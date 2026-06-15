@@ -1,16 +1,16 @@
 <?php
 
 return [
-    'title' => 'Bill',
+    'title' => 'Factura de Compra',
 
     'navigation' => [
-        'title' => 'Bills',
+        'title' => 'Facturas de Compra',
     ],
 
     'form' => [
-        'biller'            => 'Biller',
-        'reference'         => 'Reference',
-        'payment-reference' => 'Payment Reference',
-        'date'              => 'Date',
+        'biller'            => 'Facturador',
+        'reference'         => 'Referencia',
+        'payment-reference' => 'Referencia de Pago',
+        'date'              => 'Fecha',
     ],
 ];

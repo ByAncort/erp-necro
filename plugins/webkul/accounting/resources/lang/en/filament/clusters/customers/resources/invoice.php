@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Invoice',
+    'title' => 'Facuturas',
 
     'navigation' => [
-        'title' => 'Invoices',
+        'title' => 'Facuturas',
     ],
 
     'global-search' => [

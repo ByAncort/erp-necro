@@ -13,16 +13,9 @@ class Help extends Page
 
     protected static ?string $slug = 'help';
 
-    protected static ?int $navigationSort = 1;
-
-    public static function getNavigationLabel(): string
+    public static function shouldRegisterNavigation(): bool
     {
-        return __('support::filament/pages/help.navigation.label');
-    }
-
-    public static function getNavigationGroup(): ?string
-    {
-        return __('admin.navigation.help');
+        return false;
     }
 
     public function getTitle(): string

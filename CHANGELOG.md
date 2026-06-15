@@ -147,10 +147,7 @@
 * [fixed] - Fix missing translation of incoterm
 * [fixed] - Fix the issue of reference name not showing proper refernce number
 * [fixed] - Fixed credit/refund reset to draft issue
-* [fixed] - Fix the name on null while creating the journal.
-
-* #554 [fixed] - Resource Permission Scope (Individual, Group, Global) Not Working as Expected
-* #889 [fixed] - Currency Management Resource
+* [fixed] - Fix the name on null while creatquierurce
 * #964 [fixed] - Purchases Plugin: RFQ Print Missing Info & No PO Print Action
 * #1001 [fixed] - 500 Internal Server Error When Creating Journal from Create Invoice (Sale Type)
 * #1002 [fixed] - Journal Shows ID Instead of Name When Created from Invoice (Purchase Type)

@@ -1,32 +1,32 @@
 <?php
 
 return [
-    'title' => 'Variants',
+    'title' => 'Variantes',
 
     'form' => [
-        'date'                   => 'Date',
-        'employee'               => 'Employee',
-        'description'            => 'Description',
-        'time-spent'             => 'Time Spent',
-        'time-spent-helper-text' => 'Time spent in hours (Eg. 1.5 hours means 1 hour 30 minutes)',
+        'date'                   => 'Fecha',
+        'employee'               => 'Empleado',
+        'description'            => 'Descripción',
+        'time-spent'             => 'Tiempo Invertido',
+        'time-spent-helper-text' => 'Tiempo invertido en horas (Ej. 1.5 horas significa 1 hora 30 minutos)',
     ],
 
     'table' => [
         'columns' => [
-            'date'                   => 'Date',
-            'employee'               => 'Employee',
-            'description'            => 'Description',
-            'time-spent'             => 'Time Spent',
-            'time-spent-on-subtasks' => 'Time Spent on Subtasks',
-            'total-time-spent'       => 'Total Time Spent',
-            'remaining-time'         => 'Remaining Time',
+            'date'                   => 'Fecha',
+            'employee'               => 'Empleado',
+            'description'            => 'Descripción',
+            'time-spent'             => 'Tiempo Invertido',
+            'time-spent-on-subtasks' => 'Tiempo Invertido en Subtareas',
+            'total-time-spent'       => 'Tiempo Total Invertido',
+            'remaining-time'         => 'Tiempo Restante',
         ],
 
         'actions' => [
             'delete' => [
                 'notification' => [
-                    'title' => 'Variant deleted',
-                    'body'  => 'The variant has been deleted successfully.',
+                    'title' => 'Variante eliminada',
+                    'body'  => 'La variante ha sido eliminada exitosamente.',
                 ],
             ],
         ],

@@ -6,7 +6,7 @@ return [
         'contact'       => 'Contact',
         'sale'          => 'Sales',
         'purchase'      => 'Purchase',
-        'invoice'       => 'Invoices',
+        'invoice'       => 'Facuturas',
         'accounting'    => 'Accounting',
         'inventory'     => 'Inventory',
         'maintenance'   => 'Maintenance',

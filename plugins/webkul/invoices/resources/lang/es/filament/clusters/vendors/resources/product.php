@@ -2,7 +2,7 @@
 
 return [
     'navigation' => [
-        'title' => 'Products',
+        'title' => 'Productos',
         'group' => 'Inventory',
     ],
 
@@ -12,123 +12,123 @@ return [
                 'title' => 'General',
 
                 'fields' => [
-                    'name'             => 'Name',
-                    'name-placeholder' => 'eg. T-shirt',
-                    'description'      => 'Description',
-                    'tags'             => 'Tags',
-                    'sales'            => 'Sales',
-                    'purchase'         => 'Purchase',
+                    'name'             => 'Nombre',
+                    'name-placeholder' => 'ej. Polera',
+                    'description'      => 'Descripción',
+                    'tags'             => 'Etiquetas',
+                    'sales'            => 'Ventas',
+                    'purchase'         => 'Compras',
                 ],
             ],
 
             'invoice-policy' => [
-                'title'            => 'Invoice Policy',
-                'ordered-policy'   => 'You can invoice goods before they are delivered.',
-                'delivered-policy' => 'Invoice after delivery, based on quantities delivered, not ordered.',
+                'title'            => 'Política de Facturación',
+                'ordered-policy'   => 'Puede facturar los productos antes de que sean entregados.',
+                'delivered-policy' => 'Facturar después de la entrega, según cantidades entregadas, no pedidas.',
             ],
 
             'images' => [
-                'title' => 'Images',
+                'title' => 'Imágenes',
             ],
 
             'settings' => [
-                'title' => 'Settings',
+                'title' => 'Configuración',
 
                 'fields' => [
-                    'type'      => 'Type',
-                    'reference' => 'Reference',
-                    'barcode'   => 'Barcode',
-                    'category'  => 'Category',
-                    'company'   => 'Company',
+                    'type'      => 'Tipo',
+                    'reference' => 'Referencia',
+                    'barcode'   => 'Código de Barras',
+                    'category'  => 'Categoría',
+                    'company'   => 'Compañía',
                 ],
             ],
 
             'category-and-tags' => [
-                'title' => 'Category & Tags',
+                'title' => 'Categoría y Etiquetas',
 
                 'fields' => [
-                    'category' => 'Category',
-                    'tags'     => 'Tags',
+                    'category' => 'Categoría',
+                    'tags'     => 'Etiquetas',
                 ],
             ],
 
             'pricing' => [
-                'title' => 'Pricing',
+                'title' => 'Precios',
 
                 'fields' => [
-                    'price' => 'Price',
-                    'cost'  => 'Cost',
+                    'price' => 'Precio',
+                    'cost'  => 'Costo',
                 ],
             ],
 
             'additional' => [
-                'title' => 'Additional',
+                'title' => 'Adicional',
             ],
         ],
     ],
 
     'table' => [
         'columns' => [
-            'name'        => 'Name',
-            'images'      => 'Images',
-            'type'        => 'Type',
-            'reference'   => 'Reference',
-            'responsible' => 'Responsible',
-            'barcode'     => 'Barcode',
-            'category'    => 'Category',
-            'company'     => 'Company',
-            'price'       => 'Price',
-            'cost'        => 'Cost',
-            'tags'        => 'Tags',
-            'deleted-at'  => 'Deleted At',
-            'created-at'  => 'Created At',
-            'updated-at'  => 'Updated At',
+            'name'        => 'Nombre',
+            'images'      => 'Imágenes',
+            'type'        => 'Tipo',
+            'reference'   => 'Referencia',
+            'responsible' => 'Responsable',
+            'barcode'     => 'Código de Barras',
+            'category'    => 'Categoría',
+            'company'     => 'Compañía',
+            'price'       => 'Precio',
+            'cost'        => 'Costo',
+            'tags'        => 'Etiquetas',
+            'deleted-at'  => 'Eliminado en',
+            'created-at'  => 'Creado en',
+            'updated-at'  => 'Actualizado en',
         ],
 
         'groups' => [
-            'type'       => 'Type',
-            'category'   => 'Category',
-            'created-at' => 'Created At',
+            'type'       => 'Tipo',
+            'category'   => 'Categoría',
+            'created-at' => 'Creado en',
         ],
 
         'filters' => [
-            'name'        => 'Name',
-            'type'        => 'Type',
-            'reference'   => 'Reference',
-            'barcode'     => 'Barcode',
-            'category'    => 'Category',
-            'company'     => 'Company',
-            'price'       => 'Price',
-            'cost'        => 'Cost',
-            'is-favorite' => 'Is Favorite',
-            'weight'      => 'Weight',
-            'volume'      => 'Volume',
-            'tags'        => 'Tags',
-            'responsible' => 'Responsible',
-            'created-at'  => 'Created At',
-            'updated-at'  => 'Updated At',
-            'creator'     => 'Creator',
+            'name'        => 'Nombre',
+            'type'        => 'Tipo',
+            'reference'   => 'Referencia',
+            'barcode'     => 'Código de Barras',
+            'category'    => 'Categoría',
+            'company'     => 'Compañía',
+            'price'       => 'Precio',
+            'cost'        => 'Costo',
+            'is-favorite' => 'Es Favorito',
+            'weight'      => 'Peso',
+            'volume'      => 'Volumen',
+            'tags'        => 'Etiquetas',
+            'responsible' => 'Responsable',
+            'created-at'  => 'Creado en',
+            'updated-at'  => 'Actualizado en',
+            'creator'     => 'Creador',
         ],
 
         'actions' => [
             'restore' => [
                 'notification' => [
-                    'title' => 'Product restored',
-                    'body'  => 'The product has been restored successfully.',
+                    'title' => 'Producto restaurado',
+                    'body'  => 'El producto ha sido restaurado exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Product deleted',
-                    'body'  => 'The product has been deleted successfully.',
+                    'title' => 'Producto eliminado',
+                    'body'  => 'El producto ha sido eliminado exitosamente.',
                 ],
             ],
 
             'force-delete' => [
                 'notification' => [
-                    'title' => 'Product force deleted',
-                    'body'  => 'The product has been force deleted successfully.',
+                    'title' => 'Producto eliminado forzosamente',
+                    'body'  => 'El producto ha sido eliminado forzosamente exitosamente.',
                 ],
             ],
         ],
@@ -136,22 +136,22 @@ return [
         'bulk-actions' => [
             'restore' => [
                 'notification' => [
-                    'title' => 'Products restored',
-                    'body'  => 'The products has been restored successfully.',
+                    'title' => 'Productos restaurados',
+                    'body'  => 'Los productos han sido restaurados exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Products deleted',
-                    'body'  => 'The products has been deleted successfully.',
+                    'title' => 'Productos eliminados',
+                    'body'  => 'Los productos han sido eliminados exitosamente.',
                 ],
             ],
 
             'force-delete' => [
                 'notification' => [
-                    'title' => 'Products force deleted',
-                    'body'  => 'The products has been force deleted successfully.',
+                    'title' => 'Productos eliminados forzosamente',
+                    'body'  => 'Los productos han sido eliminados forzosamente exitosamente.',
                 ],
             ],
         ],
@@ -163,95 +163,95 @@ return [
                 'title' => 'General',
 
                 'entries' => [
-                    'name'             => 'Name',
-                    'name-placeholder' => 'eg. T-shirt',
-                    'description'      => 'Description',
-                    'tags'             => 'Tags',
+                    'name'             => 'Nombre',
+                    'name-placeholder' => 'ej. Polera',
+                    'description'      => 'Descripción',
+                    'tags'             => 'Etiquetas',
                 ],
             ],
 
             'images' => [
-                'title' => 'Images',
+                'title' => 'Imágenes',
 
                 'entries' => [],
             ],
 
             'settings' => [
-                'title' => 'Settings',
+                'title' => 'Configuración',
 
                 'entries' => [
-                    'type'      => 'Type',
-                    'reference' => 'Reference',
-                    'barcode'   => 'Barcode',
-                    'category'  => 'Category',
-                    'company'   => 'Company',
+                    'type'      => 'Tipo',
+                    'reference' => 'Referencia',
+                    'barcode'   => 'Código de Barras',
+                    'category'  => 'Categoría',
+                    'company'   => 'Compañía',
                 ],
             ],
 
             'pricing' => [
-                'title' => 'Pricing',
+                'title' => 'Precios',
 
                 'entries' => [
-                    'price' => 'Price',
-                    'cost'  => 'Cost',
+                    'price' => 'Precio',
+                    'cost'  => 'Costo',
                 ],
             ],
 
             'inventory' => [
-                'title' => 'Inventory',
+                'title' => 'Inventario',
 
                 'entries' => [],
 
                 'fieldsets' => [
                     'tracking' => [
-                        'title' => 'Tracking',
+                        'title' => 'Seguimiento',
 
                         'entries' => [
-                            'track-inventory' => 'Track Inventory',
-                            'track-by'        => 'Track By',
-                            'expiration-date' => 'Expiration Date',
+                            'track-inventory' => 'Controlar Inventario',
+                            'track-by'        => 'Controlar por',
+                            'expiration-date' => 'Fecha de Vencimiento',
                         ],
                     ],
 
                     'operation' => [
-                        'title' => 'Operations',
+                        'title' => 'Operaciones',
 
                         'entries' => [
-                            'routes' => 'Routes',
+                            'routes' => 'Rutas',
                         ],
                     ],
 
                     'logistics' => [
-                        'title' => 'Logistics',
+                        'title' => 'Logística',
 
                         'entries' => [
-                            'responsible' => 'Responsible',
-                            'weight'      => 'Weight',
-                            'volume'      => 'Volume',
-                            'sale-delay'  => 'Customer Lead Time (Days)',
+                            'responsible'    => 'Responsable',
+                            'weight'         => 'Peso',
+                            'volume'         => 'Volumen',
+                            'sale-delay'     => 'Plazo de Entrega (Días)',
                         ],
                     ],
 
                     'traceability' => [
-                        'title' => 'Traceability',
+                        'title' => 'Trazabilidad',
 
                         'entries' => [
-                            'expiration-date'  => 'Expiration Date (Days)',
-                            'best-before-date' => 'Best Before Date (Days)',
-                            'removal-date'     => 'Removal Date (Days)',
-                            'alert-date'       => 'Alert Date (Days)',
+                            'expiration-date'  => 'Fecha de Vencimiento (Días)',
+                            'best-before-date' => 'Consumo Preferente (Días)',
+                            'removal-date'     => 'Fecha de Retiro (Días)',
+                            'alert-date'       => 'Fecha de Alerta (Días)',
                         ],
                     ],
                 ],
             ],
 
             'record-information' => [
-                'title' => 'Record Information',
+                'title' => 'Información del Registro',
 
                 'entries' => [
-                    'created-at' => 'Created At',
-                    'created-by' => 'Created By',
-                    'updated-at' => 'Updated At',
+                    'created-at' => 'Creado en',
+                    'created-by' => 'Creado por',
+                    'updated-at' => 'Actualizado en',
                 ],
             ],
         ],

@@ -105,9 +105,6 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()
                     ->label(fn (): string => __('admin.navigation.setting'))
                     ->icon('icon-settings'),
-                NavigationGroup::make()
-                    ->label(fn (): string => __('admin.navigation.help'))
-                    ->icon('icon-help'),
             ])
             ->plugins([
                 ManufacturingPlugin::make(),

@@ -1,27 +1,27 @@
 <?php
 
 return [
-    'title' => 'IN/OUT',
+    'title' => 'ENTRADA/SALIDA',
 
     'table' => [
         'columns' => [
-            'date'                 => 'Date',
-            'reference'            => 'Reference',
-            'product'              => 'Product',
-            'package'              => 'Package',
-            'lot'                  => 'Lot / Serial Numbers',
-            'source-location'      => 'Source Location',
-            'destination-location' => 'Destination Location',
-            'quantity'             => 'Quantity',
-            'state'                => 'State',
-            'done-by'              => 'Done By',
+            'date'                 => 'Fecha',
+            'reference'            => 'Referencia',
+            'product'              => 'Producto',
+            'package'              => 'Paquete',
+            'lot'                  => 'Lote / Números de Serie',
+            'source-location'      => 'Ubicación de Origen',
+            'destination-location' => 'Ubicación de Destino',
+            'quantity'             => 'Cantidad',
+            'state'                => 'Estado',
+            'done-by'              => 'Realizado por',
         ],
 
         'actions' => [
             'delete' => [
                 'notification' => [
-                    'title' => 'Move deleted',
-                    'body'  => 'The move has been deleted successfully.',
+                    'title' => 'Movimiento eliminado',
+                    'body'  => 'El movimiento ha sido eliminado exitosamente.',
                 ],
             ],
         ],

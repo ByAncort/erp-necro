@@ -42,12 +42,12 @@ class PrintAndSendAction extends Action
             };
 
             $description = "
-                    <p>Dear {$record->partner->name},</p>
-                    <p>Your invoice <strong>{$record->name}</strong> from <strong>{$record->company->name}</strong> for <strong>{$money($record->amount_total, $record->currency->name)}</strong> is now available. Kindly arrange payment at your earliest convenience.</p>
-                    <p>When making the payment, please reference <strong>{$record->name}</strong> for account <strong>".($record->partnerBank->bank->name ?? 'N/A').'</strong>.</p>
-                    <p>If you have any questions, feel free to reach out.</p>
-                    <p><strong>Best regards,</strong><br>Administrator</p>
-                ';
+                <p>Estimado/a {$record->partner->name},</p>
+                <p>Su factura <strong>{$record->name}</strong> de <strong>{$record->company->name}</strong> por un monto de <strong>{$money($record->amount_total, $record->currency->name)}</strong> ya se encuentra disponible. Le solicitamos gestionar el pago a la brevedad posible.</p>
+                <p>Al momento de realizar el pago, por favor utilice como referencia <strong>{$record->name}</strong> para la cuenta <strong>".($record->partnerBank->bank->name ?? 'N/A').'</strong>.</p>
+                <p>Si tiene alguna consulta, no dude en contactarnos.</p>
+                <p><strong>Saludos cordiales,</strong><br>Administrador</p>
+            ';
 
             $action->fillForm([
                 'files'       => $this->prepareInvoice($record),

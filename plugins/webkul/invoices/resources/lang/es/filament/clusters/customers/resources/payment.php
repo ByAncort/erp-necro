@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Payment',
+    'title' => 'Pago',
 
     'navigation' => [
-        'title' => 'Payments',
+        'title' => 'Pagos',
         'group' => 'Invoices',
     ],
 ];

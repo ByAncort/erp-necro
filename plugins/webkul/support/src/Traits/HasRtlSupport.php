@@ -41,8 +41,8 @@ trait HasRtlSupport
                         ])
                         ->all()
                 )
-                ->excludes(['admin', 'customer'])
-                ->visible(insidePanels: false, outsidePanels: false)
+                ->excludes(['customer'])
+                ->visible(insidePanels: true)
                 ->circular();
         });
     }
