@@ -56,8 +56,10 @@ class PayAction extends Action
                         : PaymentType::SEND;
                     $paymentRegister->computeBatches();
                     $paymentRegister->computeAvailableJournalIds();
+                    $paymentRegister->available_journal_ids ??= [];
+
                     $paymentRegister->journal_id = $paymentRegister->available_journal_ids[0] ?? null;
-                    $paymentRegister->journal = Journal::find($paymentRegister->journal_id);
+                    $paymentRegister->journal = $paymentRegister->journal_id ? Journal::find($paymentRegister->journal_id) : null;
 
                     $paymentRegister->computePaymentMethodLineId();
 
@@ -65,6 +67,8 @@ class PayAction extends Action
                     $paymentRegister->amount = $amountsToPay['amount_by_default'];
                     $paymentRegister->computeInstallmentsMode();
                 } catch (Exception $e) {
+                    $paymentRegister->available_journal_ids ??= [];
+
                     Notification::make()
                         ->title(__('accounts::filament/resources/invoice/actions/pay-action.notifications.payment-failed.title'))
                         ->body($e->getMessage())
@@ -79,7 +83,7 @@ class PayAction extends Action
                                 ->relationship(
                                     'journal',
                                     'name',
-                                    modifyQueryUsing: fn (Builder $query) => $query->whereIn('id', $paymentRegister->available_journal_ids)
+                                    modifyQueryUsing: fn (Builder $query) => $query->whereIn('id', $paymentRegister->available_journal_ids ?? [])
                                 )
                                 ->label(__('accounts::filament/resources/invoice/actions/pay-action.form.fields.journal'))
                                 ->searchable()
