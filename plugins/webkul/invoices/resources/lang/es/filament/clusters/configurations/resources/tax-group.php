@@ -5,6 +5,6 @@ return [
 
     'navigation' => [
         'title' => 'Grupos de Impuestos',
-        'group' => 'Accounting',
+        'group' => 'Contabilidad',
     ],
 ];

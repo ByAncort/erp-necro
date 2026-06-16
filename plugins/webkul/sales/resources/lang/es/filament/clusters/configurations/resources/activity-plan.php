@@ -3,7 +3,7 @@
 return [
     'navigation' => [
         'title' => 'Activity Plans',
-        'group' => 'Activities',
+        'group' => 'Actividades',
     ],
 
     'form' => [

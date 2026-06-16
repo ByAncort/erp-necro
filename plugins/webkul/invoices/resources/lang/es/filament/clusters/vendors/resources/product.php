@@ -3,7 +3,7 @@
 return [
     'navigation' => [
         'title' => 'Productos',
-        'group' => 'Inventory',
+        'group' => 'Inventario',
     ],
 
     'form' => [

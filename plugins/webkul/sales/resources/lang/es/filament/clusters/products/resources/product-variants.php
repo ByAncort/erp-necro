@@ -5,6 +5,6 @@ return [
 
     'navigation' => [
         'title' => 'Product variants',
-        'group' => 'Inventory',
+        'group' => 'Inventario',
     ],
 ];

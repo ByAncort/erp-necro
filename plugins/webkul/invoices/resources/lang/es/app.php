@@ -4,7 +4,7 @@ return [
     'navigation' => [
         'settings' => [
             'label' => 'Ajustes',
-            'group' => 'Invoices',
+            'group' => 'Facturas',
         ],
     ],
 ];

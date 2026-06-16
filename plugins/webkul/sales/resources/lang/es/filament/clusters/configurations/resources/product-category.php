@@ -5,6 +5,6 @@ return [
 
     'navigation' => [
         'title' => 'Categories',
-        'group' => 'Products',
+        'group' => 'Productos',
     ],
 ];
