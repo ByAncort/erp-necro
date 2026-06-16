@@ -10,7 +10,6 @@ class Overview extends Page
 {
     use HasPageShield;
 
-    protected static bool $shouldRegisterNavigation = false;
 
     protected static ?string $slug = 'accounting/overview';
 
