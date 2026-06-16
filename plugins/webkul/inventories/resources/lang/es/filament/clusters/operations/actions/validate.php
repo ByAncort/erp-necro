@@ -1,45 +1,45 @@
 <?php
 
 return [
-    'label'             => 'Validate',
-    'modal-heading'     => 'Create Back Order?',
-    'modal-description' => 'Create a backorder if the remaining products will be processed later. If not, do not generate a backorder.',
+    'label'             => 'Validar',
+    'modal-heading'     => '¿Crear Pedido Pendiente?',
+    'modal-description' => 'Cree un pedido pendiente si los productos restantes se procesarán más tarde. Si no, no genere un pedido pendiente.',
 
     'extra-modal-footer-actions' => [
         'no-backorder' => [
-            'label' => 'No Backorder',
+            'label' => 'Sin Pedido Pendiente',
         ],
     ],
 
     'notification' => [
         'error' => [
-            'title' => 'Validation Failed',
+            'title' => 'Validación Fallida',
         ],
 
         'warning' => [
             'lines-missing' => [
-                'title' => 'No quantities are reserved',
-                'body'  => 'No quantities are reserved for the transfer.',
+                'title' => 'No hay cantidades reservadas',
+                'body'  => 'No hay cantidades reservadas para la transferencia.',
             ],
 
             'no-quantities-reserved' => [
-                'title' => 'No quantities are reserved',
-                'body'  => 'No quantities are reserved for the transfer.',
+                'title' => 'No hay cantidades reservadas',
+                'body'  => 'No hay cantidades reservadas para la transferencia.',
             ],
 
             'lot-missing' => [
-                'title' => 'Supply Lot/Serial Number',
-                'body'  => 'You need to supply a Lot/Serial Number for products :products.',
+                'title' => 'Proporcione Lote/Número de Serie',
+                'body'  => 'Debe proporcionar un Lote/Número de Serie para los productos :products.',
             ],
 
             'serial-qty' => [
-                'title' => 'Serial Number Already Assigned',
-                'body'  => 'The serial number has already been assigned to another product.',
+                'title' => 'Número de Serie Ya Asignado',
+                'body'  => 'El número de serie ya ha sido asignado a otro producto.',
             ],
 
             'partial-package' => [
-                'title' => 'Can not move same package content',
-                'body'  => 'You cannot move the same package contents more than once within a single transfer or split the package between two locations.',
+                'title' => 'No se puede mover el mismo contenido del paquete',
+                'body'  => 'No puede mover el mismo contenido de un paquete más de una vez dentro de una sola transferencia ni dividir el paquete entre dos ubicaciones.',
             ],
         ],
     ],

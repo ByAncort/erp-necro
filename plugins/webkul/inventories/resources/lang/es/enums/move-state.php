@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'draft'              => 'Draft',
-    'confirmed'          => 'Waiting',
-    'waiting'            => 'Waiting',
-    'assigned'           => 'Ready',
-    'partially-assigned' => 'Partially Ready',
-    'done'               => 'Done',
-    'canceled'           => 'Canceled',
+    'draft'              => 'Borrador',
+    'confirmed'          => 'En espera',
+    'waiting'            => 'En espera',
+    'assigned'           => 'Listo',
+    'partially-assigned' => 'Parcialmente Listo',
+    'done'               => 'Completado',
+    'canceled'           => 'Cancelado',
 ];

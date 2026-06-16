@@ -5,13 +5,13 @@ return [
         'notification' => [
             'error' => [
                 'tracking-update' => [
-                    'title' => 'Error updating tracking',
-                    'body'  => 'You can not change the inventory tracking of a product that was already used.',
+                    'title' => 'Error al actualizar el seguimiento',
+                    'body'  => 'No puede cambiar el seguimiento de inventario de un producto que ya ha sido utilizado.',
                 ],
 
                 'track-by-update' => [
-                    'title' => 'Error updating tracking',
-                    'body'  => 'You have product(s) in stock that have no lot/serial number. You can assign lot/serial numbers by doing an inventory adjustment.',
+                    'title' => 'Error al actualizar el seguimiento',
+                    'body'  => 'Tiene producto(s) en stock que no tienen lote/número de serie. Puede asignar lotes/números de serie realizando un ajuste de inventario.',
                 ],
             ],
         ],

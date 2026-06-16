@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'title'          => 'Internal Transfer',
+    'title'          => 'Transferencia Interna',
 ];

@@ -2,25 +2,25 @@
 
 return [
     'notification' => [
-        'title' => 'Receipt updated',
-        'body'  => 'The receipt has been updated successfully.',
+        'title' => 'Recepción actualizada',
+        'body'  => 'La recepción ha sido actualizada exitosamente.',
     ],
 
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
         ],
 
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Receipt deleted',
-                    'body'  => 'The receipt has been deleted successfully.',
+                    'title' => 'Recepción eliminada',
+                    'body'  => 'La recepción ha sido eliminada exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Receipt could not be deleted',
-                    'body'  => 'The Receipt cannot be deleted because it is currently in use.',
+                    'title' => 'La recepción no pudo ser eliminada',
+                    'body'  => 'La recepción no puede ser eliminada porque está actualmente en uso.',
                 ],
             ],
         ],

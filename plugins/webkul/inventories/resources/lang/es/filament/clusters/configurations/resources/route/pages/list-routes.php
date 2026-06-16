@@ -2,17 +2,17 @@
 
 return [
     'tabs' => [
-        'all'      => 'All',
-        'archived' => 'Archived',
+        'all'      => 'Todo',
+        'archived' => 'Archivado',
     ],
 
     'header-actions' => [
         'create' => [
-            'label' => 'New Route',
+            'label' => 'Nueva Ruta',
 
             'notification' => [
-                'title' => 'Route created',
-                'body'  => 'The route has been created successfully.',
+                'title' => 'Ruta creada',
+                'body'  => 'La ruta ha sido creada exitosamente.',
             ],
         ],
     ],

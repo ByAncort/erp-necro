@@ -2,26 +2,26 @@
 
 return [
     'navigation' => [
-        'title' => 'Orders',
+        'title' => 'Pedidos',
     ],
 
     'tabs' => [
-        'my-purchases'    => 'My Purchases',
-        'starred'         => 'Starred',
-        'purchase-orders' => 'Purchase Orders',
-        'orders'          => 'RFQs',
-        'draft-orders'    => 'Draft RFQs',
-        'waiting-orders'  => 'Waiting RFQs',
-        'late-orders'     => 'Late RFQs',
+        'my-purchases'    => 'Mis Compras',
+        'starred'         => 'Destacados',
+        'purchase-orders' => 'Órdenes de Compra',
+        'orders'          => 'SdC',
+        'draft-orders'    => 'SdC Borrador',
+        'waiting-orders'  => 'SdC Pendientes',
+        'late-orders'     => 'SdC Atrasadas',
     ],
 
     'header-actions' => [
         'create' => [
-            'label' => 'New Order',
+            'label' => 'Nuevo Pedido',
 
             'notification' => [
-                'title' => 'Order created',
-                'body'  => 'The order has been created successfully.',
+                'title' => 'Pedido creado',
+                'body'  => 'El pedido ha sido creado exitosamente.',
             ],
         ],
     ],

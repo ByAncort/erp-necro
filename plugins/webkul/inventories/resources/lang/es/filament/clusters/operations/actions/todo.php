@@ -1,17 +1,17 @@
 <?php
 
 return [
-    'label' => 'Mark as Todo',
+    'label' => 'Marcar como Por Hacer',
 
     'notification' => [
         'warning' => [
-            'title' => 'Receipt has no moves',
-            'body'  => 'The receipt has no moves to mark as todo.',
+            'title' => 'La recepción no tiene movimientos',
+            'body'  => 'La recepción no tiene movimientos para marcar como por hacer.',
         ],
 
         'success' => [
-            'title' => 'Receipt marked as todo',
-            'body'  => 'The receipt has been marked as todo successfully.',
+            'title' => 'Recepción marcada como por hacer',
+            'body'  => 'La recepción ha sido marcada como por hacer exitosamente.',
         ],
     ],
 ];

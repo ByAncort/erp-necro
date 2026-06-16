@@ -2,8 +2,8 @@
 
 return [
     'navigation' => [
-        'title' => 'Warehouses',
-        'group' => 'Warehouse Management',
+        'title' => 'Almacenes',
+        'group' => 'Gestión de Almacenes',
     ],
 
     'form' => [
@@ -11,86 +11,86 @@ return [
             'general' => [
                 'title'  => 'General',
                 'fields' => [
-                    'name'               => 'Name',
-                    'name-placeholder'   => 'eg. Central Warehouse',
-                    'code'               => 'Short Name',
-                    'code-placeholder'   => 'eg. CW',
-                    'code-hint-tooltip'  => 'The short name serves as an identifier for the warehouse.',
-                    'company'            => 'Company',
-                    'address'            => 'Address',
+                    'name'               => 'Nombre',
+                    'name-placeholder'   => 'ej. Almacén Central',
+                    'code'               => 'Nombre Corto',
+                    'code-placeholder'   => 'ej. AC',
+                    'code-hint-tooltip'  => 'El nombre corto sirve como identificador del almacén.',
+                    'company'            => 'Empresa',
+                    'address'            => 'Dirección',
                 ],
             ],
 
             'settings' => [
-                'title'  => 'Settings',
+                'title'  => 'Configuraciones',
 
                 'fields' => [
-                    'shipment-management'              => 'Shipment Management',
-                    'incoming-shipments'               => 'Incoming Shipments',
-                    'incoming-shipments-hint-tooltip'  => 'Default incoming route to follow',
-                    'outgoing-shipments'               => 'Outgoing Shipments',
-                    'outgoing-shipments-hint-tooltip'  => 'Default outgoing route to follow',
-                    'manufacture'                      => 'Manufacturing',
-                    'manufacture-hint-tooltip'         => 'Default manufacturing route to follow',
-                    'resupply-management'              => 'Resupply Management',
-                    'resupply-management-hint-tooltip' => 'Routes will be automatically generated to resupply this warehouse from the selected warehouses.',
-                    'resupply-from'                    => 'Resupply From',
+                    'shipment-management'              => 'Gestión de Envíos',
+                    'incoming-shipments'               => 'Envíos Entrantes',
+                    'incoming-shipments-hint-tooltip'  => 'Ruta entrante predeterminada a seguir',
+                    'outgoing-shipments'               => 'Envíos Salientes',
+                    'outgoing-shipments-hint-tooltip'  => 'Ruta saliente predeterminada a seguir',
+                    'manufacture'                      => 'Fabricación',
+                    'manufacture-hint-tooltip'         => 'Ruta de fabricación predeterminada a seguir',
+                    'resupply-management'              => 'Gestión de Reabastecimiento',
+                    'resupply-management-hint-tooltip' => 'Las rutas se generarán automáticamente para reabastecer este almacén desde los almacenes seleccionados.',
+                    'resupply-from'                    => 'Reabastecer Desde',
                 ],
             ],
 
             'additional' => [
-                'title'  => 'Additional Information',
+                'title'  => 'Información Adicional',
             ],
         ],
     ],
 
     'table' => [
         'columns' => [
-            'name'       => 'Name',
-            'code'       => 'Short Name',
-            'company'    => 'Company',
-            'address'    => 'Address',
-            'deleted-at' => 'deleted At',
-            'created-at' => 'Created At',
-            'updated-at' => 'Updated At',
+            'name'       => 'Nombre',
+            'code'       => 'Nombre Corto',
+            'company'    => 'Empresa',
+            'address'    => 'Dirección',
+            'deleted-at' => 'Eliminado el',
+            'created-at' => 'Creado el',
+            'updated-at' => 'Actualizado el',
         ],
 
         'groups' => [
-            'address'       => 'Address',
-            'company'       => 'Company',
-            'created-at'    => 'Created At',
-            'updated-at'    => 'Updated At',
+            'address'       => 'Dirección',
+            'company'       => 'Empresa',
+            'created-at'    => 'Creado el',
+            'updated-at'    => 'Actualizado el',
         ],
 
         'filters' => [
-            'company' => 'Company',
+            'company' => 'Empresa',
         ],
 
         'actions' => [
             'restore' => [
                 'notification' => [
-                    'title' => 'Warehouse restored',
-                    'body'  => 'The warehouse has been restored successfully.',
+                    'title' => 'Almacén restaurado',
+                    'body'  => 'El almacén ha sido restaurado exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Warehouse deleted',
-                    'body'  => 'The warehouse has been deleted successfully.',
+                    'title' => 'Almacén eliminado',
+                    'body'  => 'El almacén ha sido eliminado exitosamente.',
                 ],
             ],
 
             'force-delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Warehouse force deleted',
-                        'body'  => 'The warehouse has been force deleted successfully.',
+                        'title' => 'Almacén eliminado forzosamente',
+                        'body'  => 'El almacén ha sido eliminado forzosamente exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Warehouse could not be deleted',
-                        'body'  => 'The warehouse cannot be deleted because it is currently in use.',
+                        'title' => 'El almacén no pudo ser eliminado',
+                        'body'  => 'El almacén no puede ser eliminado porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -99,28 +99,28 @@ return [
         'bulk-actions' => [
             'restore' => [
                 'notification' => [
-                    'title' => 'Warehouses restored',
-                    'body'  => 'The warehouses has been restored successfully.',
+                    'title' => 'Almacenes restaurados',
+                    'body'  => 'Los almacenes han sido restaurados exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Warehouses deleted',
-                    'body'  => 'The warehouses has been deleted successfully.',
+                    'title' => 'Almacenes eliminados',
+                    'body'  => 'Los almacenes han sido eliminados exitosamente.',
                 ],
             ],
 
             'force-delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Warehouses force deleted',
-                        'body'  => 'The warehouses has been force deleted successfully.',
+                        'title' => 'Almacenes eliminados forzosamente',
+                        'body'  => 'Los almacenes han sido eliminados forzosamente exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Warehouses could not be deleted',
-                        'body'  => 'The warehouses cannot be deleted because they are currently in use.',
+                        'title' => 'Los almacenes no pudieron ser eliminados',
+                        'body'  => 'Los almacenes no pueden ser eliminados porque están actualmente en uso.',
                     ],
                 ],
             ],
@@ -130,35 +130,35 @@ return [
     'infolist' => [
         'sections' => [
             'general' => [
-                'title' => 'General Information',
+                'title' => 'Información General',
 
                 'entries' => [
-                    'name'    => 'Warehouse Name',
-                    'code'    => 'Warehouse Code',
-                    'company' => 'Company',
-                    'address' => 'Address',
+                    'name'    => 'Nombre del Almacén',
+                    'code'    => 'Código del Almacén',
+                    'company' => 'Empresa',
+                    'address' => 'Dirección',
                 ],
             ],
 
             'settings' => [
-                'title' => 'Settings',
+                'title' => 'Configuraciones',
 
                 'entries' => [
-                    'shipment-management' => 'Shipment Management',
-                    'incoming-shipments'  => 'Incoming Shipments',
-                    'outgoing-shipments'  => 'Outgoing Shipments',
-                    'resupply-management' => 'Resupply Management',
-                    'resupply-from'       => 'Resupply From',
+                    'shipment-management' => 'Gestión de Envíos',
+                    'incoming-shipments'  => 'Envíos Entrantes',
+                    'outgoing-shipments'  => 'Envíos Salientes',
+                    'resupply-management' => 'Gestión de Reabastecimiento',
+                    'resupply-from'       => 'Reabastecer Desde',
                 ],
             ],
 
             'record-information' => [
-                'title' => 'Record Information',
+                'title' => 'Información del Registro',
 
                 'entries' => [
-                    'created-by'   => 'Created By',
-                    'created-at'   => 'Created At',
-                    'last-updated' => 'Last Updated',
+                    'created-by'   => 'Creado por',
+                    'created-at'   => 'Creado el',
+                    'last-updated' => 'Última Actualización',
                 ],
             ],
         ],

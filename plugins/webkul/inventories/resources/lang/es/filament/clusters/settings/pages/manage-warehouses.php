@@ -1,22 +1,22 @@
 <?php
 
 return [
-    'title' => 'Manage Warehouses',
+    'title' => 'Gestionar Almacenes',
 
     'form' => [
-        'enable-locations'                      => 'Locations',
-        'enable-locations-helper-text'          => 'Track product location in your warehouse',
-        'configure-locations'                   => 'Configure Locations',
-        'enable-multi-steps-routes'             => 'Multi Steps Routes',
-        'enable-multi-steps-routes-helper-text' => 'Use your own routes to manage the transfer of products between warehouses',
-        'configure-routes'                      => 'Configure Warehouse Routes',
+        'enable-locations'                      => 'Ubicaciones',
+        'enable-locations-helper-text'          => 'Rastrear la ubicación de productos en su almacén',
+        'configure-locations'                   => 'Configurar Ubicaciones',
+        'enable-multi-steps-routes'             => 'Rutas de Múltiples Pasos',
+        'enable-multi-steps-routes-helper-text' => 'Use sus propias rutas para gestionar la transferencia de productos entre almacenes',
+        'configure-routes'                      => 'Configurar Rutas de Almacén',
     ],
 
     'before-save' => [
         'notification' => [
             'warning' => [
-                'title' => 'Have multiple warehouses',
-                'body'  => 'You can\'t deactivate the multi-location if you have more than one warehouse.',
+                'title' => 'Tiene múltiples almacenes',
+                'body'  => 'No puede desactivar la multi-ubicación si tiene más de un almacén.',
             ],
         ],
     ],

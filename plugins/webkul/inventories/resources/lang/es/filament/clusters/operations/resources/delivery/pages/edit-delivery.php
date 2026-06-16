@@ -2,25 +2,25 @@
 
 return [
     'notification' => [
-        'title' => 'Delivery updated',
-        'body'  => 'The delivery has been updated successfully.',
+        'title' => 'Entrega actualizada',
+        'body'  => 'La entrega ha sido actualizada exitosamente.',
     ],
 
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
         ],
 
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Delivery deleted',
-                    'body'  => 'The delivery has been deleted successfully.',
+                    'title' => 'Entrega eliminada',
+                    'body'  => 'La entrega ha sido eliminada exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Delivery could not be deleted',
-                    'body'  => 'The delivery cannot be deleted because it is currently in use.',
+                    'title' => 'La entrega no pudo ser eliminada',
+                    'body'  => 'La entrega no puede ser eliminada porque está actualmente en uso.',
                 ],
             ],
         ],

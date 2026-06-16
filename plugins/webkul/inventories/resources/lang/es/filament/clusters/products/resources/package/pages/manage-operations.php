@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'title' => 'Manage Operations',
+    'title' => 'Gestionar Operaciones',
 
     'table' => [
         'actions' => [
             'delete' => [
                 'notification' => [
-                    'title' => 'Internal Transfer created',
-                    'body'  => 'The internal transfer has been created successfully.',
+                    'title' => 'Transferencia Interna creada',
+                    'body'  => 'La transferencia interna ha sido creada exitosamente.',
                 ],
             ],
         ],

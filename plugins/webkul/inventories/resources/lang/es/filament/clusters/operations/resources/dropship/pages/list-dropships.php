@@ -3,11 +3,11 @@
 return [
     'header-actions' => [
         'create' => [
-            'label' => 'New Dropship',
+            'label' => 'Nuevo Envío Directo',
 
             'notification' => [
-                'title' => 'Dropship created',
-                'body'  => 'The dropship has been created successfully.',
+                'title' => 'Envío Directo creado',
+                'body'  => 'El envío directo ha sido creado exitosamente.',
             ],
         ],
     ],

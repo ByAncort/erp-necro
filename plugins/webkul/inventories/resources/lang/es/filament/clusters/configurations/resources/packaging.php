@@ -2,26 +2,26 @@
 
 return [
     'navigation' => [
-        'title' => 'Packagings',
-        'group' => 'Products',
+        'title' => 'Empaques',
+        'group' => 'Productos',
     ],
 
     'form' => [
-        'package-type' => 'Package Type',
-        'routes'       => 'Routes',
+        'package-type' => 'Tipo de Paquete',
+        'routes'       => 'Rutas',
     ],
 
     'table' => [
         'columns' => [
-            'package-type' => 'Package Type',
+            'package-type' => 'Tipo de Paquete',
         ],
 
         'groups' => [
-            'package-type' => 'Package Type',
+            'package-type' => 'Tipo de Paquete',
         ],
 
         'filters' => [
-            'package-type' => 'Package Type',
+            'package-type' => 'Tipo de Paquete',
         ],
     ],
 
@@ -29,16 +29,16 @@ return [
         'sections' => [
             'general' => [
                 'entries' => [
-                    'package_type' => 'Package Type',
+                    'package_type' => 'Tipo de Paquete',
                 ],
             ],
 
             'routing' => [
-                'title' => 'Routing Information',
+                'title' => 'Información de Enrutamiento',
 
                 'entries' => [
-                    'routes'     => 'Warehouse Routes',
-                    'route_name' => 'Route Name',
+                    'routes'     => 'Rutas de Almacén',
+                    'route_name' => 'Nombre de Ruta',
                 ],
             ],
         ],

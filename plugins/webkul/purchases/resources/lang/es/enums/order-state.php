@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'draft'      => 'RFQ',
-    'sent'       => 'RFQ Sent',
-    'to_approve' => 'To Approve',
-    'purchase'   => 'Purchase Order',
-    'done'       => 'Locked',
-    'canceled'   => 'Canceled',
+    'draft'      => 'SdC',
+    'sent'       => 'SdC Enviada',
+    'to_approve' => 'Por Aprobar',
+    'purchase'   => 'Orden de Compra',
+    'done'       => 'Bloqueado',
+    'canceled'   => 'Cancelado',
 ];

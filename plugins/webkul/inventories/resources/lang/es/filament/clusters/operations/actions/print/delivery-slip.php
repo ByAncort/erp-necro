@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'label' => 'Delivery Slip',
+    'label' => 'Albarán de Entrega',
 ];

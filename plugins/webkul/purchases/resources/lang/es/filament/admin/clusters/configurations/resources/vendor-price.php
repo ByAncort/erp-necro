@@ -2,7 +2,7 @@
 
 return [
     'navigation' => [
-        'title' => 'Vendor Price Lists',
+        'title' => 'Listas de Precios de Proveedor',
     ],
 
     'form' => [
@@ -11,30 +11,30 @@ return [
                 'title'  => 'General',
 
                 'fields' => [
-                    'vendor'                      => 'Vendor',
-                    'vendor-product-name'         => 'Vendor Product Name',
-                    'vendor-product-name-tooltip' => 'The vendor\'s product name will appear on the request for quotation. Leave it blank to use the internal product name.',
-                    'vendor-product-code'         => 'Vendor Product Code',
-                    'vendor-product-code-tooltip' => 'The vendor\'s product code will appear on the request for quotation. Leave it blank to use the internal code.',
-                    'delay'                       => 'Delivery Lead Time (Days)',
-                    'delay-tooltip'               => 'The lead time (in days) from purchase order confirmation to product receipt in the warehouse. Used by the scheduler for automatic purchase order planning.',
+                    'vendor'                      => 'Proveedor',
+                    'vendor-product-name'         => 'Nombre del Producto del Proveedor',
+                    'vendor-product-name-tooltip' => 'El nombre del producto del proveedor aparecerá en la solicitud de cotización. Déjelo en blanco para usar el nombre interno del producto.',
+                    'vendor-product-code'         => 'Código del Producto del Proveedor',
+                    'vendor-product-code-tooltip' => 'El código del producto del proveedor aparecerá en la solicitud de cotización. Déjelo en blanco para usar el código interno.',
+                    'delay'                       => 'Plazo de Entrega (Días)',
+                    'delay-tooltip'               => 'El plazo de entrega (en días) desde la confirmación de la orden de compra hasta la recepción del producto en el almacén. Utilizado por el planificador para la planificación automática de órdenes de compra.',
                 ],
             ],
 
             'prices' => [
-                'title'  => 'Prices',
+                'title'  => 'Precios',
 
                 'fields' => [
-                    'product'            => 'Product',
-                    'quantity'           => 'Quantity',
-                    'quantity-tooltip'   => 'The minimum quantity required to purchase from this vendor to qualify for the specified price. This is expressed in the vendor\'s Product Unit of Measure or, if not set, the product\'s default unit of measure.',
-                    'unit-price'         => 'Unit Price',
-                    'unit-price-tooltip' => 'The price per unit for this product from the vendor, expressed in the vendor’s Product Unit of Measure or, if not set, the product\'s default unit of measure.',
-                    'currency'           => 'Currency',
-                    'valid-from'         => 'Valid From',
-                    'valid-to'           => 'Valid Until',
-                    'discount'           => 'Discount (%)',
-                    'company'            => 'Company',
+                    'product'            => 'Producto',
+                    'quantity'           => 'Cantidad',
+                    'quantity-tooltip'   => 'La cantidad mínima requerida para comprar a este proveedor y calificar para el precio especificado. Esto se expresa en la Unidad de Medida del producto del proveedor o, si no se establece, en la unidad de medida predeterminada del producto.',
+                    'unit-price'         => 'Precio Unitario',
+                    'unit-price-tooltip' => 'El precio por unidad de este producto del proveedor, expresado en la Unidad de Medida del producto del proveedor o, si no se establece, en la unidad de medida predeterminada del producto.',
+                    'currency'           => 'Moneda',
+                    'valid-from'         => 'Válido Desde',
+                    'valid-to'           => 'Válido Hasta',
+                    'discount'           => 'Descuento (%)',
+                    'company'            => 'Compañía',
                 ],
             ],
         ],
@@ -42,55 +42,55 @@ return [
 
     'table' => [
         'columns' => [
-            'vendor'              => 'Vendor',
-            'vendor-product-name' => 'Vendor Product Name',
-            'vendor-product-code' => 'Vendor Product Code',
-            'delay'               => 'Delivery Lead Time (Days)',
-            'product'             => 'Product',
-            'quantity'            => 'Quantity',
-            'unit-price'          => 'Unit Price',
-            'currency'            => 'Currency',
-            'valid-from'          => 'Valid From',
-            'valid-to'            => 'Valid Until',
-            'discount'            => 'Discount (%)',
-            'company'             => 'Company',
-            'created-at'          => 'Created At',
-            'updated-at'          => 'Updated At',
+            'vendor'              => 'Proveedor',
+            'vendor-product-name' => 'Nombre del Producto del Proveedor',
+            'vendor-product-code' => 'Código del Producto del Proveedor',
+            'delay'               => 'Plazo de Entrega (Días)',
+            'product'             => 'Producto',
+            'quantity'            => 'Cantidad',
+            'unit-price'          => 'Precio Unitario',
+            'currency'            => 'Moneda',
+            'valid-from'          => 'Válido Desde',
+            'valid-to'            => 'Válido Hasta',
+            'discount'            => 'Descuento (%)',
+            'company'             => 'Compañía',
+            'created-at'          => 'Creado En',
+            'updated-at'          => 'Actualizado En',
         ],
 
         'filters' => [
-            'vendor'        => 'Filter by Vendor',
-            'product'       => 'Filter by Product',
-            'currency'      => 'Filter by Currency',
-            'company'       => 'Filter by Company',
-            'price-from'    => 'Minimum Price',
-            'price-to'      => 'Maximum Price',
-            'min-qty-from'  => 'Minimum Quantity From',
-            'min-qty-to'    => 'Minimum Quantity To',
-            'starts-from'   => 'Valid From Date',
-            'ends-before'   => 'Valid To Date',
-            'created-from'  => 'Created From',
-            'created-until' => 'Created Until',
+            'vendor'        => 'Filtrar por Proveedor',
+            'product'       => 'Filtrar por Producto',
+            'currency'      => 'Filtrar por Moneda',
+            'company'       => 'Filtrar por Compañía',
+            'price-from'    => 'Precio Mínimo',
+            'price-to'      => 'Precio Máximo',
+            'min-qty-from'  => 'Cantidad Mínima Desde',
+            'min-qty-to'    => 'Cantidad Mínima Hasta',
+            'starts-from'   => 'Fecha Válido Desde',
+            'ends-before'   => 'Fecha Válido Hasta',
+            'created-from'  => 'Creado Desde',
+            'created-until' => 'Creado Hasta',
         ],
 
         'groups' => [
-            'vendor'     => 'Vendor',
-            'product'    => 'Product',
-            'created-at' => 'Created At',
-            'updated-at' => 'Updated At',
+            'vendor'     => 'Proveedor',
+            'product'    => 'Producto',
+            'created-at' => 'Creado En',
+            'updated-at' => 'Actualizado En',
         ],
 
         'actions' => [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Vendor Price deleted',
-                        'body'  => 'The vendor price has been deleted successfully.',
+                        'title' => 'Precio de Proveedor eliminado',
+                        'body'  => 'El precio de proveedor ha sido eliminado exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Vendor Price could not be deleted',
-                        'body'  => 'The vendor price cannot be deleted because it is currently in use.',
+                        'title' => 'El Precio de Proveedor no pudo ser eliminado',
+                        'body'  => 'El precio de proveedor no puede ser eliminado porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -100,13 +100,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Vendor Prices deleted',
-                        'body'  => 'The vendor prices has been deleted successfully.',
+                        'title' => 'Precios de Proveedor eliminados',
+                        'body'  => 'Los precios de proveedor han sido eliminados exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Vendor Prices could not be deleted',
-                        'body'  => 'The vendor prices cannot be deleted because they are currently in use.',
+                        'title' => 'Los Precios de Proveedor no pudieron ser eliminados',
+                        'body'  => 'Los precios de proveedor no pueden ser eliminados porque están actualmente en uso.',
                     ],
                 ],
             ],
@@ -119,40 +119,40 @@ return [
                 'title'  => 'General',
 
                 'entries' => [
-                    'vendor'                      => 'Vendor',
-                    'vendor-product-name'         => 'Vendor Product Name',
-                    'vendor-product-name-tooltip' => 'The vendor\'s product name will appear on the request for quotation. Leave it blank to use the internal product name.',
-                    'vendor-product-code'         => 'Vendor Product Code',
-                    'vendor-product-code-tooltip' => 'The vendor\'s product code will appear on the request for quotation. Leave it blank to use the internal code.',
-                    'delay'                       => 'Delivery Lead Time (Days)',
-                    'delay-tooltip'               => 'The lead time (in days) from purchase order confirmation to product receipt in the warehouse. Used by the scheduler for automatic purchase order planning.',
+                    'vendor'                      => 'Proveedor',
+                    'vendor-product-name'         => 'Nombre del Producto del Proveedor',
+                    'vendor-product-name-tooltip' => 'El nombre del producto del proveedor aparecerá en la solicitud de cotización. Déjelo en blanco para usar el nombre interno del producto.',
+                    'vendor-product-code'         => 'Código del Producto del Proveedor',
+                    'vendor-product-code-tooltip' => 'El código del producto del proveedor aparecerá en la solicitud de cotización. Déjelo en blanco para usar el código interno.',
+                    'delay'                       => 'Plazo de Entrega (Días)',
+                    'delay-tooltip'               => 'El plazo de entrega (en días) desde la confirmación de la orden de compra hasta la recepción del producto en el almacén. Utilizado por el planificador para la planificación automática de órdenes de compra.',
                 ],
             ],
 
             'record-information' => [
-                'title'  => 'Record Information',
+                'title'  => 'Información del Registro',
 
                 'entries' => [
-                    'created-by'   => 'Created By',
-                    'created-at'   => 'Created At',
-                    'last-updated' => 'Last Updated',
+                    'created-by'   => 'Creado Por',
+                    'created-at'   => 'Creado En',
+                    'last-updated' => 'Última Actualización',
                 ],
             ],
 
             'prices' => [
-                'title'  => 'Prices',
+                'title'  => 'Precios',
 
                 'entries' => [
-                    'product'            => 'Product',
-                    'quantity'           => 'Quantity',
-                    'quantity-tooltip'   => 'The minimum quantity required to purchase from this vendor to qualify for the specified price. This is expressed in the vendor\'s Product Unit of Measure or, if not set, the product\'s default unit of measure.',
-                    'unit-price'         => 'Unit Price',
-                    'unit-price-tooltip' => 'The price per unit for this product from the vendor, expressed in the vendor’s Product Unit of Measure or, if not set, the product\'s default unit of measure.',
-                    'currency'           => 'Currency',
-                    'valid-from'         => 'Valid From',
-                    'valid-to'           => 'Valid Until',
-                    'discount'           => 'Discount (%)',
-                    'company'            => 'Company',
+                    'product'            => 'Producto',
+                    'quantity'           => 'Cantidad',
+                    'quantity-tooltip'   => 'La cantidad mínima requerida para comprar a este proveedor y calificar para el precio especificado. Esto se expresa en la Unidad de Medida del producto del proveedor o, si no se establece, en la unidad de medida predeterminada del producto.',
+                    'unit-price'         => 'Precio Unitario',
+                    'unit-price-tooltip' => 'El precio por unidad de este producto del proveedor, expresado en la Unidad de Medida del producto del proveedor o, si no se establece, en la unidad de medida predeterminada del producto.',
+                    'currency'           => 'Moneda',
+                    'valid-from'         => 'Válido Desde',
+                    'valid-to'           => 'Válido Hasta',
+                    'discount'           => 'Descuento (%)',
+                    'company'            => 'Compañía',
                 ],
             ],
         ],

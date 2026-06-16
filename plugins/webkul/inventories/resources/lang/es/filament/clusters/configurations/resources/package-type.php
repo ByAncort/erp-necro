@@ -2,8 +2,8 @@
 
 return [
     'navigation' => [
-        'title' => 'Package Types',
-        'group' => 'Delivery',
+        'title' => 'Tipos de Paquete',
+        'group' => 'Entrega',
     ],
 
     'form' => [
@@ -12,20 +12,20 @@ return [
                 'title'  => 'General',
 
                 'fields' => [
-                    'name'       => 'Name',
-                    'barcode'    => 'Barcode',
-                    'company'    => 'Company',
-                    'weight'     => 'Weight',
-                    'max-weight' => 'Max Weight',
+                    'name'       => 'Nombre',
+                    'barcode'    => 'Código de Barras',
+                    'company'    => 'Compañía',
+                    'weight'     => 'Peso',
+                    'max-weight' => 'Peso Máximo',
 
                     'fieldsets' => [
                         'size' => [
-                            'title' => 'Size',
+                            'title' => 'Tamaño',
 
                             'fields' => [
-                                'length' => 'Length',
-                                'width'  => 'Width',
-                                'height' => 'Height',
+                                'length' => 'Largo',
+                                'width'  => 'Ancho',
+                                'height' => 'Alto',
                             ],
                         ],
                     ],
@@ -36,27 +36,27 @@ return [
 
     'table' => [
         'columns' => [
-            'name'       => 'Name',
-            'barcode'    => 'Barcode',
-            'weight'     => 'Weight',
-            'max-weight' => 'Max Weight',
-            'width'      => 'Width',
-            'height'     => 'Height',
-            'length'     => 'Length',
-            'created-at' => 'Created At',
-            'updated-at' => 'Updated At',
+            'name'       => 'Nombre',
+            'barcode'    => 'Código de Barras',
+            'weight'     => 'Peso',
+            'max-weight' => 'Peso Máximo',
+            'width'      => 'Ancho',
+            'height'     => 'Alto',
+            'length'     => 'Largo',
+            'created-at' => 'Creado el',
+            'updated-at' => 'Actualizado el',
         ],
 
         'groups' => [
-            'created-at' => 'Created At',
-            'updated-at' => 'Updated At',
+            'created-at' => 'Creado el',
+            'updated-at' => 'Actualizado el',
         ],
 
         'actions' => [
             'delete' => [
                 'notification' => [
-                    'title' => 'Package Type deleted',
-                    'body'  => 'The package type has been deleted successfully.',
+                    'title' => 'Tipo de Paquete eliminado',
+                    'body'  => 'El tipo de paquete ha sido eliminado exitosamente.',
                 ],
             ],
         ],
@@ -64,8 +64,8 @@ return [
         'bulk-actions' => [
             'delete' => [
                 'notification' => [
-                    'title' => 'Package Type deleted',
-                    'body'  => 'The package type has been deleted successfully.',
+                    'title' => 'Tipo de Paquete eliminado',
+                    'body'  => 'El tipo de paquete ha sido eliminado exitosamente.',
                 ],
             ],
         ],
@@ -74,35 +74,35 @@ return [
     'infolist' => [
         'sections' => [
             'general' => [
-                'title'   => 'General Information',
+                'title'   => 'Información General',
                 'entries' => [
-                    'name'      => 'Name',
+                    'name'      => 'Nombre',
                     'fieldsets' => [
                         'size' => [
-                            'title'   => 'Package Dimensions',
+                            'title'   => 'Dimensiones del Paquete',
                             'entries' => [
-                                'length' => 'Length',
-                                'width'  => 'Width',
-                                'height' => 'Height',
+                                'length' => 'Largo',
+                                'width'  => 'Ancho',
+                                'height' => 'Alto',
                             ],
                         ],
                     ],
-                    'weight'     => 'Base Weight',
-                    'max-weight' => 'Maximum Weight',
-                    'barcode'    => 'Barcode',
-                    'company'    => 'Company',
-                    'created-at' => 'Created At',
-                    'updated-at' => 'Last Updated',
+                    'weight'     => 'Peso Base',
+                    'max-weight' => 'Peso Máximo',
+                    'barcode'    => 'Código de Barras',
+                    'company'    => 'Compañía',
+                    'created-at' => 'Creado el',
+                    'updated-at' => 'Última Actualización',
                 ],
             ],
 
             'record-information' => [
-                'title' => 'Record Information',
+                'title' => 'Información del Registro',
 
                 'entries' => [
-                    'created-by'   => 'Created By',
-                    'created-at'   => 'Created At',
-                    'last-updated' => 'Last Updated',
+                    'created-by'   => 'Creado Por',
+                    'created-at'   => 'Creado el',
+                    'last-updated' => 'Última Actualización',
                 ],
             ],
         ],

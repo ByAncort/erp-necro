@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'serial' => 'By Unique Serial Number',
-    'lot'    => 'By Lots',
-    'qty'    => 'By Quantity',
+    'serial' => 'Por Número de Serie Único',
+    'lot'    => 'Por Lotes',
+    'qty'    => 'Por Cantidad',
 ];

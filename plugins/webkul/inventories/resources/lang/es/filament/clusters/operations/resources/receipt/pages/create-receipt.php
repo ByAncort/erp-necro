@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Create Receipt',
+    'title' => 'Crear Recepción',
 
     'notification' => [
-        'title' => 'Receipt created',
-        'body'  => 'The receipt has been created successfully.',
+        'title' => 'Recepción creada',
+        'body'  => 'La recepción ha sido creada exitosamente.',
     ],
 ];

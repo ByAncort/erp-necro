@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'label'                     => 'Update Quantity',
-    'modal-heading'             => 'Update Product Quantity',
-    'modal-submit-action-label' => 'Update',
+    'label'                     => 'Actualizar Cantidad',
+    'modal-heading'             => 'Actualizar Cantidad del Producto',
+    'modal-submit-action-label' => 'Actualizar',
 
     'form' => [
         'fields' => [
-            'product'     => 'Product',
-            'on-hand-qty' => 'On Hand Quantity',
+            'product'     => 'Producto',
+            'on-hand-qty' => 'Cantidad Disponible',
         ],
     ],
 ];

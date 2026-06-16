@@ -2,8 +2,8 @@
 
 return [
     'navigation' => [
-        'title' => 'Routes',
-        'group' => 'Warehouse Management',
+        'title' => 'Rutas',
+        'group' => 'Gestión de Almacén',
     ],
 
     'form' => [
@@ -12,25 +12,25 @@ return [
                 'title'  => 'General',
 
                 'fields' => [
-                    'route'             => 'Route',
-                    'route-placeholder' => 'eg. Two Step Reception',
-                    'company'           => 'Company',
+                    'route'             => 'Ruta',
+                    'route-placeholder' => 'ej. Recepción en Dos Pasos',
+                    'company'           => 'Compañía',
                 ],
             ],
 
             'applicable-on' => [
-                'title'       => 'Applicable On',
-                'description' => 'Choose the locations where this route can be applied.',
+                'title'       => 'Aplicable en',
+                'description' => 'Elija las ubicaciones donde esta ruta puede ser aplicada.',
 
                 'fields' => [
-                    'products'                        => 'Products',
-                    'products-hint-tooltip'           => 'If selected, this route will be available for selection on the product.',
-                    'product-categories'              => 'Product Categories',
-                    'product-categories-hint-tooltip' => 'If selected, this route will be available for selection on the product category.',
-                    'warehouses'                      => 'Warehouses',
-                    'warehouses-hint-tooltip'         => 'When a warehouse is assigned to this route, it will be considered the default route for products moving through that warehouse.',
-                    'packaging'                       => 'Packaging',
-                    'packaging-hint-tooltip'          => 'If selected, this route will be available for selection on the packaging.',
+                    'products'                        => 'Productos',
+                    'products-hint-tooltip'           => 'Si se selecciona, esta ruta estará disponible para selección en el producto.',
+                    'product-categories'              => 'Categorías de Producto',
+                    'product-categories-hint-tooltip' => 'Si se selecciona, esta ruta estará disponible para selección en la categoría de producto.',
+                    'warehouses'                      => 'Almacenes',
+                    'warehouses-hint-tooltip'         => 'Cuando se asigna un almacén a esta ruta, se considerará la ruta predeterminada para los productos que se mueven a través de ese almacén.',
+                    'packaging'                       => 'Empaque',
+                    'packaging-hint-tooltip'          => 'Si se selecciona, esta ruta estará disponible para selección en el empaque.',
                 ],
             ],
         ],
@@ -38,54 +38,54 @@ return [
 
     'table' => [
         'columns' => [
-            'route'      => 'Route',
-            'company'    => 'Company',
-            'deleted-at' => 'Deleted At',
-            'created-at' => 'Created At',
-            'updated-at' => 'Updated At',
+            'route'      => 'Ruta',
+            'company'    => 'Compañía',
+            'deleted-at' => 'Eliminado el',
+            'created-at' => 'Creado el',
+            'updated-at' => 'Actualizado el',
         ],
 
         'groups' => [
-            'created-at' => 'Created At',
-            'updated-at' => 'Updated At',
+            'created-at' => 'Creado el',
+            'updated-at' => 'Actualizado el',
         ],
 
         'filters' => [
-            'company'  => 'Company',
+            'company'  => 'Compañía',
         ],
 
         'actions' => [
             'edit' => [
                 'notification' => [
-                    'title' => 'Route updated',
-                    'body'  => 'The route has been updated successfully.',
+                    'title' => 'Ruta actualizada',
+                    'body'  => 'La ruta ha sido actualizada exitosamente.',
                 ],
             ],
 
             'restore' => [
                 'notification' => [
-                    'title' => 'Route restored',
-                    'body'  => 'The route has been restored successfully.',
+                    'title' => 'Ruta restaurada',
+                    'body'  => 'La ruta ha sido restaurada exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Route deleted',
-                    'body'  => 'The route has been deleted successfully.',
+                    'title' => 'Ruta eliminada',
+                    'body'  => 'La ruta ha sido eliminada exitosamente.',
                 ],
             ],
 
             'force-delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Route force deleted',
-                        'body'  => 'The route has been force deleted successfully.',
+                        'title' => 'Ruta forzada a eliminar',
+                        'body'  => 'La ruta ha sido forzada a eliminar exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Route could not be deleted',
-                        'body'  => 'The route cannot be deleted because it is currently in use.',
+                        'title' => 'La ruta no pudo ser eliminada',
+                        'body'  => 'La ruta no puede ser eliminada porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -94,28 +94,28 @@ return [
         'bulk-actions' => [
             'restore' => [
                 'notification' => [
-                    'title' => 'Routes restored',
-                    'body'  => 'The routes has been restored successfully.',
+                    'title' => 'Rutas restauradas',
+                    'body'  => 'Las rutas han sido restauradas exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Routes deleted',
-                    'body'  => 'The routes has been deleted successfully.',
+                    'title' => 'Rutas eliminadas',
+                    'body'  => 'Las rutas han sido eliminadas exitosamente.',
                 ],
             ],
 
             'force-delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Routes force deleted',
-                        'body'  => 'The routes has been force deleted successfully.',
+                        'title' => 'Rutas forzadas a eliminar',
+                        'body'  => 'Las rutas han sido forzadas a eliminar exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Routes could not be deleted',
-                        'body'  => 'The routes cannot be deleted because they are currently in use.',
+                        'title' => 'Las rutas no pudieron ser eliminadas',
+                        'body'  => 'Las rutas no pueden ser eliminadas porque están actualmente en uso.',
                     ],
                 ],
             ],
@@ -128,35 +128,35 @@ return [
                 'title'  => 'General',
 
                 'entries' => [
-                    'route'             => 'Route',
-                    'route-placeholder' => 'eg. Two Step Reception',
-                    'company'           => 'Company',
+                    'route'             => 'Ruta',
+                    'route-placeholder' => 'ej. Recepción en Dos Pasos',
+                    'company'           => 'Compañía',
                 ],
             ],
 
             'applicable-on' => [
-                'title'       => 'Applicable On',
-                'description' => 'Select the places where this route can be selected.',
+                'title'       => 'Aplicable en',
+                'description' => 'Seleccione los lugares donde esta ruta puede ser seleccionada.',
 
                 'entries' => [
-                    'products'                        => 'Products',
-                    'products-hint-tooltip'           => 'If selected, this route will be available for selection on the product.',
-                    'product-categories'              => 'Product Categories',
-                    'product-categories-hint-tooltip' => 'If selected, this route will be available for selection on the product category.',
-                    'warehouses'                      => 'Warehouses',
-                    'warehouses-hint-tooltip'         => 'When a warehouse is assigned to this route, it will be considered the default route for products moving through that warehouse.',
-                    'packaging'                       => 'Packaging',
-                    'packaging-hint-tooltip'          => 'If selected, this route will be available for selection on the packaging.',
+                    'products'                        => 'Productos',
+                    'products-hint-tooltip'           => 'Si se selecciona, esta ruta estará disponible para selección en el producto.',
+                    'product-categories'              => 'Categorías de Producto',
+                    'product-categories-hint-tooltip' => 'Si se selecciona, esta ruta estará disponible para selección en la categoría de producto.',
+                    'warehouses'                      => 'Almacenes',
+                    'warehouses-hint-tooltip'         => 'Cuando se asigna un almacén a esta ruta, se considerará la ruta predeterminada para los productos que se mueven a través de ese almacén.',
+                    'packaging'                       => 'Empaque',
+                    'packaging-hint-tooltip'          => 'Si se selecciona, esta ruta estará disponible para selección en el empaque.',
                 ],
             ],
 
             'record-information' => [
-                'title' => 'Record Information',
+                'title' => 'Información del Registro',
 
                 'entries' => [
-                    'created-by'   => 'Created By',
-                    'created-at'   => 'Created At',
-                    'last-updated' => 'Last Updated',
+                    'created-by'   => 'Creado Por',
+                    'created-at'   => 'Creado el',
+                    'last-updated' => 'Última Actualización',
                 ],
             ],
         ],

@@ -2,8 +2,8 @@
 
 return [
     'navigation' => [
-        'title' => 'Rules',
-        'group' => 'Warehouse Management',
+        'title' => 'Reglas',
+        'group' => 'Gestión de Almacenes',
     ],
 
     'form' => [
@@ -12,54 +12,54 @@ return [
                 'title'  => 'General',
 
                 'fields' => [
-                    'name'                        => 'Name',
-                    'action'                      => 'Action',
-                    'operation-type'              => 'Operation Type',
-                    'source-location'             => 'Source Location',
-                    'destination-location'        => 'Destination Location',
-                    'supply-method'               => 'Supply Method',
-                    'supply-method-hint-tooltip'  => 'Take From Stock: Products are sourced directly from the available stock in the source location.<br/>Trigger Another Rule: The system ignores available stock and searches for a stock rule to replenish the source location.<br/>Take From Stock, if Unavailable, Trigger Another Rule: Products are first taken from available stock. If none is available, the system applies a stock rule to bring products into the source location.',
-                    'automatic-move'              => 'Automatic Move',
-                    'automatic-move-hint-tooltip' => 'Manual Operation: Creates a separate stock move after the current one.<br/>Automatic No Step Added: Directly replaces the location in the original move without adding an extra step.',
+                    'name'                        => 'Nombre',
+                    'action'                      => 'Acción',
+                    'operation-type'              => 'Tipo de Operación',
+                    'source-location'             => 'Ubicación de Origen',
+                    'destination-location'        => 'Ubicación de Destino',
+                    'supply-method'               => 'Método de Suministro',
+                    'supply-method-hint-tooltip'  => 'Tomar del Stock: Los productos se obtienen directamente del stock disponible en la ubicación de origen.<br/>Activar Otra Regla: El sistema ignora el stock disponible y busca una regla de stock para reabastecer la ubicación de origen.<br/>Tomar del Stock, si no está Disponible, Activar Otra Regla: Los productos se toman primero del stock disponible. Si no hay disponible, el sistema aplica una regla de stock para traer productos a la ubicación de origen.',
+                    'automatic-move'              => 'Movimiento Automático',
+                    'automatic-move-hint-tooltip' => 'Operación Manual: Crea un movimiento de stock separado después del actual.<br/>Automático Sin Paso Añadido: Reemplaza directamente la ubicación en el movimiento original sin añadir un paso extra.',
 
                     'action-information' => [
-                        'pull'        => 'When products are required in <b>:sourceLocation</b>, :operation is generated from <b>:destinationLocation</b> to meet the demand.',
-                        'push'        => 'When products reach <b>:sourceLocation</b>,</br><b>:operation</b> is generated to transfer them to <b>:destinationLocation</b>.',
-                        'buy'         => 'When products are needed in <b>:destinationLocation</b>, a request for quotation is created to fulfill the need.',
-                        'manufacture' => 'When products are needed in <b>:destinationLocation</b>, a manufacturing order is created to fulfill the need.',
+                        'pull'        => 'Cuando se requieran productos en <b>:sourceLocation</b>, se genera :operation desde <b>:destinationLocation</b> para satisfacer la demanda.',
+                        'push'        => 'Cuando los productos lleguen a <b>:sourceLocation</b>,</br>se genera <b>:operation</b> para transferirlos a <b>:destinationLocation</b>.',
+                        'buy'         => 'Cuando se necesiten productos en <b>:destinationLocation</b>, se crea una solicitud de cotización para satisfacer la necesidad.',
+                        'manufacture' => 'Cuando se necesiten productos en <b>:destinationLocation</b>, se crea una orden de fabricación para satisfacer la necesidad.',
                     ],
                 ],
             ],
 
             'settings' => [
-                'title'  => 'Settings',
+                'title'  => 'Configuraciones',
 
                 'fields' => [
-                    'partner-address'              => 'Partner Address',
-                    'partner-address-hint-tooltip' => 'Address where goods should be delivered. Optional.',
-                    'lead-time'                    => 'Lead Time (Days)',
-                    'lead-time-hint-tooltip'       => 'The expected transfer date will be calculated using this lead time.',
+                    'partner-address'              => 'Dirección del Partner',
+                    'partner-address-hint-tooltip' => 'Dirección donde deben entregarse los productos. Opcional.',
+                    'lead-time'                    => 'Plazo de Entrega (Días)',
+                    'lead-time-hint-tooltip'       => 'La fecha de transferencia esperada se calculará usando este plazo de entrega.',
                 ],
 
                 'fieldsets' => [
                     'applicability' => [
-                        'title'  => 'Applicability',
+                        'title'  => 'Aplicabilidad',
 
                         'fields' => [
-                            'route'   => 'Route',
-                            'company' => 'Company',
+                            'route'   => 'Ruta',
+                            'company' => 'Empresa',
                         ],
                     ],
 
                     'propagation' => [
-                        'title'  => 'Propagation',
+                        'title'  => 'Propagación',
 
                         'fields' => [
-                            'propagation-procurement-group'              => 'Propagation of Procurement Group',
-                            'propagation-procurement-group-hint-tooltip' => 'If selected, canceling the move created by this rule will also cancel the subsequent move.',
-                            'cancel-next-move'                           => 'Cancel Next Move',
-                            'warehouse-to-propagate'                     => 'Warehouse to Propagate',
-                            'warehouse-to-propagate-hint-tooltip'        => 'The warehouse assigned to the created move or procurement, which may differ from the warehouse this rule applies to (e.g., for resupply rules from another warehouse).',
+                            'propagation-procurement-group'              => 'Propagación del Grupo de Aprovisionamiento',
+                            'propagation-procurement-group-hint-tooltip' => 'Si se selecciona, cancelar el movimiento creado por esta regla también cancelará el movimiento subsiguiente.',
+                            'cancel-next-move'                           => 'Cancelar Siguiente Movimiento',
+                            'warehouse-to-propagate'                     => 'Almacén a Propagar',
+                            'warehouse-to-propagate-hint-tooltip'        => 'El almacén asignado al movimiento creado o aprovisionamiento, que puede diferir del almacén al que esta regla aplica (ej. para reglas de reabastecimiento desde otro almacén).',
                         ],
                     ],
                 ],
@@ -70,65 +70,65 @@ return [
 
     'table' => [
         'columns' => [
-            'name'                 => 'Name',
-            'action'               => 'Action',
-            'source-location'      => 'Source Location',
-            'destination-location' => 'Destination Location',
-            'route'                => 'Route',
-            'deleted-at'           => 'Deleted At',
-            'created-at'           => 'Created At',
-            'updated-at'           => 'Updated At',
+            'name'                 => 'Nombre',
+            'action'               => 'Acción',
+            'source-location'      => 'Ubicación de Origen',
+            'destination-location' => 'Ubicación de Destino',
+            'route'                => 'Ruta',
+            'deleted-at'           => 'Eliminado el',
+            'created-at'           => 'Creado el',
+            'updated-at'           => 'Actualizado el',
         ],
 
         'groups' => [
-            'action'               => 'Action',
-            'source-location'      => 'Source Location',
-            'destination-location' => 'Destination Location',
-            'route'                => 'Route',
-            'created-at'           => 'Created At',
-            'updated-at'           => 'Updated At',
+            'action'               => 'Acción',
+            'source-location'      => 'Ubicación de Origen',
+            'destination-location' => 'Ubicación de Destino',
+            'route'                => 'Ruta',
+            'created-at'           => 'Creado el',
+            'updated-at'           => 'Actualizado el',
         ],
 
         'filters' => [
-            'action'               => 'Action',
-            'source-location'      => 'Source Location',
-            'destination-location' => 'Destination Location',
-            'route'                => 'Route',
-            'company'              => 'Company',
+            'action'               => 'Acción',
+            'source-location'      => 'Ubicación de Origen',
+            'destination-location' => 'Ubicación de Destino',
+            'route'                => 'Ruta',
+            'company'              => 'Empresa',
         ],
 
         'actions' => [
             'edit' => [
                 'notification' => [
-                    'title' => 'Rule updated',
-                    'body'  => 'The rule has been updated successfully.',
+                    'title' => 'Regla actualizada',
+                    'body'  => 'La regla ha sido actualizada exitosamente.',
                 ],
             ],
 
             'restore' => [
                 'notification' => [
-                    'title' => 'Rule restored',
-                    'body'  => 'The rule has been restored successfully.',
+                    'title' => 'Regla restaurada',
+                    'body'  => 'La regla ha sido restaurada exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Rule deleted',
-                    'body'  => 'The rule has been deleted successfully.',
+                    'title' => 'Regla eliminada',
+                    'body'  => 'La regla ha sido eliminada exitosamente.',
                 ],
             ],
 
             'force-delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Rule force deleted',
-                        'body'  => 'The rule has been force deleted successfully.',
+                        'title' => 'Regla eliminada forzosamente',
+                        'body'  => 'La regla ha sido eliminada forzosamente exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Rule could not be deleted',
-                        'body'  => 'The rule cannot be deleted because it is currently in use.',
+                        'title' => 'La regla no pudo ser eliminada',
+                        'body'  => 'La regla no puede ser eliminada porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -137,28 +137,28 @@ return [
         'bulk-actions' => [
             'restore' => [
                 'notification' => [
-                    'title' => 'Rules restored',
-                    'body'  => 'The rules has been restored successfully.',
+                    'title' => 'Reglas restauradas',
+                    'body'  => 'Las reglas han sido restauradas exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Rules deleted',
-                    'body'  => 'The rules has been deleted successfully.',
+                    'title' => 'Reglas eliminadas',
+                    'body'  => 'Las reglas han sido eliminadas exitosamente.',
                 ],
             ],
 
             'force-delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Rules force deleted',
-                        'body'  => 'The rules has been force deleted successfully.',
+                        'title' => 'Reglas eliminadas forzosamente',
+                        'body'  => 'Las reglas han sido eliminadas forzosamente exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Rules could not be deleted',
-                        'body'  => 'The rules cannot be deleted because they are currently in use.',
+                        'title' => 'Las reglas no pudieron ser eliminadas',
+                        'body'  => 'Las reglas no pueden ser eliminadas porque están actualmente en uso.',
                     ],
                 ],
             ],
@@ -168,34 +168,34 @@ return [
     'infolist' => [
         'sections' => [
             'general' => [
-                'title' => 'Rule Details',
+                'title' => 'Detalles de la Regla',
 
                 'description' => [
-                    'pull' => 'When products are required in <b>:sourceLocation</b>, <b>:operation</b> is generated from <b>:destinationLocation</b> to meet the demand.',
-                    'push' => 'When products reach in <b>:sourceLocation</b>, <b>:operation</b> is generated to transfer them to <b>:destinationLocation</b>.',
+                    'pull' => 'Cuando se requieran productos en <b>:sourceLocation</b>, se genera <b>:operation</b> desde <b>:destinationLocation</b> para satisfacer la demanda.',
+                    'push' => 'Cuando los productos lleguen a <b>:sourceLocation</b>, se genera <b>:operation</b> para transferirlos a <b>:destinationLocation</b>.',
                 ],
 
                 'entries' => [
-                    'name'                 => 'Rule Name',
-                    'action'               => 'Action',
-                    'operation-type'       => 'Operation Type',
-                    'source-location'      => 'Source Location',
-                    'destination-location' => 'Destination Location',
-                    'route'                => 'Route',
-                    'company'              => 'Company',
-                    'partner-address'      => 'Partner Address',
-                    'lead-time'            => 'Lead Time',
-                    'action-information'   => 'Action Information',
+                    'name'                 => 'Nombre de la Regla',
+                    'action'               => 'Acción',
+                    'operation-type'       => 'Tipo de Operación',
+                    'source-location'      => 'Ubicación de Origen',
+                    'destination-location' => 'Ubicación de Destino',
+                    'route'                => 'Ruta',
+                    'company'              => 'Empresa',
+                    'partner-address'      => 'Dirección del Partner',
+                    'lead-time'            => 'Plazo de Entrega',
+                    'action-information'   => 'Información de la Acción',
                 ],
             ],
 
             'record-information' => [
-                'title' => 'Record Information',
+                'title' => 'Información del Registro',
 
                 'entries' => [
-                    'created-by'   => 'Created By',
-                    'created-at'   => 'Created At',
-                    'last-updated' => 'Last Updated',
+                    'created-by'   => 'Creado por',
+                    'created-at'   => 'Creado el',
+                    'last-updated' => 'Última Actualización',
                 ],
             ],
         ],

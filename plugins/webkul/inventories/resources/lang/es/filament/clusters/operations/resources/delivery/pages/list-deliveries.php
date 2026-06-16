@@ -3,11 +3,11 @@
 return [
     'header-actions' => [
         'create' => [
-            'label' => 'New Delivery',
+            'label' => 'Nueva Entrega',
 
             'notification' => [
-                'title' => 'Delivery created',
-                'body'  => 'The delivery has been created successfully.',
+                'title' => 'Entrega creada',
+                'body'  => 'La entrega ha sido creada exitosamente.',
             ],
         ],
     ],

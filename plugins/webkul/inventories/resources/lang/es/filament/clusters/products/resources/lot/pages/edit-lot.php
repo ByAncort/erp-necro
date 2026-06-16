@@ -2,25 +2,25 @@
 
 return [
     'notification' => [
-        'title' => 'Lot updated',
-        'body'  => 'The lot has been updated successfully.',
+        'title' => 'Lote actualizado',
+        'body'  => 'El lote ha sido actualizado exitosamente.',
     ],
 
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
         ],
 
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Lot deleted',
-                    'body'  => 'The lot has been deleted successfully.',
+                    'title' => 'Lote eliminado',
+                    'body'  => 'El lote ha sido eliminado exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Lot could not be deleted',
-                    'body'  => 'The lot cannot be deleted because it is currently in use.',
+                    'title' => 'El lote no pudo ser eliminado',
+                    'body'  => 'El lote no puede ser eliminado porque está actualmente en uso.',
                 ],
             ],
         ],

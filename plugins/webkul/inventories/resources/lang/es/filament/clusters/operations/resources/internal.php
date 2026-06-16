@@ -2,12 +2,12 @@
 
 return [
     'navigation' => [
-        'title' => 'Internal Transfers',
-        'group' => 'Transfers',
+        'title' => 'Transferencias Internas',
+        'group' => 'Transferencias',
     ],
 
     'global-search' => [
-        'origin' => 'Origin',
+        'origin' => 'Origen',
     ],
 
     'table' => [
@@ -15,13 +15,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Internal Transfer deleted',
-                        'body'  => 'The internal transfer ras been deleted successfully.',
+                        'title' => 'Transferencia Interna eliminada',
+                        'body'  => 'La transferencia interna ha sido eliminada exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Internal Transfer could not be deleted',
-                        'body'  => 'The internal transfer cannot be deleted because it is currently in use.',
+                        'title' => 'La transferencia interna no pudo ser eliminada',
+                        'body'  => 'La transferencia interna no puede ser eliminada porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -31,13 +31,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Internal Transfers deleted',
-                        'body'  => 'The internal transfers has been deleted successfully.',
+                        'title' => 'Transferencias Internas eliminadas',
+                        'body'  => 'Las transferencias internas han sido eliminadas exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Internal Transfers could not be deleted',
-                        'body'  => 'The internal transfers cannot be deleted because they are currently in use.',
+                        'title' => 'Las transferencias internas no pudieron ser eliminadas',
+                        'body'  => 'Las transferencias internas no pueden ser eliminadas porque están actualmente en uso.',
                     ],
                 ],
             ],

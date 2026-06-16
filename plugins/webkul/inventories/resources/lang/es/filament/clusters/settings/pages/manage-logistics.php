@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Manage Logistics',
+    'title' => 'Gestionar Logística',
 
     'form' => [
-        'enable-dropshipping'             => 'Dropshipping',
-        'enable-dropshipping-helper-text' => 'This enables a dropshipping route for products, allowing vendors to ship directly to customers. When a product is set to dropship, a purchase request for quotation is generated upon sales order confirmation. This is an on-demand process, with the customer\'s delivery address used instead of the warehouse address.',
+        'enable-dropshipping'             => 'Envío Directo',
+        'enable-dropshipping-helper-text' => 'Esto habilita una ruta de envío directo para productos, permitiendo a los proveedores enviar directamente a los clientes. Cuando un producto está configurado como envío directo, se genera una solicitud de cotización de compra al confirmar la orden de venta. Este es un proceso bajo demanda, utilizando la dirección de entrega del cliente en lugar de la dirección del almacén.',
     ],
 ];

@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'title'          => 'Dropship',
+    'title'          => 'Envío Directo',
 ];

@@ -3,11 +3,11 @@
 return [
     'header-actions' => [
         'create' => [
-            'label' => 'New Receipt',
+            'label' => 'Nueva Recepción',
 
             'notification' => [
-                'title' => 'Receipt created',
-                'body'  => 'The receipt has been created successfully.',
+                'title' => 'Recepción creada',
+                'body'  => 'La recepción ha sido creada exitosamente.',
             ],
         ],
     ],

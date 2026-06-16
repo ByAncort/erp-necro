@@ -3,65 +3,65 @@
 return [
     'table' => [
         'columns' => [
-            'reference'         => 'Reference',
-            'total-amount'      => 'Total Amount',
-            'confirmation-date' => 'Confirmation Date',
-            'status'            => 'Status',
+            'reference'         => 'Referencia',
+            'total-amount'      => 'Monto Total',
+            'confirmation-date' => 'Fecha de Confirmación',
+            'status'            => 'Estado',
         ],
     ],
 
     'infolist' => [
         'settings' => [
             'entries' => [
-                'buyer' => 'Buyer',
+                'buyer' => 'Comprador',
             ],
 
             'actions' => [
                 'accept' => [
-                    'label' => 'Accept',
+                    'label' => 'Aceptar',
 
                     'notification' => [
-                        'title' => 'Quotation Accepted',
-                        'body'  => 'The RFQ has been acknowledged successfully.',
+                        'title' => 'Cotización Aceptada',
+                        'body'  => 'La SdC ha sido confirmada exitosamente.',
                     ],
 
                     'message' => [
-                        'body' => 'The RFQ has been acknowledged by vendor.',
+                        'body' => 'La SdC ha sido confirmada por el proveedor.',
                     ],
                 ],
 
                 'decline' => [
-                    'label' => 'Decline',
+                    'label' => 'Rechazar',
 
                     'notification' => [
-                        'title' => 'Quotation Declined',
-                        'body'  => 'The RFQ has been declined successfully.',
+                        'title' => 'Cotización Rechazada',
+                        'body'  => 'La SdC ha sido rechazada exitosamente.',
                     ],
 
                     'message' => [
-                        'body' => 'The RFQ has been declined by vendor.',
+                        'body' => 'La SdC ha sido rechazada por el proveedor.',
                     ],
                 ],
 
                 'print' => [
-                    'label' => 'Download/Print',
+                    'label' => 'Descargar/Imprimir',
                 ],
             ],
         ],
 
         'general' => [
             'entries' => [
-                'purchase-order'        => 'Purchase Order #:id',
-                'quotation'             => 'Request for Quotation #:id',
-                'order-date'            => 'Order Date',
-                'from'                  => 'From',
-                'confirmation-date'     => 'Confirmation Date',
-                'receipt-date'          => 'Receipt Date',
-                'products'              => 'Products',
-                'untaxed-amount'        => 'Untaxed Amount',
-                'tax-amount'            => 'Tax Amount',
+                'purchase-order'        => 'Orden de Compra #:id',
+                'quotation'             => 'Solicitud de Cotización #:id',
+                'order-date'            => 'Fecha del Pedido',
+                'from'                  => 'De',
+                'confirmation-date'     => 'Fecha de Confirmación',
+                'receipt-date'          => 'Fecha de Recepción',
+                'products'              => 'Productos',
+                'untaxed-amount'        => 'Monto Sin Impuestos',
+                'tax-amount'            => 'Monto de Impuestos',
                 'total'                 => 'Total',
-                'communication-history' => 'Communication History',
+                'communication-history' => 'Historial de Comunicación',
             ],
         ],
     ],

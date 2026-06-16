@@ -3,19 +3,19 @@
 return [
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
         ],
 
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Receipt Deleted',
-                    'body'  => 'The receipt has been deleted successfully.',
+                    'title' => 'Recepción Eliminada',
+                    'body'  => 'La recepción ha sido eliminada exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Receipt could not be deleted',
-                    'body'  => 'The Receipt cannot be deleted because it is currently in use.',
+                    'title' => 'La recepción no pudo ser eliminada',
+                    'body'  => 'La recepción no puede ser eliminada porque está actualmente en uso.',
                 ],
             ],
         ],

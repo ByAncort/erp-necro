@@ -2,21 +2,21 @@
 
 return [
     'tabs' => [
-        'all'        => 'All',
-        'internal'   => 'Internal',
-        'customer'   => 'Customer',
-        'production' => 'Production',
-        'vendor'     => 'Vendor',
-        'archived'   => 'Archived',
+        'all'        => 'Todo',
+        'internal'   => 'Interno',
+        'customer'   => 'Cliente',
+        'production' => 'Producción',
+        'vendor'     => 'Proveedor',
+        'archived'   => 'Archivado',
     ],
 
     'header-actions' => [
         'create' => [
-            'label' => 'New Location',
+            'label' => 'Nueva Ubicación',
 
             'notification' => [
-                'title' => 'Location created',
-                'body'  => 'The location has been created successfully.',
+                'title' => 'Ubicación creada',
+                'body'  => 'La ubicación ha sido creada exitosamente.',
             ],
         ],
     ],

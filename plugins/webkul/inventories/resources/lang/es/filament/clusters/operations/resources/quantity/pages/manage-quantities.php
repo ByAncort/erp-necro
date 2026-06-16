@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'title' => 'Quantity Adjustments',
+    'title' => 'Ajustes de Cantidad',
 
     'tabs' => [
-        'internal-locations' => 'Internal Locations',
-        'transit-locations'  => 'Transit Locations',
-        'on-hand'            => 'On Hand',
-        'to-count'           => 'To Count',
-        'to-apply'           => 'To Apply',
+        'internal-locations' => 'Ubicaciones Internas',
+        'transit-locations'  => 'Ubicaciones de Tránsito',
+        'on-hand'            => 'Disponible',
+        'to-count'           => 'Por Contar',
+        'to-apply'           => 'Por Aplicar',
     ],
 ];

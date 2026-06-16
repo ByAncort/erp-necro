@@ -2,7 +2,7 @@
 
 return [
     'notification' => [
-        'title' => 'Location created',
-        'body'  => 'The location has been created successfully.',
+        'title' => 'Ubicación creada',
+        'body'  => 'La ubicación ha sido creada exitosamente.',
     ],
 ];

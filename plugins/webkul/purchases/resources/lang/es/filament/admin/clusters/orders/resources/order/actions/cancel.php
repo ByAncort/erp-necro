@@ -1,25 +1,25 @@
 <?php
 
 return [
-    'label' => 'Cancel',
+    'label' => 'Cancelar',
 
     'action' => [
         'notification' => [
             'warning' => [
                 'receipts' => [
-                    'title' => 'Cannot cancel order',
-                    'body'  => 'The order cannot be canceled since they have receipts that are already done.',
+                    'title' => 'No se puede cancelar el pedido',
+                    'body'  => 'El pedido no puede ser cancelado porque tiene recepciones que ya están realizadas.',
                 ],
 
                 'bills' => [
-                    'title' => 'Cannot cancel order',
-                    'body'  => 'The order cannot be canceled. You must first cancel their related vendor bills.',
+                    'title' => 'No se puede cancelar el pedido',
+                    'body'  => 'El pedido no puede ser cancelado. Primero debe cancelar sus facturas de proveedor relacionadas.',
                 ],
             ],
 
             'success' => [
-                'title' => 'Order canceled',
-                'body'  => 'The order has been canceled successfully.',
+                'title' => 'Pedido cancelado',
+                'body'  => 'El pedido ha sido cancelado exitosamente.',
             ],
         ],
     ],

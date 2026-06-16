@@ -2,23 +2,23 @@
 
 return [
     'notification' => [
-        'title' => 'Scrap updated',
-        'body'  => 'The scrap has been updated successfully.',
+        'title' => 'Desecho actualizado',
+        'body'  => 'El desecho ha sido actualizado exitosamente.',
     ],
 
     'header-actions' => [
         'validate' => [
-            'label' => 'Validate',
+            'label' => 'Validar',
 
             'notification' => [
                 'warning' => [
-                    'title' => 'Insufficient stock',
-                    'body'  => 'The scrap has insufficient stock to validate.',
+                    'title' => 'Stock insuficiente',
+                    'body'  => 'El desecho tiene stock insuficiente para validar.',
                 ],
 
                 'success' => [
-                    'title' => 'Scrap marked as done',
-                    'body'  => 'The scrap has been marked as done successfully.',
+                    'title' => 'Desecho marcado como completado',
+                    'body'  => 'El desecho ha sido marcado como completado exitosamente.',
                 ],
             ],
         ],
@@ -26,13 +26,13 @@ return [
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Scrap deleted',
-                    'body'  => 'The scrap has been deleted successfully.',
+                    'title' => 'Desecho eliminado',
+                    'body'  => 'El desecho ha sido eliminado exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Scraps could not be deleted',
-                    'body'  => 'The scraps cannot be deleted because they are currently in use.',
+                    'title' => 'Los desechos no pudieron ser eliminados',
+                    'body'  => 'Los desechos no pueden ser eliminados porque están actualmente en uso.',
                 ],
             ],
         ],

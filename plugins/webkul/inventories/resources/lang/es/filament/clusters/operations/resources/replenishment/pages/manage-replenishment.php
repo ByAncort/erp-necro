@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'Replenishment',
+    'title' => 'Reabastecimiento',
 
     'tabs' => [
-        'trigger-manual'    => 'Trigger Manual',
-        'trigger-automatic' => 'Trigger Automatic',
-        'to-order'          => 'To Order',
-        'not-snoozed'       => 'Not Snoozed',
+        'trigger-manual'    => 'Activación Manual',
+        'trigger-automatic' => 'Activación Automática',
+        'to-order'          => 'Por Ordenar',
+        'not-snoozed'       => 'No Pospuesto',
     ],
 ];

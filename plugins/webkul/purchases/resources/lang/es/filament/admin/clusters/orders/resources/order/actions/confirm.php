@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'label' => 'Confirm Order',
+    'label' => 'Confirmar Pedido',
 
     'action' => [
         'notification' => [
             'success' => [
-                'title' => 'Order confirmed',
-                'body'  => 'The order has been confirmed successfully.',
+                'title' => 'Pedido confirmado',
+                'body'  => 'El pedido ha sido confirmado exitosamente.',
             ],
         ],
     ],

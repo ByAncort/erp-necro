@@ -2,57 +2,57 @@
 
 return [
     'navigation' => [
-        'title' => 'Reporting',
-        'group' => 'Inventory',
+        'title' => 'Reportes',
+        'group' => 'Inventario',
     ],
 
     'moves' => [
         'navigation' => [
-            'title' => 'Moves History',
+            'title' => 'Historial de Movimientos',
         ],
 
         'filters' => [
-            'product-category'     => 'Product Category',
-            'source-location'      => 'Source Location',
-            'destination-location' => 'Destination Location',
-            'package'              => 'Package',
-            'lot'                  => 'Lot/Serial Number',
-            'package-type'         => 'Package Type',
+            'product-category'     => 'Categoría de Producto',
+            'source-location'      => 'Ubicación de Origen',
+            'destination-location' => 'Ubicación de Destino',
+            'package'              => 'Paquete',
+            'lot'                  => 'Lote/Número de Serie',
+            'package-type'         => 'Tipo de Paquete',
         ],
 
         'groups' => [
-            'product'   => 'Product',
-            'status'    => 'Status',
-            'date'      => 'Date',
-            'operation' => 'Operation',
-            'location'  => 'Location',
-            'category'  => 'Category',
+            'product'   => 'Producto',
+            'status'    => 'Estado',
+            'date'      => 'Fecha',
+            'operation' => 'Operación',
+            'location'  => 'Ubicación',
+            'category'  => 'Categoría',
         ],
     ],
 
     'quantities' => [
         'navigation' => [
-            'title' => 'Locations',
+            'title' => 'Ubicaciones',
         ],
 
         'filters' => [
-            'warehouse'        => 'Warehouse',
-            'location'         => 'Location',
-            'product-category' => 'Product Category',
-            'storage-category' => 'Storage Category',
-            'package'          => 'Package',
-            'lot'              => 'Lot/Serial Number',
-            'package-type'     => 'Package Type',
+            'warehouse'        => 'Almacén',
+            'location'         => 'Ubicación',
+            'product-category' => 'Categoría de Producto',
+            'storage-category' => 'Categoría de Almacenamiento',
+            'package'          => 'Paquete',
+            'lot'              => 'Lote/Número de Serie',
+            'package-type'     => 'Tipo de Paquete',
         ],
 
         'groups' => [
-            'product'          => 'Product',
-            'product-category' => 'Product Category',
-            'location'         => 'Location',
-            'storage-category' => 'Storage Category',
-            'lot'              => 'Lot/Serial Number',
-            'package'          => 'Package',
-            'company'          => 'Company',
+            'product'          => 'Producto',
+            'product-category' => 'Categoría de Producto',
+            'location'         => 'Ubicación',
+            'storage-category' => 'Categoría de Almacenamiento',
+            'lot'              => 'Lote/Número de Serie',
+            'package'          => 'Paquete',
+            'company'          => 'Empresa',
         ],
     ],
 ];

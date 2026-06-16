@@ -2,11 +2,11 @@
 
 return [
     'navigation' => [
-        'title' => 'Create Vendor Price List',
+        'title' => 'Crear Lista de Precios de Proveedor',
     ],
 
     'notification' => [
-        'title' => 'Vendor Price created',
-        'body'  => 'The vendor price has been created successfully.',
+        'title' => 'Precio de Proveedor creado',
+        'body'  => 'El precio de proveedor ha sido creado exitosamente.',
     ],
 ];

@@ -2,15 +2,15 @@
 
 return [
     'notification' => [
-        'title' => 'Operation Type updated',
-        'body'  => 'The operation type has been updated successfully.',
+        'title' => 'Tipo de Operación actualizado',
+        'body'  => 'El tipo de operación ha sido actualizado exitosamente.',
     ],
 
     'header-actions' => [
         'delete' => [
             'notification' => [
-                'title' => 'Operation Type deleted',
-                'body'  => 'The operation type has been deleted successfully.',
+                'title' => 'Tipo de Operación eliminado',
+                'body'  => 'El tipo de operación ha sido eliminado exitosamente.',
             ],
         ],
     ],

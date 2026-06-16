@@ -2,8 +2,8 @@
 
 return [
     'navigation' => [
-        'title' => 'Scraps',
-        'group' => 'Adjustments',
+        'title' => 'Desechos',
+        'group' => 'Ajustes',
     ],
 
     'form' => [
@@ -12,19 +12,19 @@ return [
                 'title' => 'General',
 
                 'fields' => [
-                    'product'              => 'Product',
-                    'package'              => 'Package',
-                    'quantity'             => 'Quantity',
-                    'unit'                 => 'Unit of Measure',
-                    'lot'                  => 'Lot/Serial',
-                    'tags'                 => 'Tags',
-                    'name'                 => 'Name',
+                    'product'              => 'Producto',
+                    'package'              => 'Paquete',
+                    'quantity'             => 'Cantidad',
+                    'unit'                 => 'Unidad de Medida',
+                    'lot'                  => 'Lote/Serie',
+                    'tags'                 => 'Etiquetas',
+                    'name'                 => 'Nombre',
                     'color'                => 'Color',
-                    'owner'                => 'Owner',
-                    'source-location'      => 'Source Location',
-                    'destination-location' => 'Scrap Location',
-                    'source-document'      => 'Source Document',
-                    'company'              => 'Company',
+                    'owner'                => 'Propietario',
+                    'source-location'      => 'Ubicación de Origen',
+                    'destination-location' => 'Ubicación de Desecho',
+                    'source-document'      => 'Documento de Origen',
+                    'company'              => 'Empresa',
                 ],
             ],
         ],
@@ -32,55 +32,55 @@ return [
 
     'table' => [
         'columns' => [
-            'date'            => 'Date',
-            'reference'       => 'Reference',
-            'product'         => 'Product',
-            'package'         => 'Package',
-            'quantity'        => 'Quantity',
-            'uom'             => 'Unit of Measure',
-            'source-location' => 'Source Location',
-            'scrap-location'  => 'Scrap Location',
-            'unit'            => 'Unit of Measure',
-            'lot'             => 'Lot/Serial',
-            'tags'            => 'Tags',
-            'state'           => 'State',
+            'date'            => 'Fecha',
+            'reference'       => 'Referencia',
+            'product'         => 'Producto',
+            'package'         => 'Paquete',
+            'quantity'        => 'Cantidad',
+            'uom'             => 'Unidad de Medida',
+            'source-location' => 'Ubicación de Origen',
+            'scrap-location'  => 'Ubicación de Desecho',
+            'unit'            => 'Unidad de Medida',
+            'lot'             => 'Lote/Serie',
+            'tags'            => 'Etiquetas',
+            'state'           => 'Estado',
         ],
 
         'groups' => [
-            'product'              => 'Product',
-            'source-location'      => 'Source Location',
-            'destination-location' => 'Scrap Location',
+            'product'              => 'Producto',
+            'source-location'      => 'Ubicación de Origen',
+            'destination-location' => 'Ubicación de Desecho',
         ],
 
         'filters' => [
-            'source-location'      => 'Source Location',
-            'destination-location' => 'Scrap Location',
-            'product'              => 'Product',
-            'state'                => 'State',
-            'product-category'     => 'Product Category',
-            'uom'                  => 'Unit of Measure',
-            'lot'                  => 'Lot/Serial',
-            'package'              => 'Package',
-            'tags'                 => 'Tags',
-            'company'              => 'Company',
-            'quantity'             => 'Quantity',
-            'creator'              => 'Creator',
-            'closed-at'            => 'Closed At',
-            'created-at'           => 'Created At',
-            'updated-at'           => 'Updated At',
+            'source-location'      => 'Ubicación de Origen',
+            'destination-location' => 'Ubicación de Desecho',
+            'product'              => 'Producto',
+            'state'                => 'Estado',
+            'product-category'     => 'Categoría de Producto',
+            'uom'                  => 'Unidad de Medida',
+            'lot'                  => 'Lote/Serie',
+            'package'              => 'Paquete',
+            'tags'                 => 'Etiquetas',
+            'company'              => 'Empresa',
+            'quantity'             => 'Cantidad',
+            'creator'              => 'Creador',
+            'closed-at'            => 'Cerrado el',
+            'created-at'           => 'Creado el',
+            'updated-at'           => 'Actualizado el',
         ],
 
         'actions' => [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Scrap deleted',
-                        'body'  => 'The scrap has been deleted successfully.',
+                        'title' => 'Desecho eliminado',
+                        'body'  => 'El desecho ha sido eliminado exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Scrap could not be deleted',
-                        'body'  => 'The scrap cannot be deleted because it is currently in use.',
+                        'title' => 'El desecho no pudo ser eliminado',
+                        'body'  => 'El desecho no puede ser eliminado porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -90,13 +90,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Scraps deleted',
-                        'body'  => 'The selected scraps have been deleted successfully.',
+                        'title' => 'Desechos eliminados',
+                        'body'  => 'Los desechos seleccionados han sido eliminados exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Scraps could not be deleted',
-                        'body'  => 'The scraps cannot be deleted because they are currently in use.',
+                        'title' => 'Los desechos no pudieron ser eliminados',
+                        'body'  => 'Los desechos no pueden ser eliminados porque están actualmente en uso.',
                     ],
                 ],
             ],
@@ -106,29 +106,29 @@ return [
     'infolist' => [
         'sections' => [
             'general' => [
-                'title' => 'Scrap Details',
+                'title' => 'Detalles del Desecho',
 
                 'entries' => [
-                    'product'              => 'Product',
-                    'quantity'             => 'Quantity',
-                    'lot'                  => 'Lot',
-                    'tags'                 => 'Tags',
-                    'package'              => 'Package',
-                    'owner'                => 'Owner',
-                    'source-location'      => 'Source Location',
-                    'destination-location' => 'Destination Location',
-                    'source-document'      => 'Source Document',
-                    'company'              => 'Company',
+                    'product'              => 'Producto',
+                    'quantity'             => 'Cantidad',
+                    'lot'                  => 'Lote',
+                    'tags'                 => 'Etiquetas',
+                    'package'              => 'Paquete',
+                    'owner'                => 'Propietario',
+                    'source-location'      => 'Ubicación de Origen',
+                    'destination-location' => 'Ubicación de Destino',
+                    'source-document'      => 'Documento de Origen',
+                    'company'              => 'Empresa',
                 ],
             ],
 
             'record-information' => [
-                'title' => 'Record Information',
+                'title' => 'Información del Registro',
 
                 'entries' => [
-                    'created-by'   => 'Created By',
-                    'created-at'   => 'Created At',
-                    'last-updated' => 'Last Updated',
+                    'created-by'   => 'Creado por',
+                    'created-at'   => 'Creado el',
+                    'last-updated' => 'Última Actualización',
                 ],
             ],
         ],

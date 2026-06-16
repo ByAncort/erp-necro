@@ -2,19 +2,19 @@
 
 return [
     'notification' => [
-        'title' => 'Location updated',
-        'body'  => 'The location has been updated successfully.',
+        'title' => 'Ubicación actualizada',
+        'body'  => 'La ubicación ha sido actualizada exitosamente.',
     ],
 
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
         ],
 
         'delete' => [
             'notification' => [
-                'title' => 'Location deleted',
-                'body'  => 'The location has been deleted successfully.',
+                'title' => 'Ubicación eliminada',
+                'body'  => 'La ubicación ha sido eliminada exitosamente.',
             ],
         ],
     ],

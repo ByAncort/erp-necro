@@ -2,25 +2,25 @@
 
 return [
     'notification' => [
-        'title' => 'Dropship updated',
-        'body'  => 'The dropship has been updated successfully.',
+        'title' => 'Envío Directo actualizado',
+        'body'  => 'El envío directo ha sido actualizado exitosamente.',
     ],
 
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
         ],
 
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Dropship deleted',
-                    'body'  => 'The dropship has been deleted successfully.',
+                    'title' => 'Envío Directo eliminado',
+                    'body'  => 'El envío directo ha sido eliminado exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Dropship could not be deleted',
-                    'body'  => 'The dropship cannot be deleted because it is currently in use.',
+                    'title' => 'El envío directo no pudo ser eliminado',
+                    'body'  => 'El envío directo no puede ser eliminado porque está actualmente en uso.',
                 ],
             ],
         ],

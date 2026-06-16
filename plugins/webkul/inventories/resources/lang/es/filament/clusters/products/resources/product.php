@@ -2,69 +2,69 @@
 
 return [
     'navigation' => [
-        'title' => 'Products',
-        'group' => 'Inventory',
+        'title' => 'Productos',
+        'group' => 'Inventario',
     ],
 
     'form' => [
         'sections' => [
             'inventory' => [
-                'title' => 'Inventory',
+                'title' => 'Inventario',
 
                 'fieldsets' => [
                     'tracking' => [
-                        'title' => 'Tracking',
+                        'title' => 'Seguimiento',
 
                         'fields' => [
-                            'track-inventory'              => 'Track Inventory',
-                            'track-inventory-hint-tooltip' => 'A storable product is one that requires inventory management..',
-                            'track-by'                     => 'Track By',
-                            'expiration-date'              => 'Expiration Date',
-                            'expiration-date-hint-tooltip' => 'If selected, you can specify expiration dates for the product and its associated lot/serial numbers.',
+                            'track-inventory'              => 'Rastrear Inventario',
+                            'track-inventory-hint-tooltip' => 'Un producto almacenable es aquel que requiere gestión de inventario.',
+                            'track-by'                     => 'Rastrear por',
+                            'expiration-date'              => 'Fecha de Vencimiento',
+                            'expiration-date-hint-tooltip' => 'Si se selecciona, puede especificar fechas de vencimiento para el producto y sus lotes/números de serie asociados.',
                         ],
                     ],
 
                     'operation' => [
-                        'title' => 'Operations',
+                        'title' => 'Operaciones',
 
                         'fields' => [
-                            'routes'              => 'Routes',
-                            'routes-hint-tooltip' => 'Based on the installed modules, this setting allows you to define the product\'s route, such as purchasing, manufacturing, or replenishing on order.',
+                            'routes'              => 'Rutas',
+                            'routes-hint-tooltip' => 'Basado en los módulos instalados, esta configuración le permite definir la ruta del producto, como compra, fabricación o reabastecimiento por pedido.',
                         ],
                     ],
 
                     'logistics' => [
-                        'title' => 'Logistics',
+                        'title' => 'Logística',
 
                         'fields' => [
-                            'responsible'              => 'Responsible',
-                            'responsible-hint-tooltip' => 'Delivery lead time (in days) represents the promised duration between sales order confirmation and product delivery.',
-                            'weight'                   => 'Weight',
-                            'volume'                   => 'Volume',
-                            'sale-delay'               => 'Customer Lead Time (Days)',
-                            'sale-delay-hint-tooltip'  => 'Delivery lead time (in days) represents the promised duration between sales order confirmation and product delivery.',
+                            'responsible'              => 'Responsable',
+                            'responsible-hint-tooltip' => 'El plazo de entrega (en días) representa la duración prometida entre la confirmación del pedido de venta y la entrega del producto.',
+                            'weight'                   => 'Peso',
+                            'volume'                   => 'Volumen',
+                            'sale-delay'               => 'Plazo de Entrega al Cliente (Días)',
+                            'sale-delay-hint-tooltip'  => 'El plazo de entrega (en días) representa la duración prometida entre la confirmación del pedido de venta y la entrega del producto.',
                         ],
                     ],
 
                     'traceability' => [
-                        'title' => 'Traceability',
+                        'title' => 'Trazabilidad',
 
                         'fields' => [
-                            'expiration-date'               => 'Expiration Date (Days)',
-                            'expiration-date-hint-tooltip'  => 'If selected, you can set expiration dates for the product and its associated lot/serial numbers.',
-                            'best-before-date'              => 'Best Before Date (Days)',
-                            'best-before-date-hint-tooltip' => 'The number of days before the expiration date when the product begins to deteriorate, though it is still safe to use. This is calculated based on the lot/serial number.',
-                            'removal-date'                  => 'Removal Date (Days)',
-                            'removal-date-hint-tooltip'     => 'The number of days before the expiration date when the product should be removed from stock. This is calculated based on the lot/serial number.',
-                            'alert-date'                    => 'Alert Date (Days)',
-                            'alert-date-hint-tooltip'       => 'The number of days before the expiration date when an alert should be triggered for the lot/serial number. This is calculated based on the lot/serial number.',
+                            'expiration-date'               => 'Fecha de Vencimiento (Días)',
+                            'expiration-date-hint-tooltip'  => 'Si se selecciona, puede establecer fechas de vencimiento para el producto y sus lotes/números de serie asociados.',
+                            'best-before-date'              => 'Fecha de Consumo Preferente (Días)',
+                            'best-before-date-hint-tooltip' => 'El número de días antes de la fecha de vencimiento en que el producto comienza a deteriorarse, aunque aún es seguro usarlo. Se calcula en base al lote/número de serie.',
+                            'removal-date'                  => 'Fecha de Retiro (Días)',
+                            'removal-date-hint-tooltip'     => 'El número de días antes de la fecha de vencimiento en que el producto debe retirarse del stock. Se calcula en base al lote/número de serie.',
+                            'alert-date'                    => 'Fecha de Alerta (Días)',
+                            'alert-date-hint-tooltip'       => 'El número de días antes de la fecha de vencimiento en que se debe activar una alerta para el lote/número de serie. Se calcula en base al lote/número de serie.',
                         ],
                     ],
                 ],
             ],
 
             'additional' => [
-                'title' => 'Additional',
+                'title' => 'Adicional',
             ],
         ],
     ],
@@ -72,49 +72,49 @@ return [
     'infolist' => [
         'sections' => [
             'inventory' => [
-                'title' => 'Inventory',
+                'title' => 'Inventario',
 
                 'entries' => [
                 ],
 
                 'fieldsets' => [
                     'tracking' => [
-                        'title' => 'Tracking',
+                        'title' => 'Seguimiento',
 
                         'entries' => [
-                            'track-inventory' => 'Track Inventory',
-                            'track-by'        => 'Track By',
-                            'expiration-date' => 'Expiration Date',
+                            'track-inventory' => 'Rastrear Inventario',
+                            'track-by'        => 'Rastrear por',
+                            'expiration-date' => 'Fecha de Vencimiento',
                         ],
                     ],
 
                     'operation' => [
-                        'title' => 'Operations',
+                        'title' => 'Operaciones',
 
                         'entries' => [
-                            'routes' => 'Routes',
+                            'routes' => 'Rutas',
                         ],
                     ],
 
                     'logistics' => [
-                        'title' => 'Logistics',
+                        'title' => 'Logística',
 
                         'entries' => [
-                            'responsible' => 'Responsible',
-                            'weight'      => 'Weight',
-                            'volume'      => 'Volume',
-                            'sale-delay'  => 'Customer Lead Time (Days)',
+                            'responsible' => 'Responsable',
+                            'weight'      => 'Peso',
+                            'volume'      => 'Volumen',
+                            'sale-delay'  => 'Plazo de Entrega al Cliente (Días)',
                         ],
                     ],
 
                     'traceability' => [
-                        'title' => 'Traceability',
+                        'title' => 'Trazabilidad',
 
                         'entries' => [
-                            'expiration-date'  => 'Expiration Date (Days)',
-                            'best-before-date' => 'Best Before Date (Days)',
-                            'removal-date'     => 'Removal Date (Days)',
-                            'alert-date'       => 'Alert Date (Days)',
+                            'expiration-date'  => 'Fecha de Vencimiento (Días)',
+                            'best-before-date' => 'Fecha de Consumo Preferente (Días)',
+                            'removal-date'     => 'Fecha de Retiro (Días)',
+                            'alert-date'       => 'Fecha de Alerta (Días)',
                         ],
                     ],
                 ],

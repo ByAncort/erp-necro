@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'draft'     => 'Draft',
-    'confirmed' => 'Waiting',
-    'waiting'   => 'Waiting Another Operation',
-    'assigned'  => 'Ready',
-    'done'      => 'Done',
-    'canceled'  => 'Canceled',
+    'draft'     => 'Borrador',
+    'confirmed' => 'En espera',
+    'waiting'   => 'Esperando Otra Operación',
+    'assigned'  => 'Listo',
+    'done'      => 'Completado',
+    'canceled'  => 'Cancelado',
 ];

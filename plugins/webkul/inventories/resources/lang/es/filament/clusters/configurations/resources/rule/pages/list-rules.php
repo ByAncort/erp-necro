@@ -2,17 +2,17 @@
 
 return [
     'tabs' => [
-        'all'      => 'All',
-        'archived' => 'Archived',
+        'all'      => 'Todo',
+        'archived' => 'Archivado',
     ],
 
     'header-actions' => [
         'create' => [
-            'label' => 'New Rule',
+            'label' => 'Nueva Regla',
 
             'notification' => [
-                'title' => 'Rule created',
-                'body'  => 'The rule has been created successfully.',
+                'title' => 'Regla creada',
+                'body'  => 'La regla ha sido creada exitosamente.',
             ],
         ],
     ],

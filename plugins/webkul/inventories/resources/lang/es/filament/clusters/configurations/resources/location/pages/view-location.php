@@ -3,13 +3,13 @@
 return [
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
         ],
 
         'delete' => [
             'notification' => [
-                'title' => 'Location deleted',
-                'body'  => 'The location has been deleted successfully.',
+                'title' => 'Ubicación eliminada',
+                'body'  => 'La ubicación ha sido eliminada exitosamente.',
             ],
         ],
     ],

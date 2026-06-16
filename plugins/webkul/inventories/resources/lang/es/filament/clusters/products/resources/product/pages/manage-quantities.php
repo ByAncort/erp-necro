@@ -1,60 +1,60 @@
 <?php
 
 return [
-    'title' => 'Quantities',
+    'title' => 'Cantidades',
 
     'tabs' => [
-        'internal-locations' => 'Internal Locations',
-        'transit-locations'  => 'Transit Locations',
-        'on-hand'            => 'On Hand',
-        'to-count'           => 'To Count',
-        'to-apply'           => 'To Apply',
+        'internal-locations' => 'Ubicaciones Internas',
+        'transit-locations'  => 'Ubicaciones de Tránsito',
+        'on-hand'            => 'Disponible',
+        'to-count'           => 'Por Contar',
+        'to-apply'           => 'Por Aplicar',
     ],
 
     'form' => [
         'fields' => [
-            'product'          => 'Product',
-            'location'         => 'Location',
-            'package'          => 'Package',
-            'lot'              => 'Lot / Serial Numbers',
-            'on-hand-qty'      => 'On Hand Quantity',
-            'storage-category' => 'Storage Category',
+            'product'          => 'Producto',
+            'location'         => 'Ubicación',
+            'package'          => 'Paquete',
+            'lot'              => 'Lote / Números de Serie',
+            'on-hand-qty'      => 'Cantidad Disponible',
+            'storage-category' => 'Categoría de Almacenamiento',
         ],
     ],
 
     'table' => [
         'columns' => [
-            'product'           => 'Product',
-            'location'          => 'Location',
-            'lot'               => 'Lot / Serial Numbers',
-            'storage-category'  => 'Storage Category',
-            'quantity'          => 'Quantity',
-            'package'           => 'Package',
-            'on-hand'           => 'On Hand Quantity',
-            'unit'              => 'Unit',
-            'reserved-quantity' => 'Reserved Quantity',
+            'product'           => 'Producto',
+            'location'          => 'Ubicación',
+            'lot'               => 'Lote / Números de Serie',
+            'storage-category'  => 'Categoría de Almacenamiento',
+            'quantity'          => 'Cantidad',
+            'package'           => 'Paquete',
+            'on-hand'           => 'Cantidad Disponible',
+            'unit'              => 'Unidad',
+            'reserved-quantity' => 'Cantidad Reservada',
 
             'on-hand-before-state-updated' => [
                 'notification' => [
-                    'title' => 'Quantity updated',
-                    'body'  => 'The quantity has been updated successfully.',
+                    'title' => 'Cantidad actualizada',
+                    'body'  => 'La cantidad ha sido actualizada exitosamente.',
                 ],
             ],
         ],
 
         'header-actions' => [
             'create' => [
-                'label' => 'Add Quantity',
+                'label' => 'Añadir Cantidad',
 
                 'notification' => [
-                    'title' => 'Quantity added',
-                    'body'  => 'The quantity has been added successfully.',
+                    'title' => 'Cantidad añadida',
+                    'body'  => 'La cantidad ha sido añadida exitosamente.',
                 ],
 
                 'before' => [
                     'notification' => [
-                        'title' => 'Quantity already exists',
-                        'body'  => 'Already has a quantity for the same configuration. Please update the quantity instead.',
+                        'title' => 'La cantidad ya existe',
+                        'body'  => 'Ya tiene una cantidad para la misma configuración. Actualice la cantidad en su lugar.',
                     ],
                 ],
             ],
@@ -63,8 +63,8 @@ return [
         'actions' => [
             'delete' => [
                 'notification' => [
-                    'title' => 'Quantity deleted',
-                    'body'  => 'The quantity has been deleted successfully.',
+                    'title' => 'Cantidad eliminada',
+                    'body'  => 'La cantidad ha sido eliminada exitosamente.',
                 ],
             ],
         ],

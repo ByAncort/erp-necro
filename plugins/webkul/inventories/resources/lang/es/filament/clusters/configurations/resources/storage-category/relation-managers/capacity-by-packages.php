@@ -1,42 +1,42 @@
 <?php
 
 return [
-    'title' => 'Capacity By Packages',
+    'title' => 'Capacidad por Paquetes',
 
     'form' => [
-        'package-type' => 'Package Type',
-        'qty'          => 'Quantity',
+        'package-type' => 'Tipo de Paquete',
+        'qty'          => 'Cantidad',
     ],
 
     'table' => [
         'header-actions' => [
             'create' => [
-                'label' => 'Add Package Type Capacity',
+                'label' => 'Añadir Capacidad de Tipo de Paquete',
 
                 'notification' => [
-                    'title' => 'Package Type Capacity created',
-                    'body'  => 'The package type capacity been added successfully.',
+                    'title' => 'Capacidad de Tipo de Paquete creada',
+                    'body'  => 'La capacidad de tipo de paquete ha sido añadida exitosamente.',
                 ],
             ],
         ],
 
         'columns' => [
-            'package-type' => 'Package Type',
-            'qty'          => 'Quantity',
+            'package-type' => 'Tipo de Paquete',
+            'qty'          => 'Cantidad',
         ],
 
         'actions' => [
             'edit' => [
                 'notification' => [
-                    'title' => 'Package Type Capacity updated',
-                    'body'  => 'The package type capacity has been updated successfully.',
+                    'title' => 'Capacidad de Tipo de Paquete actualizada',
+                    'body'  => 'La capacidad de tipo de paquete ha sido actualizada exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Package Type Capacity deleted',
-                    'body'  => 'The package type capacity has been deleted successfully.',
+                    'title' => 'Capacidad de Tipo de Paquete eliminada',
+                    'body'  => 'La capacidad de tipo de paquete ha sido eliminada exitosamente.',
                 ],
             ],
         ],

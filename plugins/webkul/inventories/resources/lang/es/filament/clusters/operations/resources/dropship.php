@@ -2,13 +2,13 @@
 
 return [
     'navigation' => [
-        'title' => 'Dropships',
-        'group' => 'Transfers',
+        'title' => 'Envíos Directos',
+        'group' => 'Transferencias',
     ],
 
     'global-search' => [
         'partner' => 'Partner',
-        'origin'  => 'Origin',
+        'origin'  => 'Origen',
     ],
 
     'table' => [
@@ -16,13 +16,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Dropship deleted',
-                        'body'  => 'The dropship ras been deleted successfully.',
+                        'title' => 'Envío Directo eliminado',
+                        'body'  => 'El envío directo ha sido eliminado exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Dropship could not be deleted',
-                        'body'  => 'The dropship cannot be deleted because it is currently in use.',
+                        'title' => 'El envío directo no pudo ser eliminado',
+                        'body'  => 'El envío directo no puede ser eliminado porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -32,13 +32,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Dropships deleted',
-                        'body'  => 'The dropships has been deleted successfully.',
+                        'title' => 'Envíos Directos eliminados',
+                        'body'  => 'Los envíos directos han sido eliminados exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Dropships could not be deleted',
-                        'body'  => 'The dropships cannot be deleted because they are currently in use.',
+                        'title' => 'Los envíos directos no pudieron ser eliminados',
+                        'body'  => 'Los envíos directos no pueden ser eliminados porque están actualmente en uso.',
                     ],
                 ],
             ],

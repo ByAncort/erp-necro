@@ -2,22 +2,22 @@
 
 return [
     'navigation' => [
-        'title' => 'Operation Types',
-        'group' => 'Warehouse Management',
+        'title' => 'Tipos de Operación',
+        'group' => 'Gestión de Almacén',
     ],
 
     'form' => [
         'sections' => [
             'general' => [
                 'fields' => [
-                    'operator-type'             => 'Operation Type',
-                    'operator-type-placeholder' => 'eg. Receptions',
+                    'operator-type'             => 'Tipo de Operación',
+                    'operator-type-placeholder' => 'ej. Recepciones',
                 ],
             ],
 
             'applicable-on' => [
-                'title'       => 'Applicable On',
-                'description' => 'Select the places where this route can be selected.',
+                'title'       => 'Aplicable en',
+                'description' => 'Seleccione los lugares donde esta ruta puede ser seleccionada.',
 
                 'fields' => [
                 ],
@@ -29,48 +29,48 @@ return [
                 'title'  => 'General',
 
                 'fields' => [
-                    'operator-type'                      => 'Operation Type',
-                    'sequence-prefix'                    => 'Sequence Prefix',
-                    'generate-shipping-labels'           => 'Generate Shipping Labels',
-                    'warehouse'                          => 'Warehouse',
-                    'show-reception-report'              => 'Show Reception Report at Validation',
-                    'show-reception-report-hint-tooltip' => 'If selected, the system will automatically display the reception report upon validation, provided there are moves to allocate.',
-                    'company'                            => 'Company',
-                    'return-type'                        => 'Return Type',
-                    'create-backorder'                   => 'Create Backorder',
-                    'move-type'                          => 'Move Type',
-                    'move-type-hint-tooltip'             => 'Unless defined by the source document, this will serve as the default picking policy for this operation type.',
+                    'operator-type'                      => 'Tipo de Operación',
+                    'sequence-prefix'                    => 'Prefijo de Secuencia',
+                    'generate-shipping-labels'           => 'Generar Etiquetas de Envío',
+                    'warehouse'                          => 'Almacén',
+                    'show-reception-report'              => 'Mostrar Informe de Recepción al Validar',
+                    'show-reception-report-hint-tooltip' => 'Si se selecciona, el sistema mostrará automáticamente el informe de recepción al validar, siempre que haya movimientos que asignar.',
+                    'company'                            => 'Compañía',
+                    'return-type'                        => 'Tipo de Devolución',
+                    'create-backorder'                   => 'Crear Pedido Pendiente',
+                    'move-type'                          => 'Tipo de Movimiento',
+                    'move-type-hint-tooltip'             => 'A menos que sea definido por el documento de origen, esto servirá como la política de selección predeterminada para este tipo de operación.',
                 ],
 
                 'fieldsets' => [
                     'lots' => [
-                        'title'  => 'Lots/Serial Numbers',
+                        'title'  => 'Lotes/Números de Serie',
 
                         'fields' => [
-                            'create-new'                => 'Create New',
-                            'create-new-hint-tooltip'   => 'If selected, the system will assume you intend to create new Lots/Serial Numbers, allowing you to enter them in a text field.',
-                            'use-existing'              => 'Use Existing',
-                            'use-existing-hint-tooltip' => 'If selected, you can choose the Lots/Serial Numbers or opt not to assign any. This allows stock to be created without a lot or without restrictions on the lot used.',
+                            'create-new'                => 'Crear Nuevo',
+                            'create-new-hint-tooltip'   => 'Si se selecciona, el sistema asumirá que tiene la intención de crear nuevos Lotes/Números de Serie, permitiéndole ingresarlos en un campo de texto.',
+                            'use-existing'              => 'Usar Existente',
+                            'use-existing-hint-tooltip' => 'Si se selecciona, puede elegir los Lotes/Números de Serie u optar por no asignar ninguno. Esto permite crear stock sin lote o sin restricciones sobre el lote utilizado.',
                         ],
                     ],
 
                     'locations' => [
-                        'title'  => 'Locations',
+                        'title'  => 'Ubicaciones',
 
                         'fields' => [
-                            'source-location'                   => 'Source Location',
-                            'source-location-hint-tooltip'      => 'This serves as the default source location when manually creating this operation. However, it can be changed later, and routes may assign a different default location.',
-                            'destination-location'              => 'Destination Location',
-                            'destination-location-hint-tooltip' => 'This is the default destination location for manually created operations. However, it can be modified later, and routes may assign a different default location.',
+                            'source-location'                   => 'Ubicación de Origen',
+                            'source-location-hint-tooltip'      => 'Esta es la ubicación de origen predeterminada al crear manualmente esta operación. Sin embargo, puede cambiarse más tarde, y las rutas pueden asignar una ubicación predeterminada diferente.',
+                            'destination-location'              => 'Ubicación de Destino',
+                            'destination-location-hint-tooltip' => 'Esta es la ubicación de destino predeterminada para operaciones creadas manualmente. Sin embargo, puede modificarse más tarde, y las rutas pueden asignar una ubicación predeterminada diferente.',
                         ],
                     ],
 
                     'packages' => [
-                        'title'  => 'Packages',
+                        'title'  => 'Paquetes',
 
                         'fields' => [
-                            'show-entire-package'              => 'Move Entire Package',
-                            'show-entire-package-hint-tooltip' => 'If selected, you can move entire packages.',
+                            'show-entire-package'              => 'Mover Paquete Completo',
+                            'show-entire-package-hint-tooltip' => 'Si se selecciona, puede mover paquetes completos.',
                         ],
                     ],
                 ],
@@ -81,38 +81,38 @@ return [
 
                 'fieldsets' => [
                     'print-on-validation' => [
-                        'title'  => 'Print on Validation',
+                        'title'  => 'Imprimir al Validar',
 
                         'fields' => [
-                            'delivery-slip'              => 'Delivery Slip',
-                            'delivery-slip-hint-tooltip' => 'If selected, the system will automatically print the delivery slip when the picking is validated.',
+                            'delivery-slip'              => 'Albarán de Entrega',
+                            'delivery-slip-hint-tooltip' => 'Si se selecciona, el sistema imprimirá automáticamente el albarán de entrega cuando se valide la selección.',
 
-                            'return-slip'              => 'Return Slip',
-                            'return-slip-hint-tooltip' => 'If selected, the system will automatically print the return slip when the picking is validated.',
+                            'return-slip'              => 'Albarán de Devolución',
+                            'return-slip-hint-tooltip' => 'Si se selecciona, el sistema imprimirá automáticamente el albarán de devolución cuando se valide la selección.',
 
-                            'product-labels'              => 'Product Labels',
-                            'product-labels-hint-tooltip' => 'If selected, the system will automatically print the product labels when the picking is validated.',
+                            'product-labels'              => 'Etiquetas de Producto',
+                            'product-labels-hint-tooltip' => 'Si se selecciona, el sistema imprimirá automáticamente las etiquetas de producto cuando se valide la selección.',
 
-                            'lots-labels'              => 'Lot/SN Labels',
-                            'lots-labels-hint-tooltip' => 'If selected, the system will automatically print the lot/serial number labels when the picking is validated.',
+                            'lots-labels'              => 'Etiquetas de Lote/NS',
+                            'lots-labels-hint-tooltip' => 'Si se selecciona, el sistema imprimirá automáticamente las etiquetas de lote/número de serie cuando se valide la selección.',
 
-                            'reception-report'              => 'Reception Report',
-                            'reception-report-hint-tooltip' => 'If selected, the system will automatically print the reception report when the picking is validated and contains assigned moves.',
+                            'reception-report'              => 'Informe de Recepción',
+                            'reception-report-hint-tooltip' => 'Si se selecciona, el sistema imprimirá automáticamente el informe de recepción cuando se valide la selección y contenga movimientos asignados.',
 
-                            'reception-report-labels'              => 'Reception Report Labels',
-                            'reception-report-labels-hint-tooltip' => 'If selected, the system will automatically print the reception report labels when the picking is validated.',
+                            'reception-report-labels'              => 'Etiquetas de Informe de Recepción',
+                            'reception-report-labels-hint-tooltip' => 'Si se selecciona, el sistema imprimirá automáticamente las etiquetas del informe de recepción cuando se valide la selección.',
 
-                            'package-content'              => 'Package Content',
-                            'package-content-hint-tooltip' => 'If selected, the system will automatically print the package details and their contents when the picking is validated.',
+                            'package-content'              => 'Contenido del Paquete',
+                            'package-content-hint-tooltip' => 'Si se selecciona, el sistema imprimirá automáticamente los detalles del paquete y su contenido cuando se valide la selección.',
                         ],
                     ],
 
                     'print-on-pack' => [
-                        'title'  => 'Print on "Put in Pack"',
+                        'title'  => 'Imprimir al "Poner en Paquete"',
 
                         'fields' => [
-                            'package-label'              => 'Package Label',
-                            'package-label-hint-tooltip' => 'If selected, the system will automatically print the package label when the "Put in Pack" button is used.',
+                            'package-label'              => 'Etiqueta del Paquete',
+                            'package-label-hint-tooltip' => 'Si se selecciona, el sistema imprimirá automáticamente la etiqueta del paquete cuando se use el botón "Poner en Paquete".',
                         ],
                     ],
                 ],
@@ -122,52 +122,52 @@ return [
 
     'table' => [
         'columns' => [
-            'name'       => 'Name',
-            'warehouse'  => 'Warehouse',
-            'company'    => 'Company',
-            'deleted-at' => 'Deleted At',
-            'created-at' => 'Created At',
-            'updated-at' => 'Updated At',
+            'name'       => 'Nombre',
+            'warehouse'  => 'Almacén',
+            'company'    => 'Compañía',
+            'deleted-at' => 'Eliminado el',
+            'created-at' => 'Creado el',
+            'updated-at' => 'Actualizado el',
         ],
 
         'groups' => [
-            'type'       => 'Type',
-            'warehouse'  => 'Warehouse',
-            'created-at' => 'Created At',
-            'updated-at' => 'Updated At',
+            'type'       => 'Tipo',
+            'warehouse'  => 'Almacén',
+            'created-at' => 'Creado el',
+            'updated-at' => 'Actualizado el',
         ],
 
         'filters' => [
-            'type'      => 'Type',
-            'warehouse' => 'Warehouse',
-            'company'   => 'Company',
+            'type'      => 'Tipo',
+            'warehouse' => 'Almacén',
+            'company'   => 'Compañía',
         ],
 
         'actions' => [
             'restore' => [
                 'notification' => [
-                    'title' => 'Operation Type restored',
-                    'body'  => 'The operation type has been restored successfully.',
+                    'title' => 'Tipo de Operación restaurado',
+                    'body'  => 'El tipo de operación ha sido restaurado exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Operation Type deleted',
-                    'body'  => 'The operation type has been deleted successfully.',
+                    'title' => 'Tipo de Operación eliminado',
+                    'body'  => 'El tipo de operación ha sido eliminado exitosamente.',
                 ],
             ],
 
             'force-delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Operation Type force deleted',
-                        'body'  => 'The operation type has been force deleted successfully.',
+                        'title' => 'Tipo de Operación forzado a eliminar',
+                        'body'  => 'El tipo de operación ha sido forzado a eliminar exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Operation Type could not be deleted',
-                        'body'  => 'The operation type cannot be deleted because it is currently in use.',
+                        'title' => 'El tipo de operación no pudo ser eliminado',
+                        'body'  => 'El tipo de operación no puede ser eliminado porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -176,28 +176,28 @@ return [
         'bulk-actions' => [
             'restore' => [
                 'notification' => [
-                    'title' => 'Operation Types restored',
-                    'body'  => 'The operation types has been restored successfully.',
+                    'title' => 'Tipos de Operación restaurados',
+                    'body'  => 'Los tipos de operación han sido restaurados exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Operation Types deleted',
-                    'body'  => 'The operation types has been deleted successfully.',
+                    'title' => 'Tipos de Operación eliminados',
+                    'body'  => 'Los tipos de operación han sido eliminados exitosamente.',
                 ],
             ],
 
             'force-delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Operations Types force deleted',
-                        'body'  => 'The operation types has been force deleted successfully.',
+                        'title' => 'Tipos de Operación forzados a eliminar',
+                        'body'  => 'Los tipos de operación han sido forzados a eliminar exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Operations Types could not be deleted',
-                        'body'  => 'The operation types cannot be deleted because they are currently in use.',
+                        'title' => 'Los tipos de operación no pudieron ser eliminados',
+                        'body'  => 'Los tipos de operación no pueden ser eliminados porque están actualmente en uso.',
                     ],
                 ],
             ],
@@ -205,7 +205,7 @@ return [
 
         'empty-actions' => [
             'create' => [
-                'label' => 'Create Operation Type',
+                'label' => 'Crear Tipo de Operación',
             ],
         ],
     ],
@@ -213,20 +213,20 @@ return [
     'infolist' => [
         'sections' => [
             'general' => [
-                'title' => 'General Information',
+                'title' => 'Información General',
 
                 'entries' => [
-                    'name' => 'Name',
+                    'name' => 'Nombre',
                 ],
             ],
 
             'record-information' => [
-                'title' => 'Record Information',
+                'title' => 'Información del Registro',
 
                 'entries' => [
-                    'created-by'   => 'Created By',
-                    'created-at'   => 'Created At',
-                    'last-updated' => 'Last Updated',
+                    'created-by'   => 'Creado Por',
+                    'created-at'   => 'Creado el',
+                    'last-updated' => 'Última Actualización',
                 ],
             ],
         ],
@@ -236,34 +236,34 @@ return [
                 'title' => 'General',
 
                 'entries' => [
-                    'type'                       => 'Operation Type',
-                    'sequence_code'              => 'Sequence Code',
-                    'print_label'                => 'Print Label',
-                    'warehouse'                  => 'Warehouse',
-                    'reservation_method'         => 'Reservation Method',
-                    'auto_show_reception_report' => 'Auto Show Reception Report',
-                    'company'                    => 'Company',
-                    'return_operation_type'      => 'Return Operation Type',
-                    'create_backorder'           => 'Create Backorder',
-                    'move_type'                  => 'Move Type',
+                    'type'                       => 'Tipo de Operación',
+                    'sequence_code'              => 'Código de Secuencia',
+                    'print_label'                => 'Imprimir Etiqueta',
+                    'warehouse'                  => 'Almacén',
+                    'reservation_method'         => 'Método de Reserva',
+                    'auto_show_reception_report' => 'Mostrar Informe de Recepción Automáticamente',
+                    'company'                    => 'Compañía',
+                    'return_operation_type'      => 'Tipo de Operación de Devolución',
+                    'create_backorder'           => 'Crear Pedido Pendiente',
+                    'move_type'                  => 'Tipo de Movimiento',
                 ],
 
                 'fieldsets' => [
                     'lots' => [
-                        'title' => 'Lots',
+                        'title' => 'Lotes',
 
                         'entries' => [
-                            'use_create_lots'   => 'Use Create Lots',
-                            'use_existing_lots' => 'Use Existing Lots',
+                            'use_create_lots'   => 'Usar Crear Lotes',
+                            'use_existing_lots' => 'Usar Lotes Existentes',
                         ],
                     ],
 
                     'locations' => [
-                        'title' => 'Locations',
+                        'title' => 'Ubicaciones',
 
                         'entries' => [
-                            'source_location'      => 'Source Location',
-                            'destination_location' => 'Destination Location',
+                            'source_location'      => 'Ubicación de Origen',
+                            'destination_location' => 'Ubicación de Destino',
                         ],
                     ],
                 ],
@@ -273,24 +273,24 @@ return [
 
                 'fieldsets' => [
                     'print_on_validation' => [
-                        'title' => 'Print on Validation',
+                        'title' => 'Imprimir al Validar',
 
                         'entries' => [
-                            'auto_print_delivery_slip'           => 'Auto Print Delivery Slip',
-                            'auto_print_return_slip'             => 'Auto Print Return Slip',
-                            'auto_print_product_labels'          => 'Auto Print Product Labels',
-                            'auto_print_lot_labels'              => 'Auto Print Lot Labels',
-                            'auto_print_reception_report'        => 'Auto Print Reception Report',
-                            'auto_print_reception_report_labels' => 'Auto Print Reception Report Labels',
-                            'auto_print_packages'                => 'Auto Print Packages',
+                            'auto_print_delivery_slip'           => 'Imprimir Automáticamente Albarán de Entrega',
+                            'auto_print_return_slip'             => 'Imprimir Automáticamente Albarán de Devolución',
+                            'auto_print_product_labels'          => 'Imprimir Automáticamente Etiquetas de Producto',
+                            'auto_print_lot_labels'              => 'Imprimir Automáticamente Etiquetas de Lote',
+                            'auto_print_reception_report'        => 'Imprimir Automáticamente Informe de Recepción',
+                            'auto_print_reception_report_labels' => 'Imprimir Automáticamente Etiquetas de Informe de Recepción',
+                            'auto_print_packages'                => 'Imprimir Automáticamente Paquetes',
                         ],
                     ],
 
                     'print_on_pack' => [
-                        'title' => 'Print on Pack',
+                        'title' => 'Imprimir al Empaquetar',
 
                         'entries' => [
-                            'auto_print_package_label' => 'Auto Print Package Label',
+                            'auto_print_package_label' => 'Imprimir Automáticamente Etiqueta del Paquete',
                         ],
                     ],
                 ],

@@ -2,25 +2,25 @@
 
 return [
     'notification' => [
-        'title' => 'Internal Transfer updated',
-        'body'  => 'The internal transfer has been updated successfully.',
+        'title' => 'Transferencia Interna actualizada',
+        'body'  => 'La transferencia interna ha sido actualizada exitosamente.',
     ],
 
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
         ],
 
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Internal Transfer deleted',
-                    'body'  => 'The internal transfer has been deleted successfully.',
+                    'title' => 'Transferencia Interna eliminada',
+                    'body'  => 'La transferencia interna ha sido eliminada exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Internal Transfer could not be deleted',
-                    'body'  => 'The internal transfer cannot be deleted because it is currently in use.',
+                    'title' => 'La transferencia interna no pudo ser eliminada',
+                    'body'  => 'La transferencia interna no puede ser eliminada porque está actualmente en uso.',
                 ],
             ],
         ],

@@ -3,19 +3,19 @@
 return [
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
         ],
 
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Lot Deleted',
-                    'body'  => 'The lot has been deleted successfully.',
+                    'title' => 'Lote Eliminado',
+                    'body'  => 'El lote ha sido eliminado exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Lot could not be deleted',
-                    'body'  => 'The lot cannot be deleted because it is currently in use.',
+                    'title' => 'El lote no pudo ser eliminado',
+                    'body'  => 'El lote no puede ser eliminado porque está actualmente en uso.',
                 ],
             ],
         ],

@@ -2,17 +2,17 @@
 
 return [
     'one-step' => [
-        'name'        => 'One step',
-        'description' => 'Receive and Store (One step)',
+        'name'        => 'Un paso',
+        'description' => 'Recibir y Almacenar (Un paso)',
     ],
 
     'two-steps' => [
-        'name'        => 'Two steps',
-        'description' => 'Receive then Store (Two steps)',
+        'name'        => 'Dos pasos',
+        'description' => 'Recibir luego Almacenar (Dos pasos)',
     ],
 
     'three-steps' => [
-        'name'        => 'Three steps',
-        'description' => 'Receive, Quality Control, then Store (Three steps)',
+        'name'        => 'Tres pasos',
+        'description' => 'Recibir, Control de Calidad, luego Almacenar (Tres pasos)',
     ],
 ];

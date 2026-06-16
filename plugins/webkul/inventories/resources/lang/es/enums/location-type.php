@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'supplier'   => 'Vendor Location',
-    'view'       => 'View',
-    'internal'   => 'Internal Location',
-    'customer'   => 'Customer Location',
-    'inventory'  => 'Inventory Loss',
-    'production' => 'Production',
-    'transit'    => 'Transit Location',
+    'supplier'   => 'Ubicación de Proveedor',
+    'view'       => 'Vista',
+    'internal'   => 'Ubicación Interna',
+    'customer'   => 'Ubicación de Cliente',
+    'inventory'  => 'Pérdida de Inventario',
+    'production' => 'Producción',
+    'transit'    => 'Ubicación de Tránsito',
 ];

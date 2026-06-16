@@ -2,21 +2,21 @@
 
 return [
     'navigation' => [
-        'title' => 'Categories',
-        'group' => 'Products',
+        'title' => 'Categorías',
+        'group' => 'Productos',
     ],
 
     'form' => [
         'sections' => [
             'inventory' => [
-                'title' => 'Inventory',
+                'title' => 'Inventario',
 
                 'fieldsets' => [
                     'logistics' => [
-                        'title' => 'Logistics',
+                        'title' => 'Logística',
 
                         'fields' => [
-                            'routes' => 'Routes',
+                            'routes' => 'Rutas',
                         ],
                     ],
                 ],
@@ -27,15 +27,15 @@ return [
     'infolist' => [
         'sections' => [
             'inventory' => [
-                'title' => 'Inventory',
+                'title' => 'Inventario',
 
                 'subsections' => [
                     'logistics' => [
-                        'title' => 'Logistics',
+                        'title' => 'Logística',
 
                         'entries' => [
-                            'routes'     => 'Warehouse Routes',
-                            'route_name' => 'Route Name',
+                            'routes'     => 'Rutas de Almacén',
+                            'route_name' => 'Nombre de Ruta',
                         ],
                     ],
                 ],

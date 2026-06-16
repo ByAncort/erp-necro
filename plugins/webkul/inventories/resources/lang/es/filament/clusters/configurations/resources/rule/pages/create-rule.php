@@ -2,7 +2,7 @@
 
 return [
     'notification' => [
-        'title' => 'Rule created',
-        'body'  => 'The rule has been created successfully.',
+        'title' => 'Regla creada',
+        'body'  => 'La regla ha sido creada exitosamente.',
     ],
 ];

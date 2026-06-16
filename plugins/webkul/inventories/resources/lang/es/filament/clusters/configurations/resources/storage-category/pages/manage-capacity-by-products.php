@@ -1,42 +1,42 @@
 <?php
 
 return [
-    'title' => 'Capacity By Products',
+    'title' => 'Capacidad por Productos',
 
     'form' => [
-        'product' => 'Product',
-        'qty'     => 'Quantity',
+        'product' => 'Producto',
+        'qty'     => 'Cantidad',
     ],
 
     'table' => [
         'header-actions' => [
             'create' => [
-                'label' => 'Add Product Capacity',
+                'label' => 'Añadir Capacidad de Producto',
 
                 'notification' => [
-                    'title' => 'Product Capacity created',
-                    'body'  => 'The product capacity been added successfully.',
+                    'title' => 'Capacidad de Producto creada',
+                    'body'  => 'La capacidad de producto ha sido añadida exitosamente.',
                 ],
             ],
         ],
 
         'columns' => [
-            'product' => 'Product',
-            'qty'     => 'Quantity',
+            'product' => 'Producto',
+            'qty'     => 'Cantidad',
         ],
 
         'actions' => [
             'edit' => [
                 'notification' => [
-                    'title' => 'Product Capacity updated',
-                    'body'  => 'The product capacity has been updated successfully.',
+                    'title' => 'Capacidad de Producto actualizada',
+                    'body'  => 'La capacidad de producto ha sido actualizada exitosamente.',
                 ],
             ],
 
             'delete' => [
                 'notification' => [
-                    'title' => 'Product Capacity deleted',
-                    'body'  => 'The product capacity has been deleted successfully.',
+                    'title' => 'Capacidad de Producto eliminada',
+                    'body'  => 'La capacidad de producto ha sido eliminada exitosamente.',
                 ],
             ],
         ],

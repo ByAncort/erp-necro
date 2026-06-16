@@ -2,21 +2,21 @@
 
 return [
     'notification' => [
-        'title' => 'Package updated',
-        'body'  => 'The package has been updated successfully.',
+        'title' => 'Paquete actualizado',
+        'body'  => 'El paquete ha sido actualizado exitosamente.',
     ],
 
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
 
             'actions' => [
                 'without-content' => [
-                    'label' => 'Print Barcode',
+                    'label' => 'Imprimir Código de Barras',
                 ],
 
                 'with-content' => [
-                    'label' => 'Print Barcode With Content',
+                    'label' => 'Imprimir Código de Barras con Contenido',
                 ],
             ],
         ],
@@ -24,13 +24,13 @@ return [
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Package deleted',
-                    'body'  => 'The package has been deleted successfully.',
+                    'title' => 'Paquete eliminado',
+                    'body'  => 'El paquete ha sido eliminado exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Package could not be deleted',
-                    'body'  => 'The package cannot be deleted because it is currently in use.',
+                    'title' => 'El paquete no pudo ser eliminado',
+                    'body'  => 'El paquete no puede ser eliminado porque está actualmente en uso.',
                 ],
             ],
         ],

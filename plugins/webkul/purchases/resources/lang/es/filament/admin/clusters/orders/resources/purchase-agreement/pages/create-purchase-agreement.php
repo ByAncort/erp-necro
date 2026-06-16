@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'title' => 'Create Purchase Agreement',
+    'title' => 'Crear Acuerdo de Compra',
 
     'notification' => [
-        'title' => 'Purchase Agreement created',
-        'body'  => 'The purchase agreement has been created successfully.',
+        'title' => 'Acuerdo de Compra creado',
+        'body'  => 'El acuerdo de compra ha sido creado exitosamente.',
     ],
 
     'confirmation' => [
-        'heading'     => 'Similar confirmed agreement exists',
-        'description' => 'This vendor already has a confirmed purchase agreement that is not closed or canceled. Do you want to continue creating this purchase agreement?',
+        'heading'     => 'Existe un acuerdo confirmado similar',
+        'description' => 'Este proveedor ya tiene un acuerdo de compra confirmado que no está cerrado ni cancelado. ¿Desea continuar creando este acuerdo de compra?',
     ],
 ];

@@ -2,13 +2,13 @@
 
 return [
     'navigation' => [
-        'title' => 'Receipts',
-        'group' => 'Transfers',
+        'title' => 'Recepciones',
+        'group' => 'Transferencias',
     ],
 
     'global-search' => [
         'partner' => 'Partner',
-        'origin'  => 'Origin',
+        'origin'  => 'Origen',
     ],
 
     'table' => [
@@ -16,13 +16,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Receipt deleted',
-                        'body'  => 'The receipt ras been deleted successfully.',
+                        'title' => 'Recepción eliminada',
+                        'body'  => 'La recepción ha sido eliminada exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Receipt could not be deleted',
-                        'body'  => 'The receipt cannot be deleted because it is currently in use.',
+                        'title' => 'La recepción no pudo ser eliminada',
+                        'body'  => 'La recepción no puede ser eliminada porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -32,13 +32,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Receipts deleted',
-                        'body'  => 'The receipts has been deleted successfully.',
+                        'title' => 'Recepciones eliminadas',
+                        'body'  => 'Las recepciones han sido eliminadas exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Receipts could not be deleted',
-                        'body'  => 'The receipts cannot be deleted because they are currently in use.',
+                        'title' => 'Las recepciones no pudieron ser eliminadas',
+                        'body'  => 'Las recepciones no pueden ser eliminadas porque están actualmente en uso.',
                     ],
                 ],
             ],

@@ -3,11 +3,11 @@
 return [
     'header-actions' => [
         'create' => [
-            'label' => 'New Scrap',
+            'label' => 'Nuevo Desecho',
 
             'notification' => [
-                'title' => 'Scrap created',
-                'body'  => 'The scrap has been created successfully.',
+                'title' => 'Desecho creado',
+                'body'  => 'El desecho ha sido creado exitosamente.',
             ],
         ],
     ],

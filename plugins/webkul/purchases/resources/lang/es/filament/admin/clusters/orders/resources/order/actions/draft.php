@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'label' => 'Set to Draft',
+    'label' => 'Establecer como Borrador',
 
     'action' => [
         'notification' => [
             'success' => [
-                'title' => 'Order marked as draft',
-                'body'  => 'The order has been marked as draft successfully.',
+                'title' => 'Pedido marcado como borrador',
+                'body'  => 'El pedido ha sido marcado como borrador exitosamente.',
             ],
         ],
     ],

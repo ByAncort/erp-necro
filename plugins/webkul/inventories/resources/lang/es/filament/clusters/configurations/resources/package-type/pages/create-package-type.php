@@ -2,7 +2,7 @@
 
 return [
     'notification' => [
-        'title' => 'Package Type created',
-        'body'  => 'The package type has been created successfully.',
+        'title' => 'Tipo de Paquete creado',
+        'body'  => 'El tipo de paquete ha sido creado exitosamente.',
     ],
 ];

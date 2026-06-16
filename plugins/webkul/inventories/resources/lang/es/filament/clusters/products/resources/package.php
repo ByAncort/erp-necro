@@ -2,14 +2,14 @@
 
 return [
     'navigation' => [
-        'title' => 'Packages',
-        'group' => 'Inventory',
+        'title' => 'Paquetes',
+        'group' => 'Inventario',
     ],
 
     'global-search' => [
-        'name'         => 'Name',
-        'package-type' => 'Package Type',
-        'location'     => 'Location',
+        'name'         => 'Nombre',
+        'package-type' => 'Tipo de Paquete',
+        'location'     => 'Ubicación',
     ],
 
     'form' => [
@@ -18,11 +18,11 @@ return [
                 'title' => 'General',
 
                 'fields' => [
-                    'name'             => 'Name',
-                    'name-placeholder' => 'eg. PACK007',
-                    'package-type'     => 'Package Type',
-                    'pack-date'        => 'Pack Date',
-                    'location'         => 'Location',
+                    'name'             => 'Nombre',
+                    'name-placeholder' => 'ej. PAQ007',
+                    'package-type'     => 'Tipo de Paquete',
+                    'pack-date'        => 'Fecha de Empaque',
+                    'location'         => 'Ubicación',
                 ],
             ],
         ],
@@ -30,38 +30,38 @@ return [
 
     'table' => [
         'columns' => [
-            'name'         => 'Name',
-            'package-type' => 'Package Type',
-            'location'     => 'Location',
-            'company'      => 'Company',
-            'created-at'   => 'Created At',
-            'updated-at'   => 'Updated At',
+            'name'         => 'Nombre',
+            'package-type' => 'Tipo de Paquete',
+            'location'     => 'Ubicación',
+            'company'      => 'Empresa',
+            'created-at'   => 'Creado el',
+            'updated-at'   => 'Actualizado el',
         ],
 
         'groups' => [
-            'package-type'   => 'Package Type',
-            'location'       => 'Location',
-            'created-at'     => 'Created At',
+            'package-type'   => 'Tipo de Paquete',
+            'location'       => 'Ubicación',
+            'created-at'     => 'Creado el',
         ],
 
         'filters' => [
-            'package-type' => 'Package Type',
-            'location'     => 'Location',
-            'creator'      => 'Creator',
-            'company'      => 'Company',
+            'package-type' => 'Tipo de Paquete',
+            'location'     => 'Ubicación',
+            'creator'      => 'Creador',
+            'company'      => 'Empresa',
         ],
 
         'actions' => [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Package deleted',
-                        'body'  => 'The package has been deleted successfully.',
+                        'title' => 'Paquete eliminado',
+                        'body'  => 'El paquete ha sido eliminado exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Package could not be deleted',
-                        'body'  => 'The package cannot be deleted because it is currently in use.',
+                        'title' => 'El paquete no pudo ser eliminado',
+                        'body'  => 'El paquete no puede ser eliminado porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -69,23 +69,23 @@ return [
 
         'bulk-actions' => [
             'print-without-content' => [
-                'label' => 'Print Barcode',
+                'label' => 'Imprimir Código de Barras',
             ],
 
             'print-with-content' => [
-                'label' => 'Print Barcode With Content',
+                'label' => 'Imprimir Código de Barras con Contenido',
             ],
 
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Packages deleted',
-                        'body'  => 'The packages has been deleted successfully.',
+                        'title' => 'Paquetes eliminados',
+                        'body'  => 'Los paquetes han sido eliminados exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Packages could not be deleted',
-                        'body'  => 'The packages cannot be deleted because they are currently in use.',
+                        'title' => 'Los paquetes no pudieron ser eliminados',
+                        'body'  => 'Los paquetes no pueden ser eliminados porque están actualmente en uso.',
                     ],
                 ],
             ],
@@ -95,26 +95,26 @@ return [
     'infolist' => [
         'sections' => [
             'general' => [
-                'title' => 'Package Details',
+                'title' => 'Detalles del Paquete',
 
                 'entries' => [
-                    'name'         => 'Package Name',
-                    'package-type' => 'Package Type',
-                    'pack-date'    => 'Pack Date',
-                    'location'     => 'Location',
-                    'company'      => 'Company',
-                    'created-at'   => 'Created At',
-                    'updated-at'   => 'Last Updated',
+                    'name'         => 'Nombre del Paquete',
+                    'package-type' => 'Tipo de Paquete',
+                    'pack-date'    => 'Fecha de Empaque',
+                    'location'     => 'Ubicación',
+                    'company'      => 'Empresa',
+                    'created-at'   => 'Creado el',
+                    'updated-at'   => 'Última Actualización',
                 ],
             ],
 
             'record-information' => [
-                'title' => 'Record Information',
+                'title' => 'Información del Registro',
 
                 'entries' => [
-                    'created-by'   => 'Created By',
-                    'created-at'   => 'Created At',
-                    'last-updated' => 'Last Updated',
+                    'created-by'   => 'Creado por',
+                    'created-at'   => 'Creado el',
+                    'last-updated' => 'Última Actualización',
                 ],
             ],
         ],

@@ -2,6 +2,6 @@
 
 return [
     'no'               => 'No',
-    'last-used'        => 'Last Used',
-    'closest-location' => 'Closest Location',
+    'last-used'        => 'Último Usado',
+    'closest-location' => 'Ubicación Más Cercana',
 ];

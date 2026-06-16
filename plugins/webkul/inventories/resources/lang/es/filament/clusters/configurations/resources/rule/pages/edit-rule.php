@@ -2,15 +2,15 @@
 
 return [
     'notification' => [
-        'title' => 'Rule updated',
-        'body'  => 'The rule has been updated successfully.',
+        'title' => 'Regla actualizada',
+        'body'  => 'La regla ha sido actualizada exitosamente.',
     ],
 
     'header-actions' => [
         'delete' => [
             'notification' => [
-                'title' => 'Rule deleted',
-                'body'  => 'The rule has been deleted successfully.',
+                'title' => 'Regla eliminada',
+                'body'  => 'La regla ha sido eliminada exitosamente.',
             ],
         ],
     ],

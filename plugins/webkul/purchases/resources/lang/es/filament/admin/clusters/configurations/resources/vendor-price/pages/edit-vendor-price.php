@@ -2,25 +2,25 @@
 
 return [
     'navigation' => [
-        'title' => 'Edit Vendor Price List',
+        'title' => 'Editar Lista de Precios de Proveedor',
     ],
 
     'notification' => [
-        'title' => 'Vendor Price updated',
-        'body'  => 'The vendor price has been updated successfully.',
+        'title' => 'Precio de Proveedor actualizado',
+        'body'  => 'El precio de proveedor ha sido actualizado exitosamente.',
     ],
 
     'header-actions' => [
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Vendor Price deleted',
-                    'body'  => 'The vendor price has been deleted successfully.',
+                    'title' => 'Precio de Proveedor eliminado',
+                    'body'  => 'El precio de proveedor ha sido eliminado exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Vendor Price could not be deleted',
-                    'body'  => 'The vendor price cannot be deleted because it is currently in use.',
+                    'title' => 'El Precio de Proveedor no pudo ser eliminado',
+                    'body'  => 'El precio de proveedor no puede ser eliminado porque está actualmente en uso.',
                 ],
             ],
         ],

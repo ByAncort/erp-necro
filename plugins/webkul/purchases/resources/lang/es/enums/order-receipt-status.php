@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'no'      => 'Nothing To Receive',
-    'pending' => 'Pending',
-    'partial' => 'Partially Received',
-    'full'    => 'Fully Received',
+    'no'      => 'Nada que Recibir',
+    'pending' => 'Pendiente',
+    'partial' => 'Recibido Parcialmente',
+    'full'    => 'Totalmente Recibido',
 ];

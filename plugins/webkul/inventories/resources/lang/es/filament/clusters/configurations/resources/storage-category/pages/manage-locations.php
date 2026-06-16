@@ -1,16 +1,16 @@
 <?php
 
 return [
-    'title' => 'Locations',
+    'title' => 'Ubicaciones',
 
     'table' => [
         'header-actions' => [
             'create' => [
-                'label' => 'Create Location',
+                'label' => 'Crear Ubicación',
 
                 'notification' => [
-                    'title' => 'Location Created',
-                    'body'  => 'The location has been created.',
+                    'title' => 'Ubicación Creada',
+                    'body'  => 'La ubicación ha sido creada.',
                 ],
             ],
         ],

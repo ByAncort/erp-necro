@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'title' => 'Products',
+    'title' => 'Productos',
 
     'table' => [
         'columns' => [
-            'product'         => 'Product',
-            'quantity'        => 'Quantity',
-            'unit-of-measure' => 'Unit of Measure',
+            'product'         => 'Producto',
+            'quantity'        => 'Cantidad',
+            'unit-of-measure' => 'Unidad de Medida',
         ],
     ],
 ];

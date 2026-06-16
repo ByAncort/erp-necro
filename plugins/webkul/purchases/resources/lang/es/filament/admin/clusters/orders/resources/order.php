@@ -2,9 +2,9 @@
 
 return [
     'global-search' => [
-        'vendor'    => 'Vendor',
-        'reference' => 'Reference',
-        'amount'    => 'Amount',
+        'vendor'    => 'Proveedor',
+        'reference' => 'Referencia',
+        'amount'    => 'Monto',
     ],
 
     'form' => [
@@ -13,86 +13,86 @@ return [
                 'title' => 'General',
 
                 'fields' => [
-                    'vendor'                   => 'Vendor',
-                    'vendor-reference'         => 'Vendor Reference',
-                    'vendor-reference-tooltip' => 'The reference number of the sales order or bid provided by the vendor. It is used for matching when receiving products, as this reference is typically included in the vendor\'s delivery order.',
-                    'agreement'                => 'Agreement',
-                    'currency'                 => 'Currency',
-                    'confirmation-date'        => 'Confirmation Date',
-                    'order-deadline'           => 'Order Deadline',
-                    'expected-arrival'         => 'Expected Arrival',
-                    'confirmed-by-vendor'      => 'Confirmed by Vendor',
+                    'vendor'                   => 'Proveedor',
+                    'vendor-reference'         => 'Referencia del Proveedor',
+                    'vendor-reference-tooltip' => 'El número de referencia de la orden de venta o licitación proporcionada por el proveedor. Se utiliza para la coincidencia al recibir productos, ya que esta referencia suele estar incluida en la orden de entrega del proveedor.',
+                    'agreement'                => 'Acuerdo',
+                    'currency'                 => 'Moneda',
+                    'confirmation-date'        => 'Fecha de Confirmación',
+                    'order-deadline'           => 'Fecha Límite del Pedido',
+                    'expected-arrival'         => 'Llegada Esperada',
+                    'confirmed-by-vendor'      => 'Confirmado por el Proveedor',
                 ],
             ],
         ],
 
         'tabs' => [
             'products' => [
-                'title' => 'Products',
+                'title' => 'Productos',
 
                 'repeater' => [
                     'products' => [
-                        'title'            => 'Products',
-                        'add-product-line' => 'Add Product',
+                        'title'            => 'Productos',
+                        'add-product-line' => 'Agregar Producto',
 
                         'fields' => [
-                            'product'             => 'Product',
-                            'expected-arrival'    => 'Expected Arrival',
-                            'quantity'            => 'Quantity',
-                            'received'            => 'Received',
-                            'billed'              => 'Billed',
-                            'unit'                => 'Unit',
-                            'packaging-qty'       => 'Packaging Qty',
-                            'packaging'           => 'Packaging',
-                            'taxes'               => 'Taxes',
-                            'discount-percentage' => 'Discount (%)',
-                            'unit-price'          => 'Unit Price',
-                            'amount'              => 'Amount',
+                            'product'             => 'Producto',
+                            'expected-arrival'    => 'Llegada Esperada',
+                            'quantity'            => 'Cantidad',
+                            'received'            => 'Recibido',
+                            'billed'              => 'Facturado',
+                            'unit'                => 'Unidad',
+                            'packaging-qty'       => 'Cantidad de Empaque',
+                            'packaging'           => 'Empaque',
+                            'taxes'               => 'Impuestos',
+                            'discount-percentage' => 'Descuento (%)',
+                            'unit-price'          => 'Precio Unitario',
+                            'amount'              => 'Monto',
                         ],
 
                         'notifications' => [
                             'quantity-below-received' => [
-                                'title' => 'Cannot Reduce Quantity',
-                                'body'  => 'You cannot reduce the quantity below the received quantity (:qty).',
+                                'title' => 'No se Puede Reducir la Cantidad',
+                                'body'  => 'No puede reducir la cantidad por debajo de la cantidad recibida (:qty).',
                             ],
 
                             'blanket-order-qty-limit' => [
-                                'title' => 'Quantity Exceeds Blanket Order Limit',
-                                'body'  => 'The product quantity (:product_qty) exceeds the available quantity (:available_qty) from the blanket order.',
+                                'title' => 'La Cantidad Excede el Límite de la Orden Abierta',
+                                'body'  => 'La cantidad del producto (:product_qty) excede la cantidad disponible (:available_qty) de la orden abierta.',
                             ],
                         ],
 
                         'columns' => [
-                            'product'             => 'Product',
-                            'expected-arrival'    => 'Expected Arrival',
-                            'quantity'            => 'Quantity',
-                            'received'            => 'Received',
-                            'billed'              => 'Billed',
-                            'unit'                => 'Unit',
-                            'packaging-qty'       => 'Packaging Qty',
-                            'packaging'           => 'Packaging',
-                            'taxes'               => 'Taxes',
-                            'discount-percentage' => 'Discount (%)',
-                            'unit-price'          => 'Unit Price',
-                            'amount'              => 'Amount',
+                            'product'             => 'Producto',
+                            'expected-arrival'    => 'Llegada Esperada',
+                            'quantity'            => 'Cantidad',
+                            'received'            => 'Recibido',
+                            'billed'              => 'Facturado',
+                            'unit'                => 'Unidad',
+                            'packaging-qty'       => 'Cantidad de Empaque',
+                            'packaging'           => 'Empaque',
+                            'taxes'               => 'Impuestos',
+                            'discount-percentage' => 'Descuento (%)',
+                            'unit-price'          => 'Precio Unitario',
+                            'amount'              => 'Monto',
                         ],
 
                         'delete-action' => [
                             'error' => [
-                                'title' => 'Cannot Delete Product',
-                                'body'  => 'Products cannot be deleted from a confirmed purchase order.',
+                                'title' => 'No se Puede Eliminar el Producto',
+                                'body'  => 'No se pueden eliminar productos de una orden de compra confirmada.',
                             ],
                         ],
                     ],
 
                     'section' => [
-                        'title' => 'Add Section',
+                        'title' => 'Agregar Sección',
 
                         'fields' => [],
                     ],
 
                     'note' => [
-                        'title' => 'Add Note',
+                        'title' => 'Agregar Nota',
 
                         'fields' => [],
                     ],
@@ -100,81 +100,81 @@ return [
             ],
 
             'additional' => [
-                'title' => 'Additional Information',
+                'title' => 'Información Adicional',
 
                 'fields' => [
-                    'buyer'             => 'Buyer',
-                    'company'           => 'Company',
-                    'source-document'   => 'Source Document',
+                    'buyer'             => 'Comprador',
+                    'company'           => 'Compañía',
+                    'source-document'   => 'Documento de Origen',
                     'incoterm'          => 'Incoterm',
-                    'incoterm-tooltip'  => 'International Commercial Terms (Incoterms) are a set of standardized trade terms used in global transactions to define responsibilities between buyers and sellers.',
-                    'incoterm-location' => 'Incoterm Location',
-                    'payment-term'      => 'Payment Term',
-                    'fiscal-position'   => 'Fiscal Position',
+                    'incoterm-tooltip'  => 'Los Términos Comerciales Internacionales (Incoterms) son un conjunto de términos estandarizados utilizados en transacciones globales para definir responsabilidades entre compradores y vendedores.',
+                    'incoterm-location' => 'Ubicación Incoterm',
+                    'payment-term'      => 'Plazo de Pago',
+                    'fiscal-position'   => 'Posición Fiscal',
                 ],
             ],
 
             'terms' => [
-                'title' => 'Terms and Conditions',
+                'title' => 'Términos y Condiciones',
             ],
         ],
     ],
 
     'table' => [
         'columns' => [
-            'favorite'         => 'Favorite',
-            'priority'         => 'Priority',
-            'vendor-reference' => 'Vendor Reference',
-            'reference'        => 'Reference',
-            'vendor'           => 'Vendor',
-            'buyer'            => 'Buyer',
-            'company'          => 'Company',
-            'order-deadline'   => 'Order Deadline',
-            'source-document'  => 'Source Document',
-            'untaxed-amount'   => 'Untaxed Amount',
-            'total-amount'     => 'Total Amount',
-            'status'           => 'Status',
-            'billing-status'   => 'Billing Status',
-            'receipt-status'   => 'Receipt Status',
-            'currency'         => 'Currency',
+            'favorite'         => 'Favorito',
+            'priority'         => 'Prioridad',
+            'vendor-reference' => 'Referencia del Proveedor',
+            'reference'        => 'Referencia',
+            'vendor'           => 'Proveedor',
+            'buyer'            => 'Comprador',
+            'company'          => 'Compañía',
+            'order-deadline'   => 'Fecha Límite del Pedido',
+            'source-document'  => 'Documento de Origen',
+            'untaxed-amount'   => 'Monto Sin Impuestos',
+            'total-amount'     => 'Monto Total',
+            'status'           => 'Estado',
+            'billing-status'   => 'Estado de Facturación',
+            'receipt-status'   => 'Estado de Recepción',
+            'currency'         => 'Moneda',
         ],
 
         'groups' => [
-            'vendor'     => 'Vendor',
-            'buyer'      => 'Buyer',
-            'state'      => 'State',
-            'created-at' => 'Created At',
-            'updated-at' => 'Updated At',
+            'vendor'     => 'Proveedor',
+            'buyer'      => 'Comprador',
+            'state'      => 'Estado',
+            'created-at' => 'Creado En',
+            'updated-at' => 'Actualizado En',
         ],
 
         'filters' => [
-            'status'           => 'Status',
-            'vendor-reference' => 'Vendor Reference',
-            'reference'        => 'Reference',
-            'untaxed-amount'   => 'Untaxed Amount',
-            'total-amount'     => 'Total Amount',
-            'order-deadline'   => 'Order Deadline',
-            'vendor'           => 'Vendor',
-            'buyer'            => 'Buyer',
-            'company'          => 'Company',
-            'payment-term'     => 'Payment Term',
+            'status'           => 'Estado',
+            'vendor-reference' => 'Referencia del Proveedor',
+            'reference'        => 'Referencia',
+            'untaxed-amount'   => 'Monto Sin Impuestos',
+            'total-amount'     => 'Monto Total',
+            'order-deadline'   => 'Fecha Límite del Pedido',
+            'vendor'           => 'Proveedor',
+            'buyer'            => 'Comprador',
+            'company'          => 'Compañía',
+            'payment-term'     => 'Plazo de Pago',
             'incoterm'         => 'Incoterm',
-            'status'           => 'Status',
-            'created-at'       => 'Created At',
-            'updated-at'       => 'Updated At',
+            'status'           => 'Estado',
+            'created-at'       => 'Creado En',
+            'updated-at'       => 'Actualizado En',
         ],
 
         'actions' => [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Order deleted',
-                        'body'  => 'The order has been deleted successfully.',
+                        'title' => 'Pedido eliminado',
+                        'body'  => 'El pedido ha sido eliminado exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Order could not be deleted',
-                        'body'  => 'The order cannot be deleted because it is currently in use.',
+                        'title' => 'El Pedido no pudo ser eliminado',
+                        'body'  => 'El pedido no puede ser eliminado porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -184,13 +184,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Orders deleted',
-                        'body'  => 'The orders has been deleted successfully.',
+                        'title' => 'Pedidos eliminados',
+                        'body'  => 'Los pedidos han sido eliminados exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Orders could not be deleted',
-                        'body'  => 'The orders cannot be deleted because they are currently in use.',
+                        'title' => 'Los Pedidos no pudieron ser eliminados',
+                        'body'  => 'Los pedidos no pueden ser eliminados porque están actualmente en uso.',
                     ],
                 ],
             ],
@@ -203,72 +203,72 @@ return [
                 'title' => 'General',
 
                 'entries' => [
-                    'purchase-order'           => 'Purchase Order',
-                    'vendor'                   => 'Vendor',
-                    'vendor-reference'         => 'Vendor Reference',
-                    'vendor-reference-tooltip' => 'The reference number of the sales order or bid provided by the vendor. It is used for matching when receiving products, as this reference is typically included in the vendor\'s delivery order.',
-                    'agreement'                => 'Agreement',
-                    'currency'                 => 'Currency',
-                    'confirmation-date'        => 'Confirmation Date',
-                    'order-deadline'           => 'Order Deadline',
-                    'expected-arrival'         => 'Expected Arrival',
-                    'confirmed-by-vendor'      => 'Confirmed by Vendor',
+                    'purchase-order'           => 'Orden de Compra',
+                    'vendor'                   => 'Proveedor',
+                    'vendor-reference'         => 'Referencia del Proveedor',
+                    'vendor-reference-tooltip' => 'El número de referencia de la orden de venta o licitación proporcionada por el proveedor. Se utiliza para la coincidencia al recibir productos, ya que esta referencia suele estar incluida en la orden de entrega del proveedor.',
+                    'agreement'                => 'Acuerdo',
+                    'currency'                 => 'Moneda',
+                    'confirmation-date'        => 'Fecha de Confirmación',
+                    'order-deadline'           => 'Fecha Límite del Pedido',
+                    'expected-arrival'         => 'Llegada Esperada',
+                    'confirmed-by-vendor'      => 'Confirmado por el Proveedor',
                 ],
             ],
         ],
 
         'tabs' => [
             'products' => [
-                'title' => 'Products',
+                'title' => 'Productos',
 
                 'repeater' => [
                     'products' => [
-                        'title'            => 'Products',
-                        'add-product-line' => 'Add Product',
+                        'title'            => 'Productos',
+                        'add-product-line' => 'Agregar Producto',
 
                         'entries' => [
-                            'product'             => 'Product',
-                            'expected-arrival'    => 'Expected Arrival',
-                            'quantity'            => 'Quantity',
-                            'received'            => 'Received',
-                            'billed'              => 'Billed',
-                            'unit'                => 'Unit',
-                            'packaging-qty'       => 'Packaging Qty',
-                            'packaging'           => 'Packaging',
-                            'taxes'               => 'Taxes',
-                            'discount-percentage' => 'Discount (%)',
-                            'unit-price'          => 'Unit Price',
-                            'amount'              => 'Amount',
+                            'product'             => 'Producto',
+                            'expected-arrival'    => 'Llegada Esperada',
+                            'quantity'            => 'Cantidad',
+                            'received'            => 'Recibido',
+                            'billed'              => 'Facturado',
+                            'unit'                => 'Unidad',
+                            'packaging-qty'       => 'Cantidad de Empaque',
+                            'packaging'           => 'Empaque',
+                            'taxes'               => 'Impuestos',
+                            'discount-percentage' => 'Descuento (%)',
+                            'unit-price'          => 'Precio Unitario',
+                            'amount'              => 'Monto',
                         ],
                     ],
 
                     'section' => [
-                        'title' => 'Add Section',
+                        'title' => 'Agregar Sección',
                     ],
 
                     'note' => [
-                        'title' => 'Add Note',
+                        'title' => 'Agregar Nota',
                     ],
                 ],
             ],
 
             'additional' => [
-                'title' => 'Additional Information',
+                'title' => 'Información Adicional',
 
                 'entries' => [
-                    'buyer'             => 'Buyer',
-                    'company'           => 'Company',
-                    'source-document'   => 'Source Document',
+                    'buyer'             => 'Comprador',
+                    'company'           => 'Compañía',
+                    'source-document'   => 'Documento de Origen',
                     'incoterm'          => 'Incoterm',
-                    'incoterm-tooltip'  => 'International Commercial Terms (Incoterms) are a set of standardized trade terms used in global transactions to define responsibilities between buyers and sellers.',
-                    'incoterm-location' => 'Incoterm Location',
-                    'payment-term'      => 'Payment Term',
-                    'fiscal-position'   => 'Fiscal Position',
+                    'incoterm-tooltip'  => 'Los Términos Comerciales Internacionales (Incoterms) son un conjunto de términos estandarizados utilizados en transacciones globales para definir responsabilidades entre compradores y vendedores.',
+                    'incoterm-location' => 'Ubicación Incoterm',
+                    'payment-term'      => 'Plazo de Pago',
+                    'fiscal-position'   => 'Posición Fiscal',
                 ],
             ],
 
             'terms' => [
-                'title' => 'Terms and Conditions',
+                'title' => 'Términos y Condiciones',
             ],
         ],
     ],

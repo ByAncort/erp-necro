@@ -2,13 +2,13 @@
 
 return [
     'navigation' => [
-        'title' => 'Deliveries',
-        'group' => 'Transfers',
+        'title' => 'Entregas',
+        'group' => 'Transferencias',
     ],
 
     'global-search' => [
         'partner' => 'Partner',
-        'origin'  => 'Origin',
+        'origin'  => 'Origen',
     ],
 
     'table' => [
@@ -16,13 +16,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Delivery deleted',
-                        'body'  => 'The delivery ras been deleted successfully.',
+                        'title' => 'Entrega eliminada',
+                        'body'  => 'La entrega ha sido eliminada exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Delivery could not be deleted',
-                        'body'  => 'The delivery cannot be deleted because it is currently in use.',
+                        'title' => 'La entrega no pudo ser eliminada',
+                        'body'  => 'La entrega no puede ser eliminada porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -32,13 +32,13 @@ return [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Deliveries deleted',
-                        'body'  => 'The deliveries has been deleted successfully.',
+                        'title' => 'Entregas eliminadas',
+                        'body'  => 'Las entregas han sido eliminadas exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Deliveries could not be deleted',
-                        'body'  => 'The deliveries cannot be deleted because they are currently in use.',
+                        'title' => 'Las entregas no pudieron ser eliminadas',
+                        'body'  => 'Las entregas no pueden ser eliminadas porque están actualmente en uso.',
                     ],
                 ],
             ],

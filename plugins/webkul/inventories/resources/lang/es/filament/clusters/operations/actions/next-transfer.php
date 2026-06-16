@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'label' => 'Next Transfer',
+    'label' => 'Siguiente Transferencia',
 ];

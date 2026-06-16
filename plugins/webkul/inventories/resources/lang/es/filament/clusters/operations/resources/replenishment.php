@@ -2,8 +2,8 @@
 
 return [
     'navigation' => [
-        'title' => 'Replenishment',
-        'group' => 'Procurement',
+        'title' => 'Reabastecimiento',
+        'group' => 'Aprovisionamiento',
     ],
 
     'form' => [
@@ -13,24 +13,24 @@ return [
 
     'table' => [
         'columns' => [
-            'product'           => 'Product',
-            'location'          => 'Location',
-            'route'             => 'Route',
-            'vendor'            => 'Vendor',
-            'trigger'           => 'Trigger',
-            'on-hand'           => 'On Hand',
-            'min'               => 'Min',
-            'max'               => 'Max',
-            'multiple-quantity' => 'Multiple Quantity',
-            'to-order'          => 'To Order',
-            'uom'               => 'UOM',
-            'company'           => 'Company',
+            'product'           => 'Producto',
+            'location'          => 'Ubicación',
+            'route'             => 'Ruta',
+            'vendor'            => 'Proveedor',
+            'trigger'           => 'Activador',
+            'on-hand'           => 'Disponible',
+            'min'               => 'Mín',
+            'max'               => 'Máx',
+            'multiple-quantity' => 'Cantidad Múltiple',
+            'to-order'          => 'Por Ordenar',
+            'uom'               => 'UDM',
+            'company'           => 'Empresa',
         ],
 
         'groups' => [
-            'location' => 'Location',
-            'product'  => 'Product',
-            'category' => 'Category',
+            'location' => 'Ubicación',
+            'product'  => 'Producto',
+            'category' => 'Categoría',
         ],
 
         'filters' => [
@@ -38,17 +38,17 @@ return [
 
         'header-actions' => [
             'create' => [
-                'label' => 'Add Replenishment',
+                'label' => 'Añadir Reabastecimiento',
 
                 'notification' => [
-                    'title' => 'Replenishment added',
-                    'body'  => 'The replenishment has been added successfully.',
+                    'title' => 'Reabastecimiento añadido',
+                    'body'  => 'El reabastecimiento ha sido añadido exitosamente.',
                 ],
 
                 'before' => [
                     'notification' => [
-                        'title' => 'Replenishment already exists',
-                        'body'  => 'A replenishment already exists for this configuration. Please update the existing replenishment instead.',
+                        'title' => 'El reabastecimiento ya existe',
+                        'body'  => 'Ya existe un reabastecimiento para esta configuración. Actualice el reabastecimiento existente en su lugar.',
                     ],
                 ],
             ],

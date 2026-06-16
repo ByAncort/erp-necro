@@ -2,8 +2,8 @@
 
 return [
     'navigation' => [
-        'title' => 'Storage Categories',
-        'group' => 'Warehouse Management',
+        'title' => 'Categorías de Almacenamiento',
+        'group' => 'Gestión de Almacenes',
     ],
 
     'form' => [
@@ -12,10 +12,10 @@ return [
                 'title'  => 'General',
 
                 'fields' => [
-                    'name'               => 'Name',
-                    'allow-new-products' => 'Allow New Products',
-                    'max-weight'         => 'Max Weight',
-                    'company'            => 'Company',
+                    'name'               => 'Nombre',
+                    'allow-new-products' => 'Permitir Nuevos Productos',
+                    'max-weight'         => 'Peso Máximo',
+                    'company'            => 'Empresa',
                 ],
             ],
         ],
@@ -23,26 +23,26 @@ return [
 
     'table' => [
         'columns' => [
-            'name'               => 'Name',
-            'allow-new-products' => 'Allow New Products',
-            'max-weight'         => 'Max Weight',
-            'company'            => 'Company',
-            'deleted-at'         => 'Deleted At',
-            'created-at'         => 'Created At',
-            'updated-at'         => 'Updated At',
+            'name'               => 'Nombre',
+            'allow-new-products' => 'Permitir Nuevos Productos',
+            'max-weight'         => 'Peso Máximo',
+            'company'            => 'Empresa',
+            'deleted-at'         => 'Eliminado el',
+            'created-at'         => 'Creado el',
+            'updated-at'         => 'Actualizado el',
         ],
 
         'groups' => [
-            'allow-new-products' => 'Allow New Products',
-            'created-at'         => 'Created At',
-            'updated-at'         => 'Updated At',
+            'allow-new-products' => 'Permitir Nuevos Productos',
+            'created-at'         => 'Creado el',
+            'updated-at'         => 'Actualizado el',
         ],
 
         'actions' => [
             'delete' => [
                 'notification' => [
-                    'title' => 'Storage Category deleted',
-                    'body'  => 'The storage category has been deleted successfully.',
+                    'title' => 'Categoría de Almacenamiento eliminada',
+                    'body'  => 'La categoría de almacenamiento ha sido eliminada exitosamente.',
                 ],
             ],
         ],
@@ -50,8 +50,8 @@ return [
         'bulk-actions' => [
             'delete' => [
                 'notification' => [
-                    'title' => 'Storage Categories deleted',
-                    'body'  => 'The storage categories has been deleted successfully.',
+                    'title' => 'Categorías de Almacenamiento eliminadas',
+                    'body'  => 'Las categorías de almacenamiento han sido eliminadas exitosamente.',
                 ],
             ],
         ],
@@ -63,20 +63,20 @@ return [
                 'title'  => 'General',
 
                 'entries' => [
-                    'name'               => 'Name',
-                    'allow-new-products' => 'Allow New Products',
-                    'max-weight'         => 'Max Weight',
-                    'company'            => 'Company',
+                    'name'               => 'Nombre',
+                    'allow-new-products' => 'Permitir Nuevos Productos',
+                    'max-weight'         => 'Peso Máximo',
+                    'company'            => 'Empresa',
                 ],
             ],
 
             'record-information' => [
-                'title' => 'Record Information',
+                'title' => 'Información del Registro',
 
                 'entries' => [
-                    'created-by'   => 'Created By',
-                    'created-at'   => 'Created At',
-                    'last-updated' => 'Last Updated',
+                    'created-by'   => 'Creado por',
+                    'created-at'   => 'Creado el',
+                    'last-updated' => 'Última Actualización',
                 ],
             ],
         ],

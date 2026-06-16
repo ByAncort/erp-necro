@@ -2,15 +2,15 @@
 
 return [
     'notification' => [
-        'title' => 'Storage Category updated',
-        'body'  => 'The storage category has been updated successfully.',
+        'title' => 'Categoría de Almacenamiento actualizada',
+        'body'  => 'La categoría de almacenamiento ha sido actualizada exitosamente.',
     ],
 
     'header-actions' => [
         'delete' => [
             'notification' => [
-                'title' => 'Storage Category deleted',
-                'body'  => 'The storage category has been deleted successfully.',
+                'title' => 'Categoría de Almacenamiento eliminada',
+                'body'  => 'La categoría de almacenamiento ha sido eliminada exitosamente.',
             ],
         ],
     ],

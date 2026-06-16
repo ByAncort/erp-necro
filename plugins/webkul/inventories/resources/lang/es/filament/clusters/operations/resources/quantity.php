@@ -2,92 +2,92 @@
 
 return [
     'navigation' => [
-        'title' => 'Quantities',
-        'group' => 'Adjustments',
+        'title' => 'Cantidades',
+        'group' => 'Ajustes',
     ],
 
     'form' => [
         'fields' => [
-            'location'         => 'Location',
-            'product'          => 'Product',
-            'package'          => 'Package',
-            'lot'              => 'Lot / Serial Numbers',
-            'counted-qty'      => 'Counted Quantity',
-            'scheduled-at'     => 'Scheduled At',
-            'storage-category' => 'Storage Category',
+            'location'         => 'Ubicación',
+            'product'          => 'Producto',
+            'package'          => 'Paquete',
+            'lot'              => 'Lote / Números de Serie',
+            'counted-qty'      => 'Cantidad Contada',
+            'scheduled-at'     => 'Programado el',
+            'storage-category' => 'Categoría de Almacenamiento',
         ],
     ],
 
     'table' => [
         'columns' => [
-            'location'           => 'Location',
-            'product'            => 'Product',
-            'product-category'   => 'Product Category',
-            'lot'                => 'Lot / Serial Numbers',
-            'storage-category'   => 'Storage Category',
-            'available-quantity' => 'Available Quantity',
-            'quantity'           => 'Quantity',
-            'package'            => 'Package',
-            'last-counted-at'    => 'Last Counted At',
-            'on-hand'            => 'On Hand Quantity',
-            'uom'                => 'UOM',
-            'counted'            => 'Counted Quantity',
-            'difference'         => 'Difference',
-            'scheduled-at'       => 'Scheduled At',
-            'user'               => 'User',
-            'company'            => 'Company',
+            'location'           => 'Ubicación',
+            'product'            => 'Producto',
+            'product-category'   => 'Categoría de Producto',
+            'lot'                => 'Lote / Números de Serie',
+            'storage-category'   => 'Categoría de Almacenamiento',
+            'available-quantity' => 'Cantidad Disponible',
+            'quantity'           => 'Cantidad',
+            'package'            => 'Paquete',
+            'last-counted-at'    => 'Último Conteo el',
+            'on-hand'            => 'Cantidad Disponible',
+            'uom'                => 'UDM',
+            'counted'            => 'Cantidad Contada',
+            'difference'         => 'Diferencia',
+            'scheduled-at'       => 'Programado el',
+            'user'               => 'Usuario',
+            'company'            => 'Empresa',
 
             'on-hand-before-state-updated' => [
                 'notification' => [
-                    'title' => 'Quantity updated',
-                    'body'  => 'The quantity has been updated successfully.',
+                    'title' => 'Cantidad actualizada',
+                    'body'  => 'La cantidad ha sido actualizada exitosamente.',
                 ],
             ],
         ],
 
         'groups' => [
-            'product'          => 'Product',
-            'product-category' => 'Product Category',
-            'location'         => 'Location',
-            'storage-category' => 'Storage Category',
-            'lot'              => 'Lot / Serial Numbers',
-            'company'          => 'Company',
-            'package'          => 'Package',
+            'product'          => 'Producto',
+            'product-category' => 'Categoría de Producto',
+            'location'         => 'Ubicación',
+            'storage-category' => 'Categoría de Almacenamiento',
+            'lot'              => 'Lote / Números de Serie',
+            'company'          => 'Empresa',
+            'package'          => 'Paquete',
         ],
 
         'filters' => [
-            'product'             => 'Product',
-            'uom'                 => 'Unit of Measure',
-            'product-category'    => 'Product Category',
-            'location'            => 'Location',
-            'storage-category'    => 'Storage Category',
-            'lot'                 => 'Lot / Serial Numbers',
-            'company'             => 'Company',
-            'package'             => 'Package',
-            'on-hand-quantity'    => 'On Hand Quantity',
-            'difference-quantity' => 'Difference Quantity',
-            'incoming-at'         => 'Incoming At',
-            'scheduled-at'        => 'Scheduled At',
-            'user'                => 'User',
-            'created-at'          => 'Created At',
-            'updated-at'          => 'Updated At',
-            'company'             => 'Company',
-            'creator'             => 'Creator',
+            'product'             => 'Producto',
+            'uom'                 => 'Unidad de Medida',
+            'product-category'    => 'Categoría de Producto',
+            'location'            => 'Ubicación',
+            'storage-category'    => 'Categoría de Almacenamiento',
+            'lot'                 => 'Lote / Números de Serie',
+            'company'             => 'Empresa',
+            'package'             => 'Paquete',
+            'on-hand-quantity'    => 'Cantidad Disponible',
+            'difference-quantity' => 'Cantidad de Diferencia',
+            'incoming-at'         => 'Entrante el',
+            'scheduled-at'        => 'Programado el',
+            'user'                => 'Usuario',
+            'created-at'          => 'Creado el',
+            'updated-at'          => 'Actualizado el',
+            'company'             => 'Empresa',
+            'creator'             => 'Creador',
         ],
 
         'header-actions' => [
             'create' => [
-                'label' => 'Add Quantity',
+                'label' => 'Añadir Cantidad',
 
                 'notification' => [
-                    'title' => 'Quantity added',
-                    'body'  => 'The quantity has been added successfully.',
+                    'title' => 'Cantidad añadida',
+                    'body'  => 'La cantidad ha sido añadida exitosamente.',
                 ],
 
                 'before' => [
                     'notification' => [
-                        'title' => 'Quantity already exists',
-                        'body'  => 'A quantity already exists for this configuration. Please update the existing quantity instead.',
+                        'title' => 'La cantidad ya existe',
+                        'body'  => 'Ya existe una cantidad para esta configuración. Actualice la cantidad existente en su lugar.',
                     ],
                 ],
             ],
@@ -95,20 +95,20 @@ return [
 
         'actions' => [
             'apply' => [
-                'label' => 'Apply',
+                'label' => 'Aplicar',
 
                 'notification' => [
-                    'title' => 'Quantity changes applied',
-                    'body'  => 'The quantity changes has been applied successfully.',
+                    'title' => 'Cambios de cantidad aplicados',
+                    'body'  => 'Los cambios de cantidad han sido aplicados exitosamente.',
                 ],
             ],
 
             'clear' => [
-                'label' => 'Clear',
+                'label' => 'Limpiar',
 
                 'notification' => [
-                    'title' => 'Quantity changes cleared',
-                    'body'  => 'The quantity changes have been cleared successfully.',
+                    'title' => 'Cambios de cantidad limpiados',
+                    'body'  => 'Los cambios de cantidad han sido limpiados exitosamente.',
                 ],
             ],
         ],

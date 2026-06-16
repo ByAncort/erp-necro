@@ -1,22 +1,22 @@
 <?php
 
 return [
-    'label'        => 'Send By Email',
-    'resend-label' => 'Re-Send By Email',
+    'label'        => 'Enviar por Correo',
+    'resend-label' => 'Reenviar por Correo',
 
     'form' => [
         'fields' => [
-            'to'      => 'To',
-            'subject' => 'Subject',
-            'message' => 'Message',
+            'to'      => 'Para',
+            'subject' => 'Asunto',
+            'message' => 'Mensaje',
         ],
     ],
 
     'action' => [
         'notification' => [
             'success' => [
-                'title' => 'Email sent',
-                'body'  => 'The email has been sent successfully.',
+                'title' => 'Correo enviado',
+                'body'  => 'El correo ha sido enviado exitosamente.',
             ],
         ],
     ],

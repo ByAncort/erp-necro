@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'label' => 'Check Availability',
+    'label' => 'Verificar Disponibilidad',
 ];

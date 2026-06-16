@@ -2,17 +2,17 @@
 
 return [
     'tabs' => [
-        'all'      => 'All',
-        'internal' => 'Internal Locations',
+        'all'      => 'Todo',
+        'internal' => 'Ubicaciones Internas',
     ],
 
     'header-actions' => [
         'create' => [
-            'label' => 'New Package',
+            'label' => 'Nuevo Paquete',
 
             'notification' => [
-                'title' => 'Package created',
-                'body'  => 'The package has been created successfully.',
+                'title' => 'Paquete creado',
+                'body'  => 'El paquete ha sido creado exitosamente.',
             ],
         ],
     ],

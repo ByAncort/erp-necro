@@ -2,17 +2,17 @@
 
 return [
     'one-step' => [
-        'name'        => 'One step',
-        'description' => 'Manufacture (1 step)',
+        'name'        => 'Un paso',
+        'description' => 'Fabricar (1 paso)',
     ],
 
     'two-steps' => [
-        'name'        => 'Two steps',
-        'description' => 'Pick components then manufacture (2 steps)',
+        'name'        => 'Dos pasos',
+        'description' => 'Recoger componentes luego fabricar (2 pasos)',
     ],
 
     'three-steps' => [
-        'name'        => 'Three steps',
-        'description' => 'Pick components, manufacture, then store products (3 steps)',
+        'name'        => 'Tres pasos',
+        'description' => 'Recoger componentes, fabricar, luego almacenar productos (3 pasos)',
     ],
 ];

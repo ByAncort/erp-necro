@@ -2,17 +2,17 @@
 
 return [
     'tabs' => [
-        'all'      => 'All',
-        'archived' => 'Archived',
+        'all'      => 'Todo',
+        'archived' => 'Archivado',
     ],
 
     'header-actions' => [
         'create' => [
-            'label' => 'New Warehouse',
+            'label' => 'Nuevo Almacén',
 
             'notification' => [
-                'title' => 'Warehouse created',
-                'body'  => 'The warehouse has been created successfully.',
+                'title' => 'Almacén creado',
+                'body'  => 'El almacén ha sido creado exitosamente.',
             ],
         ],
     ],

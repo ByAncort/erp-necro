@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Create Delivery',
+    'title' => 'Crear Entrega',
 
     'notification' => [
-        'title' => 'Delivery created',
-        'body'  => 'The delivery has been created successfully.',
+        'title' => 'Entrega creada',
+        'body'  => 'La entrega ha sido creada exitosamente.',
     ],
 ];

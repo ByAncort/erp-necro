@@ -2,13 +2,13 @@
 
 return [
     'navigation' => [
-        'title' => 'Lots / Serial Numbers',
-        'group' => 'Inventory',
+        'title' => 'Lotes / Números de Serie',
+        'group' => 'Inventario',
     ],
 
     'global-search' => [
-        'ref'     => 'Reference',
-        'product' => 'Product',
+        'ref'     => 'Referencia',
+        'product' => 'Producto',
     ],
 
     'form' => [
@@ -17,13 +17,13 @@ return [
                 'title' => 'General',
 
                 'fields' => [
-                    'name'                   => 'Name',
-                    'name-placeholder'       => 'e.g. LOT/0001/20121',
-                    'product'                => 'Product',
-                    'product-hint-tooltip'   => 'The product associated with this lot/serial number. It cannot be changed if it has already been moved.',
-                    'reference'              => 'Reference',
-                    'reference-hint-tooltip' => 'An internal reference number, if different from the manufacturer\'s lot/serial number.',
-                    'description'            => 'Description',
+                    'name'                   => 'Nombre',
+                    'name-placeholder'       => 'ej. LOTE/0001/20121',
+                    'product'                => 'Producto',
+                    'product-hint-tooltip'   => 'El producto asociado con este lote/número de serie. No se puede cambiar si ya ha sido movido.',
+                    'reference'              => 'Referencia',
+                    'reference-hint-tooltip' => 'Un número de referencia interno, si es diferente del lote/número de serie del fabricante.',
+                    'description'            => 'Descripción',
                 ],
             ],
         ],
@@ -31,38 +31,38 @@ return [
 
     'table' => [
         'columns' => [
-            'name'         => 'Name',
-            'product'      => 'Product',
-            'on-hand-qty'  => 'On Hand Quantity',
-            'reference'    => 'Internal Reference',
-            'created-at'   => 'Created At',
-            'updated-at'   => 'Updated At',
+            'name'         => 'Nombre',
+            'product'      => 'Producto',
+            'on-hand-qty'  => 'Cantidad Disponible',
+            'reference'    => 'Referencia Interna',
+            'created-at'   => 'Creado el',
+            'updated-at'   => 'Actualizado el',
         ],
 
         'groups' => [
-            'product'        => 'Product',
-            'location'       => 'Location',
-            'created-at'     => 'Created At',
+            'product'        => 'Producto',
+            'location'       => 'Ubicación',
+            'created-at'     => 'Creado el',
         ],
 
         'filters' => [
-            'product'  => 'Product',
-            'location' => 'Location',
-            'creator'  => 'Creator',
-            'company'  => 'Company',
+            'product'  => 'Producto',
+            'location' => 'Ubicación',
+            'creator'  => 'Creador',
+            'company'  => 'Empresa',
         ],
 
         'actions' => [
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Lot deleted',
-                        'body'  => 'The lot has been deleted successfully.',
+                        'title' => 'Lote eliminado',
+                        'body'  => 'El lote ha sido eliminado exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Lot could not be deleted',
-                        'body'  => 'The lot cannot be deleted because it is currently in use.',
+                        'title' => 'El lote no pudo ser eliminado',
+                        'body'  => 'El lote no puede ser eliminado porque está actualmente en uso.',
                     ],
                 ],
             ],
@@ -70,19 +70,19 @@ return [
 
         'bulk-actions' => [
             'print' => [
-                'label' => 'Print Barcode',
+                'label' => 'Imprimir Código de Barras',
             ],
 
             'delete' => [
                 'notification' => [
                     'success' => [
-                        'title' => 'Lots deleted',
-                        'body'  => 'The lots has been deleted successfully.',
+                        'title' => 'Lotes eliminados',
+                        'body'  => 'Los lotes han sido eliminados exitosamente.',
                     ],
 
                     'error' => [
-                        'title' => 'Lots could not be deleted',
-                        'body'  => 'The lots cannot be deleted because they are currently in use.',
+                        'title' => 'Los lotes no pudieron ser eliminados',
+                        'body'  => 'Los lotes no pueden ser eliminados porque están actualmente en uso.',
                     ],
                 ],
             ],
@@ -92,27 +92,27 @@ return [
     'infolist' => [
         'sections' => [
             'general' => [
-                'title' => 'Lot Details',
+                'title' => 'Detalles del Lote',
 
                 'entries' => [
-                    'name'        => 'Lot Name',
-                    'product'     => 'Product',
-                    'reference'   => 'Reference',
-                    'description' => 'Description',
-                    'on-hand-qty' => 'On-Hand Quantity',
-                    'company'     => 'Company',
-                    'created-at'  => 'Created At',
-                    'updated-at'  => 'Last Updated',
+                    'name'        => 'Nombre del Lote',
+                    'product'     => 'Producto',
+                    'reference'   => 'Referencia',
+                    'description' => 'Descripción',
+                    'on-hand-qty' => 'Cantidad Disponible',
+                    'company'     => 'Empresa',
+                    'created-at'  => 'Creado el',
+                    'updated-at'  => 'Última Actualización',
                 ],
             ],
 
             'record-information' => [
-                'title' => 'Record Information',
+                'title' => 'Información del Registro',
 
                 'entries' => [
-                    'created-by'   => 'Created By',
-                    'created-at'   => 'Created At',
-                    'last-updated' => 'Last Updated',
+                    'created-by'   => 'Creado por',
+                    'created-at'   => 'Creado el',
+                    'last-updated' => 'Última Actualización',
                 ],
             ],
         ],

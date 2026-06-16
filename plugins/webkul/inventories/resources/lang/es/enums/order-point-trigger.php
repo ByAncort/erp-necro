@@ -2,5 +2,5 @@
 
 return [
     'manual'    => 'Manual',
-    'automatic' => 'Automatic',
+    'automatic' => 'Automático',
 ];

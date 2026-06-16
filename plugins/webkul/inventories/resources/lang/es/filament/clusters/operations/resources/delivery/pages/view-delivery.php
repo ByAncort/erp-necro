@@ -3,19 +3,19 @@
 return [
     'header-actions' => [
         'print' => [
-            'label' => 'Print',
+            'label' => 'Imprimir',
         ],
 
         'delete' => [
             'notification' => [
                 'success' => [
-                    'title' => 'Delivery Deleted',
-                    'body'  => 'The delivery has been deleted successfully.',
+                    'title' => 'Entrega Eliminada',
+                    'body'  => 'La entrega ha sido eliminada exitosamente.',
                 ],
 
                 'error' => [
-                    'title' => 'Delivery could not be deleted',
-                    'body'  => 'The delivery cannot be deleted because it is currently in use.',
+                    'title' => 'La entrega no pudo ser eliminada',
+                    'body'  => 'La entrega no puede ser eliminada porque está actualmente en uso.',
                 ],
             ],
         ],
