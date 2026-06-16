@@ -1084,12 +1084,18 @@ class BillResource extends Resource
                             ->withTrashed()
                             ->whereNull('is_configurable'),
                     )
-                    ->searchable()
+                    ->searchable(['name', 'barcode'])
                     ->preload()
                     ->live()
                     ->wrapOptionLabels(false)
                     ->getOptionLabelFromRecordUsing(function ($record): string {
-                        return $record->name.($record->trashed() ? ' (Deleted)' : '');
+                        $label = $record->name;
+
+                        if ($record->barcode) {
+                            $label .= ' ['.$record->barcode.']';
+                        }
+
+                        return $label.($record->trashed() ? ' (Deleted)' : '');
                     })
                     ->disableOptionWhen(function ($value, $state, $component, $label) {
                         if (str_contains($label, ' (Deleted)')) {
