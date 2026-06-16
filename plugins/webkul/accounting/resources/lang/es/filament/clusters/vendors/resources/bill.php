@@ -1,23 +1,23 @@
 <?php
 
 return [
-    'title' => 'Bill',
+    'title' => 'Factura de Compra',
 
     'navigation' => [
-        'title' => 'Bills',
+        'title' => 'Facturas de Compra',
     ],
 
     'global-search' => [
-        'vendor'   => 'Vendor',
-        'date'     => 'Date',
-        'due-date' => 'Due Date',
-        'amount'   => 'Amount',
+        'vendor'   => 'Proveedor',
+        'date'     => 'Fecha',
+        'due-date' => 'Fecha de Vencimiento',
+        'amount'   => 'Monto',
     ],
 
     'form' => [
-        'biller'            => 'Biller',
-        'reference'         => 'Reference',
-        'payment-reference' => 'Payment Reference',
-        'date'              => 'Date',
+        'biller'            => 'Facturador',
+        'reference'         => 'Referencia',
+        'payment-reference' => 'Referencia de Pago',
+        'date'              => 'Fecha',
     ],
 ];

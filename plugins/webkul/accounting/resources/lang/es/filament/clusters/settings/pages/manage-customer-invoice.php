@@ -1,16 +1,16 @@
 <?php
 
 return [
-    'title' => 'Manage Customer Invoice',
+    'title' => 'Gestionar Factura de Cliente',
 
     'form' => [
         'cash-rounding' => [
-            'label'       => 'Cash Rounding',
-            'helper-text' => 'Specify the lowest denomination of the currency accepted for cash payments.',
+            'label'       => 'Redondeo de Efectivo',
+            'helper-text' => 'Especifique la denominación más baja de la moneda aceptada para pagos en efectivo.',
         ],
 
         'incoterm' => [
-            'label' => 'Default Incoterm',
+            'label' => 'Incoterm Predeterminado',
         ],
     ],
 ];

@@ -2,7 +2,7 @@
 
 return [
     'notification' => [
-        'title' => 'Journal Entry created',
-        'body'  => 'The journal entry has been created successfully.',
+        'title' => 'Asiento de Diario creado',
+        'body'  => 'El asiento de diario ha sido creado exitosamente.',
     ],
 ];

@@ -7,7 +7,7 @@ return [
         'sale'          => 'Sales',
         'purchase'      => 'Purchase',
         'invoice'       => 'Invoices',
-        'accounting'    => 'Accounting',
+        'accounting'    => 'Contabilidad',
         'inventory'     => 'Inventory',
         'maintenance'   => 'Maintenance',
         'manufacturing' => 'Manufacturing',
