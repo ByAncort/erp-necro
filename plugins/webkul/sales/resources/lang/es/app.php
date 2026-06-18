@@ -3,7 +3,7 @@
 return [
     'navigation' => [
         'settings' => [
-            'label' => 'Settings',
+            'label' => 'Ajustes',
             'group' => 'Ventas',
         ],
     ],

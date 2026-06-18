@@ -2,7 +2,7 @@
 
 return [
     'navigation' => [
-        'title' => 'Configurations',
+        'title' => 'Configuraciones',
         'group' => 'Ventas',
     ],
 ];

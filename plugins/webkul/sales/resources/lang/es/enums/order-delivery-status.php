@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'no'      => 'Nothing To Deliver',
-    'pending' => 'Pending',
-    'partial' => 'Partially Delivered',
-    'full'    => 'Fully Delivered',
+    'no'      => 'Nada que entregar',
+    'pending' => 'Pendiente',
+    'partial' => 'Parcialmente entregado',
+    'full'    => 'Totalmente entregado',
 ];
