@@ -414,7 +414,6 @@ class Operation extends Model
         return $impactedOperations->unique('id');
     }
 
-
     public function getEntirePackDestinationLocation($moveLines)
     {
         $destinationLocationIds = $moveLines

@@ -75,5 +75,4 @@ class EditProduct extends BaseEditProduct
             }
         }
     }
-
 }

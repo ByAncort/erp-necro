@@ -112,7 +112,7 @@ class Location extends Model
     public function getInternalChildLocations()
     {
         return static::where('type', LocationType::INTERNAL)
-            ->whereRaw('parent_path LIKE ?', [$this->parent_path . '%'])
+            ->whereRaw('parent_path LIKE ?', [$this->parent_path.'%'])
             ->get();
     }
 
@@ -132,7 +132,7 @@ class Location extends Model
 
         while ($current) {
             $categoryIds->push($current->id);
-            
+
             $current = $current->parent_id ? $current->parent : null;
         }
 
@@ -227,7 +227,7 @@ class Location extends Model
                 $lastUsedLocation = MoveLine::where('state', MoveState::DONE)
                     ->where('product_id', $product->id)
                     ->whereHas('destinationLocation', fn ($q) => $q->where('id', $this->locationOut->id)
-                        ->orWhereRaw('parent_path LIKE ?', [$this->locationOut->parent_path . '%'])
+                        ->orWhereRaw('parent_path LIKE ?', [$this->locationOut->parent_path.'%'])
                     )
                     ->when($putawayRule->packageTypes->isNotEmpty(), function ($query) use ($putawayRule) {
                         $query->whereHas('resultPackage', fn ($q) => $q->whereIn('package_type_id', $putawayRule->packageTypes->pluck('id')->all()));
@@ -235,7 +235,7 @@ class Location extends Model
                     ->orderBy('scheduled_at', 'desc')
                     ->first()
                     ?->destinationLocation;
-                
+
                 $outLocation = $lastUsedLocation ?? $outLocation;
             }
 
@@ -305,8 +305,7 @@ class Location extends Model
         ?Package $package = null,
         float $locationQty = 0,
         array $excludeMoveLineIds = []
-    ): bool
-    {
+    ): bool {
         if (! $this->storage_category_id) {
             return true;
         }

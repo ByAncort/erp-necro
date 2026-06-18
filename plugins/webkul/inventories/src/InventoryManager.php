@@ -616,7 +616,7 @@ class InventoryManager
 
         Move::whereIn('id', $assignedMovesIds)->get()->each(fn ($move) => $move->update(['state' => MoveState::ASSIGNED]));
 
-        foreach ($moves as $move){
+        foreach ($moves as $move) {
             $this->checkForEntirePack($move->operation);
         }
 
@@ -691,7 +691,7 @@ class InventoryManager
 
         foreach ($resultPackages as $resultPackage) {
             $locationCount = $resultPackage->quantities
-                ->filter(fn($quantity) => float_compare($quantity->quantity, 0.0, precisionRounding: $quantity->uom->rounding) > 0)
+                ->filter(fn ($quantity) => float_compare($quantity->quantity, 0.0, precisionRounding: $quantity->uom->rounding) > 0)
                 ->pluck('location_id')
                 ->unique()
                 ->count();
@@ -2565,7 +2565,7 @@ class InventoryManager
                 continue;
             }
 
-            $package  = PackageModel::find($packageId);
+            $package = PackageModel::find($packageId);
 
             $operations = $packageMoveLines->pluck('operation')->unique('id');
 
@@ -2625,8 +2625,8 @@ class InventoryManager
 
                 foreach ($packageLevelIds as $packageLevel) {
                     $packageLevelMoveLines = $moveLinesByPackageLevel->get($packageLevel->id, collect());
-                    
-                    $packageLevelDestinationLocationId  = $operations->first()->getEntirePackDestinationLocation($packageLevelMoveLines)
+
+                    $packageLevelDestinationLocationId = $operations->first()->getEntirePackDestinationLocation($packageLevelMoveLines)
                         ?? $operations->first()->destination_location_id;
 
                     if ($packageLevel->destination_location_id !== $packageLevelDestinationLocationId) {
@@ -2636,7 +2636,7 @@ class InventoryManager
 
                 foreach ($moveLinesToPack->pluck('move')->unique('id') as $move) {
                     if (
-                        $move->lines->every(fn($line) => $line->package_level_id)
+                        $move->lines->every(fn ($line) => $line->package_level_id)
                         && $move->lines->pluck('package_level_id')->unique()->count() === 1
                     ) {
                         $move->update(['package_level_id' => $move->lines->first()->package_level_id]);

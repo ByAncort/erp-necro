@@ -72,7 +72,7 @@ use Webkul\Support\Models\UOM;
 class ManufacturingOrderResource extends Resource
 {
     use HasResourcePermissionQuery;
-    
+
     protected static ?string $model = Order::class;
 
     protected static ?string $cluster = Operations::class;

@@ -42,7 +42,7 @@ return [
     ],
 
     'product' => [
-        'endless-loop-rule' => "Configuración de regla no válida, la siguiente regla causa un bucle infinito: :name",
+        'endless-loop-rule' => 'Configuración de regla no válida, la siguiente regla causa un bucle infinito: :name',
     ],
 
     'move' => [

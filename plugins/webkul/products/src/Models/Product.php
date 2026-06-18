@@ -16,8 +16,8 @@ use Webkul\Chatter\Traits\HasLogActivity;
 use Webkul\Product\Database\Factories\ProductFactory;
 use Webkul\Product\Enums\ProductType;
 use Webkul\Security\Models\User;
-use Webkul\Support\Models\Concerns\HasContributedAttributes;
 use Webkul\Support\Models\Company;
+use Webkul\Support\Models\Concerns\HasContributedAttributes;
 use Webkul\Support\Models\UOM;
 
 class Product extends Model implements Sortable

@@ -17,11 +17,11 @@ use Filament\Tables\Grouping\Group;
 use Filament\Tables\Table;
 use Webkul\Support\Enums\UOMType;
 use Webkul\Support\Filament\Forms\Components\Repeater;
-use Webkul\Support\Models\UOMCategory;
 use Webkul\Support\Filament\Resources\UOMCategoryResource\Pages\CreateUOMCategory;
 use Webkul\Support\Filament\Resources\UOMCategoryResource\Pages\EditUOMCategory;
 use Webkul\Support\Filament\Resources\UOMCategoryResource\Pages\ListUOMCategories;
 use Webkul\Support\Filament\Resources\UOMCategoryResource\Pages\ViewUOMCategory;
+use Webkul\Support\Models\UOMCategory;
 
 class UOMCategoryResource extends Resource
 {

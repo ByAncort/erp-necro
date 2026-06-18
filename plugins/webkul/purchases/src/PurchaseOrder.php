@@ -3,6 +3,7 @@
 namespace Webkul\Purchase;
 
 use Barryvdh\DomPDF\Facade\Pdf;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
@@ -16,8 +17,10 @@ use Webkul\Inventory\Enums as InventoryEnums;
 use Webkul\Inventory\Facades\Inventory as InventoryFacade;
 use Webkul\Inventory\Models\Location;
 use Webkul\Inventory\Models\Move;
+use Webkul\Inventory\Models\MoveLine;
 use Webkul\Inventory\Models\OperationType;
 use Webkul\Inventory\Models\ProcurementGroup;
+use Webkul\Inventory\Models\ProductQuantity;
 use Webkul\Inventory\Models\Receipt;
 use Webkul\PluginManager\Package;
 use Webkul\Product\Enums\ProductType;
@@ -108,7 +111,94 @@ class PurchaseOrder
 
         $this->createInventoryOperation($record);
 
+        $this->autoUpdateStockFromPurchase($record);
+
         return $record;
+    }
+
+    public function autoUpdateStockFromPurchase(Order $record): void
+    {
+        if (! Package::isPluginInstalled('inventories')) {
+            return;
+        }
+
+        $record->load('lines.inventoryMoves.product', 'lines.inventoryMoves.uom', 'operations');
+
+        $moves = collect();
+
+        foreach ($record->lines as $line) {
+            if ($line->product?->type !== ProductType::GOODS) {
+                continue;
+            }
+
+            foreach ($line->inventoryMoves as $move) {
+                if (! in_array($move->state, [InventoryEnums\MoveState::DONE, InventoryEnums\MoveState::CANCELED])) {
+                    $moves->push($move);
+                }
+            }
+        }
+
+        $this->completeMoves($moves);
+
+        $record->operations->each(function ($operation) {
+            if (! in_array($operation->state, [InventoryEnums\OperationState::DONE, InventoryEnums\OperationState::CANCELED])) {
+                $operation->refresh();
+
+                $operation->computeState();
+
+                $operation->save();
+
+                if ($operation->state === InventoryEnums\OperationState::DONE && ! $operation->closed_at) {
+                    $operation->update(['closed_at' => now()]);
+                }
+            }
+        });
+    }
+
+    protected function completeMoves(Collection $moves): void
+    {
+        foreach ($moves as $move) {
+            $qty = $move->product_uom_qty;
+
+            if (float_is_zero($qty, precisionRounding: $move->uom->rounding)) {
+                continue;
+            }
+
+            if (! $move->product->is_storable) {
+                continue;
+            }
+
+            if ($move->lines->isEmpty()) {
+                MoveLine::create($move->prepareLineValues(quantity: $qty));
+
+                $move->refresh();
+            }
+
+            if (! $move->shouldBypassReservation($move->sourceLocation)) {
+                ProductQuantity::updateReservedQuantity(
+                    product: $move->product,
+                    location: $move->sourceLocation,
+                    quantity: -$qty,
+                );
+            }
+
+            ProductQuantity::updateAvailableQuantity(
+                product: $move->product,
+                location: $move->sourceLocation,
+                quantity: -$qty,
+            );
+
+            ProductQuantity::updateAvailableQuantity(
+                product: $move->product,
+                location: $move->destinationLocation,
+                quantity: $qty,
+            );
+
+            $move->update([
+                'state' => InventoryEnums\MoveState::DONE,
+                'date'  => now(),
+            ]);
+        }
     }
 
     public function canUserApprove($user): bool
@@ -655,7 +745,6 @@ class PurchaseOrder
         $moveDestinations = $moveDestinations->filter(
             fn ($move) => $move->state !== InventoryEnums\MoveState::CANCELED && ! $move->isPurchaseReturn()
         );
-
 
         $qtyToPush = $line->product_qty - $qty;
 

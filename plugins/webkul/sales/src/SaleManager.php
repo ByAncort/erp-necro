@@ -3,6 +3,7 @@
 namespace Webkul\Sale;
 
 use Exception;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Webkul\Account\Enums as AccountEnums;
 use Webkul\Account\Enums\InvoicePolicy;
@@ -12,7 +13,9 @@ use Webkul\Account\Models\Move as AccountMove;
 use Webkul\Inventory\Enums as InventoryEnums;
 use Webkul\Inventory\Facades\Inventory as InventoryFacade;
 use Webkul\Inventory\Models\Location;
+use Webkul\Inventory\Models\MoveLine;
 use Webkul\Inventory\Models\Product as InventoryProduct;
+use Webkul\Inventory\Models\ProductQuantity;
 use Webkul\Partner\Models\Partner;
 use Webkul\PluginManager\Package;
 use Webkul\Product\Enums as ProductEnums;
@@ -69,6 +72,8 @@ class SaleManager
 
         $this->applyInventoryRules($record->lines);
 
+        $this->autoUpdateStockFromSale($record);
+
         $record->update([
             'locked' => $this->quotationAndOrderSettings->enable_lock_confirm_sales,
         ]);
@@ -78,6 +83,93 @@ class SaleManager
         OrderConfirmed::dispatch($record);
 
         return $record;
+    }
+
+    public function autoUpdateStockFromSale(Order $record): void
+    {
+        if (! Package::isPluginInstalled('inventories')) {
+            return;
+        }
+
+        $record->load('lines.inventoryMoves.product', 'lines.inventoryMoves.uom');
+
+        $moves = collect();
+
+        foreach ($record->lines as $line) {
+            if ($line->product?->type !== ProductEnums\ProductType::GOODS) {
+                continue;
+            }
+
+            foreach ($line->inventoryMoves as $move) {
+                if (! in_array($move->state, [InventoryEnums\MoveState::DONE, InventoryEnums\MoveState::CANCELED])) {
+                    $moves->push($move);
+                }
+            }
+        }
+
+        $this->completeMoves($moves);
+
+        $record->load('operations');
+
+        $record->operations->each(function ($operation) {
+            if (! in_array($operation->state, [InventoryEnums\OperationState::DONE, InventoryEnums\OperationState::CANCELED])) {
+                $operation->refresh();
+
+                $operation->computeState();
+
+                $operation->save();
+
+                if ($operation->state === InventoryEnums\OperationState::DONE && ! $operation->closed_at) {
+                    $operation->update(['closed_at' => now()]);
+                }
+            }
+        });
+    }
+
+    protected function completeMoves(Collection $moves): void
+    {
+        foreach ($moves as $move) {
+            $qty = $move->product_uom_qty;
+
+            if (float_is_zero($qty, precisionRounding: $move->uom->rounding)) {
+                continue;
+            }
+
+            if (! $move->product->is_storable) {
+                continue;
+            }
+
+            if ($move->lines->isEmpty()) {
+                MoveLine::create($move->prepareLineValues(quantity: $qty));
+
+                $move->refresh();
+            }
+
+            if (! $move->shouldBypassReservation($move->sourceLocation)) {
+                ProductQuantity::updateReservedQuantity(
+                    product: $move->product,
+                    location: $move->sourceLocation,
+                    quantity: -$qty,
+                );
+            }
+
+            ProductQuantity::updateAvailableQuantity(
+                product: $move->product,
+                location: $move->sourceLocation,
+                quantity: -$qty,
+            );
+
+            ProductQuantity::updateAvailableQuantity(
+                product: $move->product,
+                location: $move->destinationLocation,
+                quantity: $qty,
+            );
+
+            $move->update([
+                'state' => InventoryEnums\MoveState::DONE,
+                'date'  => now(),
+            ]);
+        }
     }
 
     public function backToQuotation(Order $record): Order
